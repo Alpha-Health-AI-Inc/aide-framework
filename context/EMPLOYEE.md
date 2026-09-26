@@ -8,6 +8,8 @@ Source: [ONBOARDING.md](../ONBOARDING.md)
 
 # Employee onboarding
 
+For a request to connect as an employee with a repository URL, follow [Employee start](../EMPLOYEE-START.md). Treat it as an action request, check authentication/access before cloning, and do not ask the person to choose a documentation task or a credential architecture.
+
 **First action:** run the [Git connection check](../GIT-FIRST.md) against the supplied private destination. No Claude Projects container or HTML form is required. Use the personal handoff and confirmed identity, then ask the employee about missing assignments. Do not create a second organization.
 
 [Manager setup](../SETUP.md) / [Daily use](../DAILY-USE.md) / [Acceptance checks](../SETUP-ACCEPTANCE.md)

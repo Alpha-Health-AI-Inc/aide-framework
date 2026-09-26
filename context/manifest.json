@@ -3,21 +3,21 @@
   "measurement": "UTF-8 bytes and whitespace-delimited words. Not token counts or provider capacity.",
   "packs": {
     "MANAGER.md": {
-      "bytes": 26199,
-      "words": 3495,
-      "sha256": "2ca0356457df9277e8ab23a0566894647ffbaf745c6b28b647537ed6a62bdd94",
+      "bytes": 26651,
+      "words": 3552,
+      "sha256": "703b71db92489c2937ff2db923a9e764a2720ba3a29129efe41d4b4887ccfe68",
       "sources": {
         "SETUP.md": "1eb713d094f01a5213f664325db94ae7ef1eb6c2f1ed82261d55b06d10a17252",
-        "AGENT-SETUP.md": "995165554be0d324280aa1d6623fbfdd3a836f908ebb5d79c439d863f7a41dbb",
+        "AGENT-SETUP.md": "8d2f25548e4172bcc5e6d620c9dccff3c9daf85a9ef30319daed9bb94936999f",
         "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
       }
     },
     "EMPLOYEE.md": {
-      "bytes": 12552,
-      "words": 1618,
-      "sha256": "489e18b303dc07fb4212811cbd21ef74036282a0bc75886403097ffdd5ac955a",
+      "bytes": 12825,
+      "words": 1658,
+      "sha256": "4eb9fc273689d1f0f150ae4245830940a4838390fa441bd34c195822a04d6382",
       "sources": {
-        "ONBOARDING.md": "4708d086c9a471b153e48b9d8f2a8425ebaa4ae3a22dae0c04d5fb8c192ad56e",
+        "ONBOARDING.md": "f6429b6a316b635ff43a9ef7828c0f094c2e5f1b1cf44dc5b1ce4dc8338417b4",
         "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
       }
     },

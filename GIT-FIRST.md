@@ -1,5 +1,7 @@
 # Connect Git before building the workspace
 
+For a request to connect as an employee with a repository URL, follow [Employee start](EMPLOYEE-START.md). Treat it as an action request, check authentication/access before cloning, and do not ask the person to choose a documentation task or a credential architecture.
+
 This is the first step for **Start onboarding** in every client. If no working folder is selected, guide the human through the client’s folder picker as the prerequisite; do not claim filesystem access from a screenshot. Complete one bounded connection check before collecting a roster or generating organization files. Use the local folder and permitted tools; a Claude Projects container, browser, HTML form and GitHub MCP are optional.
 
 ## 1. Inspect the current route

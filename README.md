@@ -131,3 +131,7 @@ AIDE stands for **Ambient Intelligent Digital Employee**. Originally published b
 ### One organization, many teams
 
 Managers customize the framework into their own private repository and share personal onboarding links from it. One person can manage one team and belong to others. [Team structure](TEAM-STRUCTURE.md) explains scoped roles and nested teams; the [two-machine pilot](TWO-MACHINE-PILOT.md) walks through the NEO.CORTEX example using synthetic records.
+
+## Joining an existing workspace
+
+Use the manager’s private URL with “Start employee onboarding.” [Employee start](EMPLOYEE-START.md) defines the direct connection flow. The manager uses the handoff generator to provide a deployed entry link and explicit prompt; a template path is not a completed workspace. Existing deployments must adopt these changes explicitly.

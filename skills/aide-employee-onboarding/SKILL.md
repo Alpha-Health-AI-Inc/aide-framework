@@ -5,6 +5,8 @@ description: Onboard a person and their agent from an approved private AIDE team
 
 # Employee onboarding
 
+Treat “start employee onboarding” or “connect as an employee” plus a repository URL as a direct action request. Read [Employee start](../../EMPLOYEE-START.md) before cloning. Do not offer documentation/process-design choices or ask for an existing checkout path. Check actual sign-in and private read access, then use the selected working folder. Pause on missing membership/access rather than proposing new credentials.
+
 First execute [Git-first onboarding](../../GIT-FIRST.md) against the supplied private repository. Use the personal handoff and actual identity. No Projects container or browser form is required.
 
 

@@ -176,6 +176,8 @@ For an uncertain write, inspect the exact path and bytes before a bounded retry.
 
 ## First milestone: return the shared link
 
+Use `scripts/make_employee_handoff.py --workspace <private-checkout>` from the framework clone to prepare the employee message. It refuses missing deployed entry points and unresolved destination placeholders; separately read back the same files on the remote branch. Share the resulting explicit employee prompt and deployed link, never `templates/workspace/JOIN.md`. Do not claim employees can connect until their actual account access is arranged.
+
 Publish the generic `JOIN.md` from the workspace template and verify it alongside `START-HERE.md`. Return the actual private repository link and JOIN.md link immediately after successful read-back. Do not block this milestone on product assignments, meeting details or a complete roster. State any employee invitation still needed. A general join link does not register identities, grant access or establish membership. Continue personal handoffs when the owner confirms each membership.
 
 ## 5. Prepare the employee handoff

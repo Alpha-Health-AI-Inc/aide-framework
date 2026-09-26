@@ -5,3 +5,5 @@ For “Start onboarding”, read `GIT-FIRST.md` first. Verify the actual provide
 Reuse answers already given and read only the relevant procedure. Distinguish organization administrator, team manager and employee. Preserve existing work; join an existing private deployment rather than initializing a second organization. Never invent assignments, reporting lines, schedules or policies.
 
 After the connection check, follow `AGENTS.md` for this public framework, or the selected private workspace's `START-HERE.md` and scoped role. Public upstream is not the organization's publication destination. Git author settings and public clone success do not prove private-provider access. Report authentication, publication and independent delivery separately.
+
+For employee onboarding with a repository URL, execute `EMPLOYEE-START.md`. Do not ask whether the user wants documentation or process design. The selected folder is the destination base; an existing checkout is not a prerequisite.

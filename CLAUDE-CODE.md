@@ -1,5 +1,7 @@
 # Start in Claude Code
 
+For a request to connect as an employee with a repository URL, follow [Employee start](EMPLOYEE-START.md). Treat it as an action request, check authentication/access before cloning, and do not ask the person to choose a documentation task or a credential architecture.
+
 [Connection check](GIT-FIRST.md) / [Team structure](TEAM-STRUCTURE.md) / [Two-machine test](TWO-MACHINE-PILOT.md)
 
 At the Claude Code desktop starting screen, keep **Local** selected. If it shows **No folder**, use that control to choose or create an empty working folder, such as `AIDE Setup`. This is a local folder, not a Claude Chat Project. Folder selection is a host step that the repository cannot perform before the session starts. If the client accepts a task without it, the agent checks actual filesystem access and asks for the folder only when needed.
