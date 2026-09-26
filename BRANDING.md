@@ -6,14 +6,16 @@ An adopting organization can use its own name, logo, colors, and terminology. It
 
 ## The upstream visual style
 
-The design uses black and white surfaces, bold typography, generous spacing, and a restrained red ribbon. The origin credit stays secondary to the project and its purpose.
+The design uses neutral surfaces, tight bold headings, fine borders, and small red accents. A left-aligned masthead and a team-exchange diagram give the framework its own composition. The origin credit stays secondary to the project and its purpose.
+
+Use consistent outer margins and spacing between headings, descriptions, and diagrams. Check artwork at the width it occupies in GitHub, not only at its source size. The landing page’s hero ribbon, prompt box, and call-to-action layout are not part of this project’s visual system.
 
 | Element | Light | Dark |
 | --- | --- | --- |
-| Background | `#ffffff` | `#101113` |
-| Main text | `#101113` | `#f7f7f8` |
-| Secondary text | `#666970` | `#a3a4ab` |
-| Accent | `#f5224e` | `#f5224e` |
+| Background | `#ffffff` | `#101114` |
+| Main text | `#101114` | `#f4f5f7` |
+| Secondary text | `#5e626b` | `#a5a8b0` |
+| Accent | `#e52349` | `#fb365d` |
 
 The SVG assets contain editable text and vector shapes. The README selects the light or dark image through a `picture` element and includes a default image for other viewers.
 

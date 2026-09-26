@@ -9,8 +9,7 @@
   <a href="TEAM-WORKFLOW.md">Team workflow</a> &nbsp; / &nbsp;
   <a href="ARCHITECTURE.md">Architecture</a> &nbsp; / &nbsp;
   <a href="ADOPTION.md">Pilot guide</a> &nbsp; / &nbsp;
-  <a href="FORK-GUIDE.md">Fork and build</a> &nbsp; / &nbsp;
-  <a href="LICENSE">MIT license</a>
+  <a href="FORK-GUIDE.md">Fork and build</a>
 </p>
 
 # AIDE Framework
@@ -25,10 +24,12 @@ A reference design for a shared GitHub workspace for teams using separate AI ass
 
 A QA assistant sends a report to a delivery assistant. The receiver reads it and writes a receipt tied to that exact report. The sender checks the receipt. A manager can then review the findings without first chasing confirmation that they arrived.
 
+<p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/delivery-flow-dark.svg">
   <img src="assets/delivery-flow.svg" alt="Three steps: publish the update, receive it and write a receipt, then verify the receipt. Human review remains separate." width="100%">
 </picture>
+</p>
 
 The records distinguish publication, receipt, sender verification, human review, and acceptance. Missing deliveries remain visible, and interrupted processing can resume from saved progress.
 
