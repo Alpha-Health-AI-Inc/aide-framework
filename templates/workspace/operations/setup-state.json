@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "organization_id": "<organization-id>",
+  "updated_at": null,
+  "stages": {
+    "workspace_prepared": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "workspace_published": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "manager_identity_verified": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "employee_connected": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "first_handoff_verified": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "product_access_checked": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    },
+    "human_acceptance": {
+      "status": "pending",
+      "observed_at": null,
+      "evidence": [],
+      "failure_cause": null
+    }
+  },
+  "next_action": {
+    "owner": null,
+    "action": null
+  }
+}

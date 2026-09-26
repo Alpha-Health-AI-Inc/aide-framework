@@ -1,5 +1,7 @@
 # Pilot guide
 
+**Manager starting point:** give your agent [SETUP.md](SETUP.md). The agent prepares the decisions and evidence below; you authenticate and approve the concrete scope. Use [setup acceptance](SETUP-ACCEPTANCE.md) for the first two-person handoff.
+
 Start with one internal workflow whose outcome can be measured. Use two independent sessions, such as a QA assistant and a delivery assistant, with no mutual session access. They must obtain shared context and complete the handoff through Git alone.
 
 This guide defines acceptance requirements for an implementation. It is not a record of completed tests.

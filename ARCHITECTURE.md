@@ -40,6 +40,8 @@ Identity checks, duplicate detection, digest comparison, and retry timing belong
 
 ## Records
 
+The [manual pilot profile](EXCHANGE-CONTRACT.md) supplies concrete message, receipt and verification conventions for agent-led setup. It does not replace an existing deployment schema or provide an executable validator.
+
 <details>
 <summary>Required record fields</summary>
 

@@ -10,6 +10,9 @@ This template describes the intended workflow. It does not grant repository acce
 ## Deployment
 
 - Organization: <organization-id>
+- Manual record profile or existing deployment schema: <approved profile>
+- Setup state: operations/setup-state.json
+- Agent procedures: <pinned framework SKILLS.md link or included copy>
 - Git provider and adapter version: <deployment configuration>
 - Shared repository: <private Git repository URL>
 - Exchange branch: <exact branch>

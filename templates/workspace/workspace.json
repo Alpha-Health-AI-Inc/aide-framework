@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "record_profile": "aide-manual-v1",
+  "organization_id": "<organization-id>",
+  "provider": "<selected-provider>",
+  "repository_url": "<exact-private-url>",
+  "exchange_branch": "<approved-branch>",
+  "visibility": "private",
+  "sharing_model": "team-readable",
+  "collection_mode": "manual",
+  "local_state_path": ".aide-local/",
+  "clock_tolerance_seconds": 300,
+  "retry_policy": {
+    "uncertain_write_inspections": 1,
+    "max_retry_after_confirmed_absence": 1,
+    "stop_on": [
+      "permission_rejected",
+      "identity_conflict",
+      "content_conflict"
+    ]
+  },
+  "manager_recipient": "<manager-agent-id>",
+  "procedure_revision": "<framework-commit>",
+  "approval_reference": "<scoped-approval-reference>"
+}

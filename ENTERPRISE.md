@@ -2,7 +2,7 @@
 
 [Overview](README.md) / [Visual tour](VISUAL-GUIDE.md) / [Architecture](ARCHITECTURE.md) / [Pilot guide](ADOPTION.md)
 
-**Status: investigation and implementation plan.** AIDE is a collaboration contract for humans and bots using shared Git records. It does not currently ship a runtime, a human-facing submission app, provider adapters, or file and folder authorization.
+**Status: investigation and implementation plan.** AIDE is a collaboration contract for humans and bots using shared Git records. It ships agent instruction skills, setup runbooks and templates. It does not currently ship a runtime, a human-facing submission app, provider adapters, or file and folder authorization.
 
 <p>
 <picture>

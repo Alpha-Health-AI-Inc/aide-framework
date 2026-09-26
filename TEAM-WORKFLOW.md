@@ -58,7 +58,7 @@ A product entry records its owner, purpose, documentation, source repository, su
 
 For example, a new hire reads their **People** entry, learns the assigned **Products**, follows the onboarding and QA **Processes**, then joins the relevant **Projects**. Their agent identifies missing product access and prepares the required request for its responsible owner.
 
-Use one explicitly configured repository and exchange branch for the pilot. The following layout is a convention for that private repository, not a set of files already provided by this project:
+Use one explicitly configured repository and exchange branch for the pilot. The following layout is the private workspace convention. Use the [source templates](templates/README.md) and [agent setup runbook](AGENT-SETUP.md) to render it for your team:
 
 <details>
 <summary>Exact folder layout</summary>

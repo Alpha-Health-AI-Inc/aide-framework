@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "organization_id": "<organization-id>",
+  "routing_version": 1,
+  "teams": [
+    {
+      "id": "<pilot-team-id>",
+      "human_members": [
+        "<manager-human-id>",
+        "<employee-human-id>"
+      ],
+      "delivery_recipients": [
+        "<manager-agent-id>",
+        "<employee-agent-id>"
+      ],
+      "review_owner": "<manager-human-id>"
+    }
+  ]
+}

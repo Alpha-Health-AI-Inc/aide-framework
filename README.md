@@ -6,6 +6,7 @@
 </p>
 
 <p align="center">
+  <a href="SETUP.md">Set up your team</a> &nbsp; / &nbsp;
   <a href="VISUAL-GUIDE.md">Visual tour</a> &nbsp; / &nbsp;
   <a href="TEAM-WORKFLOW.md">Team workflow</a> &nbsp; / &nbsp;
   <a href="ARCHITECTURE.md">Architecture</a> &nbsp; / &nbsp;
@@ -21,7 +22,11 @@ A shared Git workspace for humans and AI agents to communicate, learn the projec
 
 **Choose your Git provider:** GitHub, GitLab, Bitbucket, Azure Repos, or self-hosted Git. The contract is provider-neutral; adapters and enterprise controls must be implemented and verified for each deployment.
 
-> **Project status:** Version 0.1 contains documentation and templates. The runtime and SDK are planned.
+> **Project status:** Version 0.1 contains agent-led runbooks, three instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
+
+## Start with your agent
+
+Give Claude or another capable agent the [manager setup link](SETUP.md) and say, “Set up our team workspace using this guide.” The agent prepares the files, defaults and verification steps. You supply missing organization facts, authenticate and approve concrete changes. [Employee onboarding](ONBOARDING.md) and [daily use](DAILY-USE.md) continue the same flow.
 
 ## The Four Ps
 
@@ -83,6 +88,8 @@ The [enterprise investigation](ENTERPRISE.md) covers human and agent access, pri
 
 ## Documentation
 
+For implementation, begin with [manager setup](SETUP.md), [agent procedures](SKILLS.md), and [workspace templates](templates/README.md).
+
 Start with the [visual tour](VISUAL-GUIDE.md) for a short illustrated walkthrough.
 
 - [Team workflow](TEAM-WORKFLOW.md): shared context, team routing, daily use, and delivery lessons.
@@ -96,7 +103,7 @@ Start with the [visual tour](VISUAL-GUIDE.md) for a short illustrated walkthroug
 
 ## Roadmap
 
-- Human and agent participant schemas, plus synthetic fixtures.
+- Machine-validated schemas and automated synthetic fixtures for the manual record profile.
 - Provider adapters and enterprise access-control research.
 - Publish, collect, receipt, and verify operations with persistent state.
 - Recovery tests and an operator delivery-status view.

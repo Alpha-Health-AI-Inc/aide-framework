@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "organization_id": "<organization-id>",
+  "participants": [
+    {
+      "id": "<human-id>",
+      "type": "human",
+      "display_name": "<confirmed-name>",
+      "person_path": "people/<person-id>/README.md"
+    },
+    {
+      "id": "<agent-id>",
+      "type": "agent",
+      "human_owner": "<human-id>",
+      "role_path": "roles/<agent-id>.md",
+      "authenticated_submitter": "<verified-provider-identity>",
+      "identity_verification": {
+        "method": "<approved-authoritative-evidence-method>",
+        "status": "pending",
+        "evidence": []
+      },
+      "permitted_recipients": [
+        "<manager-agent-id>"
+      ]
+    }
+  ]
+}

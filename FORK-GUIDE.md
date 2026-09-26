@@ -2,6 +2,10 @@
 
 Fork this repository to adapt the design and templates for your organization. Version 0.1 contains documentation; implementation starts in your fork. Internal team context and operational records belong in a separate private deployment repository.
 
+## Set up a team or build the framework
+
+For a team workspace, give your agent [SETUP.md](SETUP.md). It follows the runbook and prepares the defaults; a public fork is optional. The steps below are for adapting or implementing the reusable framework itself.
+
 ## Setup
 
 <p>
@@ -25,7 +29,9 @@ Copy this brief into Claude or another implementation assistant:
 Use https://github.com/Alpha-Health-AI-Inc/aide-framework as the upstream design.
 Read README.md, TEAM-WORKFLOW.md, START-HERE-TEMPLATE.md, ARCHITECTURE.md,
 ADOPTION.md, ROLE-TEMPLATE.md, ENTERPRISE.md, and FORK-GUIDE.md.
-The repository contains documentation, not a working runtime.
+The repository contains runbooks, instruction skills and templates, not a
+working runtime. Follow AGENT-SETUP.md for manual team setup. Do not make
+the manager design the workspace or write an implementation backlog.
 
 Our team includes human contributors and independent Claude, Codex, Hermes,
 or other agent sessions. Humans must also be able to read and publish records.
