@@ -1,0 +1,73 @@
+{
+  "schema_version": "2.0",
+  "doc_id": "product-x",
+  "title": "Product X",
+  "owner": "Owner pending confirmation",
+  "reviewer": null,
+  "established_by": "Author pending confirmation",
+  "document_version": "0.1",
+  "document_status": "draft",
+  "audience": "internal",
+  "workspace_pillar": "products",
+  "scope": {
+    "subject_id": "product-x",
+    "subject_version": null,
+    "environment": "Not yet verified",
+    "includes": [
+      "Requested product scope pending confirmation"
+    ],
+    "excludes": [
+      "Unverified production behavior"
+    ]
+  },
+  "last_reviewed": null,
+  "last_doc_update": "2026-09-26",
+  "review_due": null,
+  "freshness": {
+    "status": "unknown",
+    "last_code_change": null,
+    "compared_at": null,
+    "method": "No source comparison performed",
+    "scope_note": "Draft; do not infer readiness or access from this reference",
+    "source_ids": []
+  },
+  "sources": [],
+  "topics": [
+    {
+      "id": "overview",
+      "title": "Product overview",
+      "sections": [
+        {
+          "id": "purpose",
+          "title": "Purpose and current behavior",
+          "body": "Not yet documented from verified sources.",
+          "evidence_state": "unknown",
+          "status": "active",
+          "replaced_by": null,
+          "source_ids": [],
+          "qa": [
+            {
+              "id": "what-is-verified",
+              "question": "What has been verified?",
+              "answer": "No product behavior has been verified for this draft.",
+              "source_ids": [],
+              "evidence_state": "unknown"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "miscellaneous_qa": [],
+  "gaps": [
+    {
+      "id": "source-inventory",
+      "question": "Which product revision and environment are in scope?",
+      "owner": "Pending assignment",
+      "next_action": "Obtain approved source references and named reviewer."
+    }
+  ],
+  "change_log": [],
+  "extensions": {}
+}

@@ -1,0 +1,105 @@
+{
+  "schema_version": "2.0",
+  "doc_id": "example-export",
+  "title": "Example Export (synthetic)",
+  "owner": "Example Product Team",
+  "reviewer": "Example reviewer (synthetic fixture review)",
+  "established_by": "Example author",
+  "document_version": "1.0",
+  "document_status": "draft",
+  "audience": "public",
+  "workspace_pillar": "products",
+  "scope": {
+    "subject_id": "example-export",
+    "subject_version": "fixture-v1",
+    "environment": "Synthetic local configuration only",
+    "includes": [
+      "Export configuration fields in the supplied fixture"
+    ],
+    "excludes": [
+      "API behavior",
+      "Deployed product behavior",
+      "Authentication and permissions"
+    ]
+  },
+  "last_reviewed": "2026-09-26",
+  "last_doc_update": "2026-09-26",
+  "review_due": "2026-10-26",
+  "freshness": {
+    "status": "in_sync",
+    "last_code_change": "2026-09-26",
+    "compared_at": "2026-09-26T12:00:00Z",
+    "method": "Read the local JSON fixture and compare the documented configuration fields; SHA-256 binds its exact bytes.",
+    "scope_note": "In sync with this synthetic configuration snapshot only. No application execution was tested.",
+    "source_ids": [
+      "export-config"
+    ]
+  },
+  "sources": [
+    {
+      "id": "export-config",
+      "kind": "code",
+      "locator": "export-rules.json",
+      "revision": "fixture-v1",
+      "content_sha256": "202ff357a96ab8ed01f9c545ac9bacf889baf7869b0d11eb765ecf2b3b11f347",
+      "local_path": "export-rules.json",
+      "observed_at": "2026-09-26T12:00:00Z"
+    }
+  ],
+  "topics": [
+    {
+      "id": "exports",
+      "title": "Export behavior",
+      "sections": [
+        {
+          "id": "csv-export",
+          "title": "CSV configuration",
+          "body": "The supplied configuration selects CSV exports, sets a maximum of 1,000 rows, and selects reject as the overflow policy. These are configuration values, not proof of an executed export.\n\n| Setting | Value |\n| --- | --- |\n| Format | CSV |\n| Maximum rows | 1,000 |\n| Overflow policy | Reject |",
+          "evidence_state": "observed",
+          "status": "active",
+          "replaced_by": null,
+          "source_ids": [
+            "export-config"
+          ],
+          "qa": [
+            {
+              "id": "over-limit",
+              "question": "What should I check when an export exceeds the limit?",
+              "answer": "Confirm the requested row count against the 1,000-row configuration limit. The fixture selects rejection, but the actual error response, retry behavior and user-facing message have not been tested. Do not change production limits based on this example.",
+              "source_ids": [
+                "export-config"
+              ],
+              "evidence_state": "observed"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [],
+  "miscellaneous_qa": [
+    {
+      "id": "production-ready",
+      "question": "Does this example establish production readiness?",
+      "answer": "No. It documents a synthetic configuration snapshot. Runtime behavior and deployment acceptance remain untested.",
+      "source_ids": [],
+      "evidence_state": "unknown"
+    }
+  ],
+  "gaps": [
+    {
+      "id": "runtime-check",
+      "question": "Does an actual export enforce the configured limit?",
+      "owner": "Example test owner",
+      "next_action": "Run an authorized functional test against the intended environment."
+    }
+  ],
+  "change_log": [
+    {
+      "date": "2026-09-26",
+      "version": "1.0",
+      "summary": "Documented the supplied synthetic configuration, with runtime gaps explicit."
+    }
+  ],
+  "extensions": {}
+}

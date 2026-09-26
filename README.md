@@ -22,7 +22,7 @@ A shared Git workspace for humans and AI agents to communicate, learn the projec
 
 **Choose your Git provider:** GitHub, GitLab, Bitbucket, Azure Repos, or self-hosted Git. The contract is provider-neutral; adapters and enterprise controls must be implemented and verified for each deployment.
 
-> **Project status:** Version 0.1 contains agent-led runbooks, four instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
+> **Project status:** Version 0.1 contains agent-led runbooks, five instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
 
 ## Start with your agent
 
@@ -104,6 +104,7 @@ For implementation, begin with [manager setup](SETUP.md), [agent procedures](SKI
 
 Start with the [visual tour](VISUAL-GUIDE.md) for a short illustrated walkthrough.
 
+- [CI Source documentation](CI-DOCUMENTATION.md): a documentation skill, evidence-aware template and human/machine generator.
 - [Team workflow](TEAM-WORKFLOW.md): shared context, team routing, daily use, and delivery lessons.
 - [Startup template](START-HERE-TEMPLATE.md): an entry point for independent sessions.
 - [Architecture](ARCHITECTURE.md): components, records, processing, and access boundaries.

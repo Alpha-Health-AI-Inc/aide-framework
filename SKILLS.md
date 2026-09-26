@@ -9,6 +9,8 @@ These skills are Markdown instruction packages maintained with the framework. Th
 | “Propose a QA bot,” “Build an approved specialist,” or “Share this AIDE.” | [aide-create-specialist](skills/aide-create-specialist/SKILL.md) |
 | “Publish my work,” “Check team updates,” or “Did it arrive?” | [aide-team-exchange](skills/aide-team-exchange/SKILL.md) |
 
+| “Document this product,” “Update CI Source,” or “Review documentation freshness.” | [aide-ci-documentation](skills/aide-ci-documentation/SKILL.md) |
+
 ## Use in any capable agent
 
 Give the agent [SETUP.md](SETUP.md), or the relevant skill link, and ask it to read and follow the procedure within the current assignment. The complete repository checkout retains the relative reference paths used by the skills. Do not copy a lone skill folder and assume its linked guides and templates came with it.
@@ -19,7 +21,7 @@ For a new employee session, the private team's START-HERE and role contract dete
 
 ## Current validation
 
-The kit includes these four procedures, runbooks, workspace templates and a manual exchange profile. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
+The kit includes these five procedures, runbooks, workspace templates and a manual exchange profile. The CI documentation skill also ships a local validator and Markdown/JSONL generator; it is self-contained when copied with its complete skill directory. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
 
 ## Lifecycle procedures
 

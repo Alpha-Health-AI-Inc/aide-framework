@@ -2,13 +2,14 @@
 
 [Manager setup](SETUP.md) / [Runtime setup](RUNTIME-SETUP.md) / [Acceptance](SETUP-ACCEPTANCE.md)
 
-The public framework is a documentation and instruction-skill kit. It describes how to prepare human workspaces, add specialist AIDEs and coordinate through Git. It does not yet ship the runtime implementation described in the architecture.
+The public framework is a documentation and instruction-skill kit with a local CI Source validator and generator. It describes how to prepare human workspaces, add specialist AIDEs and coordinate through Git. It does not yet ship the runtime implementation described in the architecture.
 
 | Area | Included now | Remaining proof or implementation |
 | --- | --- | --- |
 | Human and team setup | Runbooks, Four Ps templates and approval handoffs | Clean independent manager/employee deployment |
 | Employee-created specialists | Proposal, catalog, creation skill and sharing procedure | Independent builder/requester test with actual tools |
 | Runtime configuration | Profile reconciliation, saved-state and fresh-session checks; recipe template | Concrete tested recipe for each supported client/version |
+| CI Source documentation | Schema, generation skill, Markdown/JSONL outputs, local hash checks and regression tests | Real-source semantic review, freshness triggers and retrieval evaluation |
 | Git exchange | Message/receipt conventions and recovery procedure | Deterministic validator, durable processing and provider acceptance |
 | Product integrations | Access inventory and per-operation checks | Actual authorized authentication and tests for each deployment |
 | Isolation | Explicit repository and runtime-boundary guidance | Verified enforcement for the selected accounts/environments |
