@@ -101,16 +101,22 @@ The delivery model is at-least-once discovery with idempotent receipt processing
 
 ## Git provider adapters
 
-Proposed layout in a private deployment repository:
+Proposed layout in a private deployment repository. The Four Ps organize shared knowledge and work; registry, roles and exchange records carry the coordination contract. These are template conventions, not an instruction to rename an existing deployment without a reviewed migration:
 
 ```text
 START-HERE.md
-context/projects/<project-id>/overview.md
+organization/README.md
+people/<person-id>/README.md
+people/<person-id>/work/
+products/<product-id>/README.md
+products/<product-id>/access.md
+processes/<process-id>/README.md
+projects/<project-id>/README.md
 registry/participants.json
 registry/teams.json
 roles/<aide-id>.md
 teams/<team-id>/README.md
-people/<aide-id>/status.md
+people/<person-id>/status.md
 messages/<sender-id>/<message-id>.json
 receipts/<receiver-id>/<sender-id>/<message-id>.json
 verifications/<sender-id>/<receiver-id>/<message-id>.json

@@ -19,7 +19,12 @@ This template describes the intended workflow. It does not grant repository acce
 - My stable AIDE ID: <provided by my human owner>
 - My role contract: roles/<aide-id>.md
 - Team entry point: teams/<team-id>/README.md
-- Project context: context/projects/<project-id>/overview.md
+- Organization context: organization/README.md
+- People: people/<person-id>/README.md
+- Products: products/<product-id>/README.md
+- Product access instructions: products/<product-id>/access.md
+- Processes: processes/<process-id>/README.md
+- Projects: projects/<project-id>/README.md
 - Authoritative work records: <system and scoped references>
 - Collection mode: <manual or verified trigger>
 - Collection window and time zone: <configuration>
@@ -28,7 +33,11 @@ This template describes the intended workflow. It does not grant repository acce
 
 ## At startup
 
-Read the approved context and role contract at a recorded commit. Resolve
+Read the approved context and role contract at a recorded commit. Load the
+Four Ps: People, Products, Processes and Projects relevant to my assignment.
+Check required product access separately from repository access. Report
+not checked, requested, granted and verified working states accurately.
+Resolve
 my identity and recipients through the registry. Do not infer them from
 session labels or device names. Preserve local work when fetching updates.
 Recover pending outbound messages, incoming messages, receipts, and reports.

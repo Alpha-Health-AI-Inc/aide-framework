@@ -28,14 +28,35 @@ Register each participant with a stable ID and a type, `human` or `agent`. Recor
 
 All participants follow the configured provider, repository, branch, schema and receipt rules. The same contract covers human-to-human, human-to-agent and agent-to-agent handoffs. Publication and collection may be manual; a deployed worker is needed for unattended operation.
 
-## A repository people can navigate
+## The Four Ps: a workspace people can navigate
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-map-dark.svg">
-  <img src="assets/workspace-map.svg" alt="Workspace map: startup and context; registry, roles and teams; messages by sender; receipts and verifications." width="100%">
+  <img src="assets/workspace-map.svg" alt="The Four Ps: People for who does the work, Products for what the team builds and uses, Processes for how work gets done, and Projects for what is being delivered." width="100%">
 </picture>
 </p>
+
+**The Four Ps**, or **P4**, are the four visible sections of the workspace: **People, Products, Processes, and Projects**.
+
+| Pillar | Question | What belongs here |
+| --- | --- | --- |
+| **People** | Who does the work? | Human profiles, agent ownership, roles, onboarding and published work. |
+| **Products** | What do we build, support and use? | Product context, owners, system links, environments and access instructions. |
+| **Processes** | How do we work? | Repeatable procedures, QA methods, review steps, approvals and escalation paths. |
+| **Projects** | What are we delivering? | Scoped initiatives, outcomes, milestones, owners, decisions and work references. |
+
+Organization-wide context belongs in `organization/`: purpose, shared vocabulary and team structure. It sits alongside the Four Ps. Processes have their own home rather than being buried in general company context. Registry, role contracts and exchange records support these sections.
+
+A product is an ongoing offering or system. A project is a bounded effort to change or deliver something. A process is the repeatable way the team carries out that work. Each project links to its products, responsible people and applicable processes rather than copying them.
+
+The default team workspace is open to all authorized repository members, including each person's published folder. Personal folders organize work; they are not private areas. Product source code can remain in its existing repository, with links from the product entry.
+
+### Product access during onboarding
+
+A product entry records its owner, purpose, documentation, source repository, supported environments, permitted roles, and how to request access. Record the request owner and distinguish **not checked**, **requested**, **granted**, and **verified working**. Keep credentials in approved storage. Repository access and a product link do not grant access to the product itself.
+
+For example, a new hire reads their **People** entry, learns the assigned **Products**, follows the onboarding and QA **Processes**, then joins the relevant **Projects**. Their agent identifies missing product access and prepares the required request for its responsible owner.
 
 Use one explicitly configured repository and exchange branch for the pilot. The following layout is a convention for that private repository, not a set of files already provided by this project:
 
@@ -44,15 +65,19 @@ Use one explicitly configured repository and exchange branch for the pilot. The 
 
 ```text
 START-HERE.md                         # Entry point for a new session
-context/                             # Reviewed shared knowledge
-  organization.md
-  projects/<project-id>/overview.md
+organization/README.md               # Shared purpose, vocabulary and structure
+people/<person-id>/README.md          # Profile, role and agent ownership
+people/<person-id>/work/              # Work shared with the team after publication
+products/<product-id>/README.md       # Product context, owner and source links
+products/<product-id>/access.md       # Access instructions; no credentials
+processes/<process-id>/README.md      # Repeatable procedure and review owner
+projects/<project-id>/README.md       # Outcomes, scope and links to the other Ps
 registry/
   participants.json                  # Stable participant IDs and authenticated identities
   teams.json                         # Membership and routing version
 roles/<aide-id>.md                    # Human-approved scope and startup contract
 teams/<team-id>/README.md             # Purpose, projects, owners, routing
-people/<aide-id>/status.md            # Optional dated summary, with source links
+people/<person-id>/status.md          # Optional dated summary, with source links
 messages/<sender-id>/<message-id>.json
 receipts/<receiver-id>/<sender-id>/<message-id>.json
 verifications/<sender-id>/<receiver-id>/<message-id>.json
@@ -74,7 +99,7 @@ Give the assistant the private repository, exact branch, its stable AIDE ID, and
 <summary>Startup sequence for an assistant</summary>
 
 1. Fetch the approved entry point and record the commit being read.
-2. Load the role contract, team routing, project context, and links to authoritative work records. Read only the permitted, relevant scope.
+2. Load organization context, the role contract and team routing. Follow the assigned People, Products, Processes and Projects entries and their links to authoritative work records. Read only the permitted, relevant scope.
 3. Resolve identity and recipients through the registry. Session names and machine names are not stable identities.
 4. Recover pending messages, receipts, and unreported findings. An unread record remains eligible even when it was created yesterday.
 5. Report the assigned scope, context revision, latest source dates, and any missing access. Separate access not tested, denied, and available.

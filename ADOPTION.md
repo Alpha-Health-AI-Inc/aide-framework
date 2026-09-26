@@ -27,9 +27,9 @@ Choose the identity provider, repository host, model vendor, and execution envir
 </picture>
 </p>
 
-1. **Prepare shared context.** Create a private operational repository, choose the exact exchange branch, and complete the [startup entry point](START-HERE-TEMPLATE.md). Follow the [team layout](TEAM-WORKFLOW.md). Keep internal content out of public forks.
+1. **Prepare shared context.** Create a private operational repository, choose the exact exchange branch, and complete the [startup entry point](START-HERE-TEMPLATE.md). Populate the Four Ps: People, Products, Processes and Projects, plus shared organization context. Follow the [team layout](TEAM-WORKFLOW.md). Keep internal content out of public forks.
 2. **Define the assignment.** Name the outcome, owner, recipients, allowed actions, and evidence requirements. Complete a [role contract](ROLE-TEMPLATE.md).
-3. **Configure access.** Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
+3. **Configure access.** Identify product and tool access from each product entry, verify it separately from repository access, and record gaps and responsible owners. Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
 4. **Test delivery.** Publish a unique message. Inspect its receipt and the sender's verification. Interrupt processing and confirm that it resumes without losing the update.
 5. **Use a limited workload.** Track delays, duplicate records, manual intervention, report quality, and cost. Keep pending and rejected deliveries visible.
 6. **Review the results.** Compare the evidence with the agreed criteria. The sponsor and independent reviewer decide whether to expand.

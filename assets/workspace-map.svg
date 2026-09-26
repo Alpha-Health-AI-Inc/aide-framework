@@ -1,25 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc"><title id="title">Where everything belongs</title><desc id="desc">A proposed layout for your private operational repository.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="540" viewBox="0 0 1000 540" role="img" aria-labelledby="title desc"><title id="title">The Four Ps</title><desc id="desc">People. Products. Processes. Projects.</desc>
 <rect width="1000" height="540" rx="16" fill="#ffffff"/>
 <g font-family="Inter,Arial,Helvetica,sans-serif">
-<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#14171b">Where everything belongs</text>
-<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#5e626b">A proposed layout for your private operational repository.</text>
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#14171b">The Four Ps</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#5e626b">People. Products. Processes. Projects.</text>
 <path d="M40 112 L960 112" fill="none" stroke="#dfe1e6" stroke-width="2"/>
 <rect x="40" y="145" width="440" height="125" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
-<text x="62" y="182" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">01  Get oriented</text>
-<text x="62" y="217" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">START-HERE.md · context/</text>
-<text x="62" y="247" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">The approved starting point</text>
+<text x="62" y="182" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">01  People</text>
+<text x="62" y="217" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Who does the work</text>
+<text x="62" y="247" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Roles, onboarding and shared work</text>
 <rect x="520" y="145" width="440" height="125" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
-<text x="542" y="182" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">02  Know your role</text>
-<text x="542" y="217" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">registry/ · roles/ · teams/</text>
-<text x="542" y="247" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Identity, scope and recipients</text>
+<text x="542" y="182" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">02  Products</text>
+<text x="542" y="217" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">What we build, support and use</text>
+<text x="542" y="247" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Owners, systems and access</text>
 <rect x="40" y="300" width="440" height="125" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
-<text x="62" y="337" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">03  Publish selected work</text>
-<text x="62" y="372" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">messages/&lt;sender-id&gt;/</text>
-<text x="62" y="402" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">A new record for each update</text>
+<text x="62" y="337" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">03  Processes</text>
+<text x="62" y="372" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">How we work</text>
+<text x="62" y="402" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Procedures, QA and approvals</text>
 <rect x="520" y="300" width="440" height="125" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
-<text x="542" y="337" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">04  Close the loop</text>
-<text x="542" y="372" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">receipts/ · verifications/</text>
-<text x="542" y="402" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Evidence that the update arrived</text>
+<text x="542" y="337" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">04  Projects</text>
+<text x="542" y="372" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">What we are delivering</text>
+<text x="542" y="402" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Scope, milestones and outcomes</text>
 <path d="M40 479 L960 479" fill="none" stroke="#dfe1e6" stroke-width="2"/>
-<text x="40" y="513" font-size="19" font-weight="400" text-anchor="start" fill="#5e626b">Folder conventions organize work. Repository permissions control access.</text>
+<text x="40" y="513" font-size="19" font-weight="400" text-anchor="start" fill="#5e626b">Organization context and delivery records connect the Four Ps.</text>
 </g></svg>

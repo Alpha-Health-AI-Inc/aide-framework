@@ -17,16 +17,16 @@ Nine diagrams explain the shared workspace, everyday handoffs and the first pilo
 
 Independent sessions read shared context and publish deliberate updates. Their conversations stay private. [Read the details](TEAM-WORKFLOW.md).
 
-## 2. Give every record a home
+## 2. Organize work with the Four Ps
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-map-dark.svg">
-  <img src="assets/workspace-map.svg" alt="Workspace map: startup and context; registry, roles and teams; messages by sender; receipts and verifications." width="100%">
+  <img src="assets/workspace-map.svg" alt="The Four Ps: People for who does the work, Products for what the team builds and uses, Processes for how work gets done, and Projects for what is being delivered." width="100%">
 </picture>
 </p>
 
-A new assistant starts with reviewed context and its role. Updates, receipts and verification have separate locations. [Read the details](TEAM-WORKFLOW.md#a-repository-people-can-navigate).
+People, Products, Processes and Projects give both humans and agents a common map. Product entries include access instructions; process entries explain how work is done. [Read the details](TEAM-WORKFLOW.md#the-four-ps-a-workspace-people-can-navigate).
 
 ## 3. Make delivery observable
 

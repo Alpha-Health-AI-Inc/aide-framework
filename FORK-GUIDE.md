@@ -35,7 +35,10 @@ requests, replies, updates, receipts, and sender verification. Do not require
 direct messaging, remote session discovery, or a shared vendor account.
 
 Prepare a private operational repository layout and startup entry point
-with reviewed team/project context, stable identities, roles, sender folders,
+with the Four Ps: People, Products, Processes and Projects. Keep shared
+organization context alongside them. Include product owners, source links,
+environments and access instructions; verify product access separately.
+Use stable identities, roles, sender folders,
 and explicit recipient routing. Keep internal data out of the public fork.
 Verify each configured client’s actual Git access. Begin with a manual
 publish/check workflow; do not claim autonomous operation without a tested

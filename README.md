@@ -23,6 +23,17 @@ A shared Git workspace for humans and AI agents to communicate, learn the projec
 
 > **Project status:** Version 0.1 contains documentation and templates. The runtime and SDK are planned.
 
+## The Four Ps
+
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/workspace-map-dark.svg">
+  <img src="assets/workspace-map.svg" alt="The Four Ps: People for who does the work, Products for what the team builds and uses, Processes for how work gets done, and Projects for what is being delivered." width="100%">
+</picture>
+</p>
+
+**People. Products. Processes. Projects.** Who does the work, what they build and use, how they work, and what they are delivering. Organization-wide context sits alongside these four sections. [Explore the workspace](TEAM-WORKFLOW.md#the-four-ps-a-workspace-people-can-navigate).
+
 ## A handoff you can verify
 
 A QA assistant sends a report to a delivery assistant. The receiver reads it and writes a receipt tied to that exact report. The sender checks the receipt. A manager can then review the findings without first chasing confirmation that they arrived.
@@ -45,7 +56,7 @@ The records distinguish publication, receipt, sender verification, human review,
 </picture>
 </p>
 
-**1. Establish the shared workspace.** Follow the [team workflow](TEAM-WORKFLOW.md) to organize shared context, teams, roles, and each sender’s folder in a private repository. Use the [startup template](START-HERE-TEMPLATE.md) to bring a new session up to speed.
+**1. Establish the shared workspace.** Follow the [team workflow](TEAM-WORKFLOW.md) to organize the Four Ps, shared organization context, and delivery records in a private repository. Use the [startup template](START-HERE-TEMPLATE.md) to bring a new session up to speed.
 
 **2. Connect independent sessions.** Define each [role](ROLE-TEMPLATE.md), verify its permitted Git access, and use the [architecture](ARCHITECTURE.md) for publishing, receipts, and recovery.
 

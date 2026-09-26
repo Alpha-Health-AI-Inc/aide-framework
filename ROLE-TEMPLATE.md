@@ -10,6 +10,8 @@ Complete this template before activating an AIDE. Record unresolved fields as pe
 | Purpose | Assigned responsibility and measurable outcome |
 | Ownership | Human owner and backup |
 | Execution | Runtime identity and credential reference, never a secret value |
+| Four Ps | Links to the responsible person, assigned products, applicable processes and current projects |
+| Product access | Required systems, permitted roles, request owner and verified access state; no credentials |
 | Sources | Authoritative work and knowledge systems; permitted read scope |
 | Actions | Allowed tools, operations, environments, and recipients |
 | Decisions | Approval owner and escalation conditions |
