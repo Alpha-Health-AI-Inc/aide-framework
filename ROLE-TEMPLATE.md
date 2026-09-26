@@ -8,7 +8,8 @@ Complete this template before activating an AIDE. Record unresolved fields as pe
 | Team | Membership, project scope, routing version, and explicit permitted recipients |
 | Git provider and workspace | Repository, exact exchange branch, approved entry point, sender folder, and receipt paths |
 | Purpose | Assigned responsibility and measurable outcome |
-| Ownership | Human owner and backup |
+| Ownership | Accountable human owner and backup; sponsor, builder, maintainer and runtime operator when distinct |
+| Shared capability | Catalog entry, pinned definition, instance ID, approved request audience and sharing mode |
 | Execution | Runtime identity and credential reference, never a secret value |
 | Four Ps | Links to the responsible person, assigned products, applicable processes and current projects |
 | Product access | Required systems, permitted roles, request owner and verified access state; no credentials |

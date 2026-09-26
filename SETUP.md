@@ -62,3 +62,9 @@ The agent reports these states separately. A missing employee response remains p
 This link starts a guided team pilot. For organization-wide preparation, follow [organization rollout](ORG-ROLLOUT.md). Each employee still authenticates and verifies their own onboarding. The agent prepares the structure and links; it cannot infer the whole company's roster or grant access from a manager's team-level approval.
 
 Plan continuity at setup: assign an accountable owner and backup, pin the procedure version, and prepare a checkpoint for every manager and employee. [The lifecycle guide](LIFECYCLE.md) covers new sessions, computer changes, role transfers, pauses, departures, upgrades and retirement.
+
+## Start with the human, then grow
+
+The first manager can prepare their own workspace before another employee joins. Keep the independent counterpart test pending until a real authorized participant is available. The framework supports their growing scope through [new humans and specialist AIDEs](GROW-YOUR-TEAM.md).
+
+Create a team-readable `aides/README.md` catalog. Employees can propose improvements, build approved specialists in their own instances and share them through that catalog. [Creating an AIDE](CREATE-AIDE.md) covers delegated ownership and approval; [using an existing AIDE](SHARED-AIDES.md) covers discovery and actual access. The manager directs scope while employees can own implementation and maintenance.

@@ -52,3 +52,7 @@ These are required scenarios, not claimed passes. Use synthetic content and appr
 | Organization expansion | Each added team proves its own identity, routing, permitted data boundary and onboarding; measure operational limits. |
 
 Store outcomes in dated transition and acceptance records. A documentation review or metadata validator cannot satisfy these behavioral gates. See [device change](DEVICE-CHANGE.md), [recovery](RECOVERY.md) and [organization rollout](ORG-ROLLOUT.md).
+
+## Employee-created shared specialist
+
+Use [the specialist acceptance template](templates/AIDE-ACCEPTANCE.md). Verify that an employee can prepare a proposal, obtain an actual scoped decision, build through supported tools and publish a usable package. A different colleague must discover it, submit an allowed request and receive a useful result through Git without access to the creator's session. Keep catalog publication, runtime activation, delivery and task quality separate. Exercise out-of-scope handling, repeated-request reconciliation, creator unavailability and operator handover. These checks are requirements, not recorded passes.

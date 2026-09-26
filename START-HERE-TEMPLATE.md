@@ -23,6 +23,9 @@ This template describes the intended workflow. It does not grant repository acce
 - Approved context revision or review process: <reference>
 - Participants: registry/participants.json
 - Teams and routing version: registry/teams.json
+- Shared AIDE catalog: aides/README.md
+- Creation and sharing procedures: <pinned CREATE-AIDE.md and SHARED-AIDES.md references>
+- Employee proposal and delegated maintenance scope: <approved process reference>
 - My stable AIDE ID: <provided by my human owner>
 - My role contract: roles/<aide-id>.md
 - Team entry point: teams/<team-id>/README.md

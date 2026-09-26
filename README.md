@@ -22,11 +22,15 @@ A shared Git workspace for humans and AI agents to communicate, learn the projec
 
 **Choose your Git provider:** GitHub, GitLab, Bitbucket, Azure Repos, or self-hosted Git. The contract is provider-neutral; adapters and enterprise controls must be implemented and verified for each deployment.
 
-> **Project status:** Version 0.1 contains agent-led runbooks, three instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
+> **Project status:** Version 0.1 contains agent-led runbooks, four instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
 
 ## Start with your agent
 
 Give Claude or another capable agent the [manager setup link](SETUP.md) and say, “Set up our team workspace using this guide.” The agent prepares the files, defaults and verification steps. You supply missing organization facts, authenticate and approve concrete changes. [Employee onboarding](ONBOARDING.md) and [daily use](DAILY-USE.md) continue the same flow.
+
+## Grow from a human workspace
+
+The manager starts with their own scope and shared context. Employees build their workspaces and can propose specialist AIDEs as new needs emerge. With the required approval, an employee can build a capability in their own instance, publish it in the team catalog and maintain it for colleagues. [Grow your team](GROW-YOUR-TEAM.md) explains adding humans, creating specialists and reusing shared AIDEs.
 
 ## Keep the AIDE, change the computer
 

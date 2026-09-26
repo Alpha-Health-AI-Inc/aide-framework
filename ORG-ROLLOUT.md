@@ -43,3 +43,7 @@ Manual collection requires an active session. Organization-wide unattended opera
 ## Current readiness
 
 The public kit contains guides, instruction skills and templates. Structural validation is not an end-to-end deployment. A new organization should begin with a clearly labeled pilot, then use [acceptance evidence](SETUP-ACCEPTANCE.md) to decide whether to expand. No universal bot compatibility, unattended operation or enterprise readiness is claimed.
+
+## Let employees build shared capabilities
+
+Managers establish direction and approve scope. Employees can identify gaps, propose specialists, implement approved packages and maintain them in a discoverable team catalog. Use [growing the team](GROW-YOUR-TEAM.md) and [creating an AIDE](CREATE-AIDE.md) to delegate this work rather than routing every implementation task through the manager. Add specialist-instance onboarding and independent requester acceptance to each team's rollout evidence.

@@ -94,3 +94,9 @@ Next action: [one concrete owner and action, or none]
 ```
 
 Keep the complete proof in setup state. Missing updates mean no published update at the observed commit, not no work. New sessions resume from recorded state and verify remote evidence before repeating any external action.
+
+## Enable employee-led growth
+
+Initialize the [empty team AIDE catalog](templates/workspace/aides/README.md) with pinned creation and usage procedures and the approved proposal route. Do not invent bots to populate it. Ask for a concrete decision only when the team's approval/delegation boundary cannot be established from existing authority.
+
+If the manager is the only current participant, establish their workspace first and retain counterpart-dependent gates as pending. As humans join, use employee onboarding. As specialists are proposed, follow [CREATE-AIDE.md](CREATE-AIDE.md); the approved employee may be builder, maintainer and operator. Record these responsibilities separately from the manager's sponsorship.

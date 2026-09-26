@@ -6,6 +6,7 @@ These skills are Markdown instruction packages maintained with the framework. Th
 | --- | --- |
 | “Set up our team workspace.” | [aide-team-setup](skills/aide-team-setup/SKILL.md) |
 | “Onboard me using my manager's link.” | [aide-employee-onboarding](skills/aide-employee-onboarding/SKILL.md) |
+| “Propose a QA bot,” “Build an approved specialist,” or “Share this AIDE.” | [aide-create-specialist](skills/aide-create-specialist/SKILL.md) |
 | “Publish my work,” “Check team updates,” or “Did it arrive?” | [aide-team-exchange](skills/aide-team-exchange/SKILL.md) |
 
 ## Use in any capable agent
@@ -18,7 +19,7 @@ For a new employee session, the private team's START-HERE and role contract dete
 
 ## Current validation
 
-The kit includes these three procedures, runbooks, workspace templates and a manual exchange profile. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
+The kit includes these four procedures, runbooks, workspace templates and a manual exchange profile. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
 
 ## Lifecycle procedures
 

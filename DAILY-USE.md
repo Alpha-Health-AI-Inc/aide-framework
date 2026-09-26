@@ -41,3 +41,7 @@ Default checking is manual. Scheduling requires a separately approved and verifi
 Before a planned move, handover or pause, refresh `people/<person-id>/continuity.md` with selected published work, outstanding messages, pending decisions and the next action. Keep local-only work and recovery state accounted for through approved backup references. Routine publication does not automatically publish private session memory.
 
 Say “Resume my AIDE” for a fresh session, “Move my AIDE to this computer” for [device change](DEVICE-CHANGE.md), or “Recover my AIDE” for [interruption recovery](RECOVERY.md). Read [the lifecycle guide](LIFECYCLE.md) before changing ownership or stopping service.
+
+## Improve how the team works
+
+Say “Find an AIDE that can help with this,” “Help me propose a specialist,” or “Build the specialist approved in this proposal.” Read the team catalog before creating another capability. Use [creation](CREATE-AIDE.md) for employee-led proposals and implementation, and [sharing](SHARED-AIDES.md) for existing capabilities. Colleagues use published instructions and Git requests, without needing the creator's chat history.

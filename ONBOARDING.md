@@ -39,3 +39,9 @@ If onboarding is interrupted, inspect `operations/setup-state.json`, the person'
 Create your shared continuity checkpoint from [this template](templates/CONTINUITY.md) after onboarding. Record your stable identity, current assignment, source revisions and pending work. Update it at meaningful handoffs and before leaving a session with unfinished work. Keep private chat and credentials out of it.
 
 A new session reads the checkpoint and reconciles remote records. For a new computer or agent client, use [device change](DEVICE-CHANGE.md). A fresh clone restores published work; unpublished files, local reporting state and attachments need their own verified recovery path. [The lifecycle guide](LIFECYCLE.md) also covers role changes and departures.
+
+## Discover and create capabilities
+
+Read your team's `aides/README.md` during onboarding. Your agent can explain existing QA, Product or other specialists, their approved use and their availability. Follow [shared AIDEs](SHARED-AIDES.md) to use one.
+
+If a useful capability is missing, ask your agent to [prepare a proposal](CREATE-AIDE.md). After the manager's required approval, you can build it in your authorized instance, publish the reusable package and verify it with a colleague. You may own its maintenance; the manager does not need to operate it for you.

@@ -68,3 +68,9 @@ Retirement requires a named owner for every outstanding item, stopped triggers, 
 ## Release gates
 
 The [lifecycle acceptance matrix](SETUP-ACCEPTANCE.md#lifecycle-acceptance) defines the evidence required for these transitions. The framework publishes procedures and templates; it does not yet claim tested lifecycle automation or organization-wide deployment readiness.
+
+## Employee-created specialist lifecycle
+
+A human can own several specialist AIDEs. Use [the creation procedure](CREATE-AIDE.md) to separate sponsor, builder, maintainer, operator and backup. Each durable instance has its own role, identity, active session and pending work. Its approved package is shared through the [team catalog](SHARED-AIDES.md), so another authorized operator can take over without copying the creator's private session.
+
+When a creator moves or leaves, transfer the specialist's maintenance, runtime credentials through approved mechanisms, version and outstanding requests as well as the person's work. Retire an instance separately from its reusable definition. Stop routing new requests to a retired instance; retain its history and name the approved successor. Existing users adopt revised packages through reviewed version changes.
