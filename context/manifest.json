@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "measurement": "UTF-8 bytes and whitespace-delimited words. Not token counts or provider capacity.",
+  "packs": {
+    "MANAGER.md": {
+      "bytes": 24440,
+      "words": 3264,
+      "sha256": "72fdc0f4a731aea9b24f55892273de6c3df6f29a2efc7fe6c8aeb17edbfb92dd",
+      "sources": {
+        "SETUP.md": "a2e2128c1d1240999eb1d7166f2d378486b78e905fff42869d23c4f9fcec1fe3",
+        "AGENT-SETUP.md": "2094600cf6f1af23d3b4ed44db499b7ef257a3bf2fcaf55d3c41aa4a0d13fb80",
+        "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
+      }
+    },
+    "EMPLOYEE.md": {
+      "bytes": 12253,
+      "words": 1577,
+      "sha256": "31f068ab64371f4c4e12cd38eb2b6a10c2c4f13c2fe73255b55e8702d283c983",
+      "sources": {
+        "ONBOARDING.md": "d21fa732c57910ae845631b0f6446c1108008e73f8339c9143ab0df985032f90",
+        "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
+      }
+    },
+    "CORE.md": {
+      "bytes": 5103,
+      "words": 742,
+      "sha256": "647392fcf321ef18c86bbc45f149417d3b266fcd560d8d17b92750f5265b967e",
+      "sources": {}
+    }
+  },
+  "launch_files": {
+    "skills/aide-start-onboarding/SKILL.md": {
+      "bytes": 2972,
+      "words": 445,
+      "sha256": "a1230125f95f42fa8363fe20b6762a7cd059126759c013b39445765e770e2f37"
+    },
+    "onboard.html": {
+      "bytes": 23622,
+      "words": 1339,
+      "sha256": "1128844d7000331d9b4ca7c075760f2fdc36b794f4e6c0377d04d9a9e9e77597"
+    }
+  }
+}

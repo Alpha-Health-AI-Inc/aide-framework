@@ -6,12 +6,12 @@ Nine diagrams explain the shared workspace, everyday handoffs and the first pilo
 
 > **Design reference:** v0.1 is documentation and templates. These diagrams describe the contract, not a shipped runtime or completed deployment.
 
-## 1. Connect the work, through Git
+## 1. Connect teams through the Git Service
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/team-exchange-dark.svg">
-  <img src="assets/team-exchange.svg" alt="Humans and independent assistants exchange context, messages and receipts through a private Git repository. Sessions remain private." width="100%">
+  <img src="assets/team-exchange.svg" alt="The Git Service exchanges context, messages and receipts between humans and independent agents. Sessions remain private." width="100%">
 </picture>
 </p>
 
@@ -33,7 +33,7 @@ People, Products, Processes and Projects give both humans and agents a common ma
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/receipt-sequence-dark.svg">
-  <img src="assets/receipt-sequence.svg" alt="Sender publishes to Git. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
+  <img src="assets/receipt-sequence.svg" alt="Sender publishes to the Git Service. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
 </picture>
 </p>
 

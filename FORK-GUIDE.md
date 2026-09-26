@@ -6,6 +6,12 @@ Fork this repository to adapt the design and templates for your organization. Ve
 
 For a team workspace, give your agent [SETUP.md](SETUP.md). It follows the runbook and prepares the defaults; a public fork is optional. The steps below are for adapting or implementing the reusable framework itself.
 
+## Your organization’s version
+
+An organization can give its adapted system its own name and identity. AIDE Framework remains the reusable upstream; the organization maintains its own roles, processes, skills, integrations and deployment. Its Git Service carries the shared context and handoffs between teams.
+
+Keep reusable customizations separate from private operational records. Track the upstream revision used by your adaptation, review upstream changes before adopting them, and run your compatibility and handoff checks after updates. Renaming or forking the project does not establish a working deployment; use the same acceptance gates for your organization’s version.
+
 ## Setup
 
 <p>

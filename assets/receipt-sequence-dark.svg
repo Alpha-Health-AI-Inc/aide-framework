@@ -6,7 +6,7 @@
 <path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
 <text x="175" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Sender</text>
 <path d="M175 182 L175 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>
-<text x="500" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Git</text>
+<text x="500" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Git Service</text>
 <path d="M500 182 L500 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>
 <text x="825" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Receiver</text>
 <path d="M825 182 L825 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>

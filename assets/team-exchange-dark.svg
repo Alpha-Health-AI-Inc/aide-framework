@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc"><title id="title">People and agents. Shared records.</title><desc id="desc">People contribute directly or through an assistant. Git carries the handoff.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc"><title id="title">People and agents. Shared records.</title><desc id="desc">People and their agents coordinate through the Git Service.</desc>
 <rect width="1000" height="600" rx="16" fill="#101114"/>
 <g font-family="Inter,Arial,Helvetica,sans-serif">
 <text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">People and agents. Shared records.</text>
-<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">People contribute directly or through an assistant. Git carries the handoff.</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">People and their agents coordinate through the Git Service.</text>
 <path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
 <rect x="40" y="150" width="305" height="100" rx="10" fill="#191b21" stroke="#343740"/>
 <text x="62" y="187" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Human contributor</text>
@@ -32,7 +32,7 @@
 <path d="M367 462 L375.5252452205951 456.7731277106934" fill="none" stroke="#a5a8b0" stroke-width="2"/>
 <path d="M367 462 L375.5252452205951 467.2268722893066" fill="none" stroke="#a5a8b0" stroke-width="2"/>
 <rect x="500" y="150" width="460" height="350" rx="10" fill="#191b21" stroke="#fb365d"/>
-<text x="522" y="187" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Private Git workspace</text>
+<text x="522" y="187" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Git Service</text>
 <text x="526" y="242" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Start together</text>
 <text x="526" y="273" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Context, roles and routing</text>
 <text x="526" y="338" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Exchange work</text>

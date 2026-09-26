@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "context_id": "<stable-context-id>",
+  "organization_id": "<organization-id>",
+  "workspace_id": "<workspace-id>",
+  "team_id": "<team-id>",
+  "membership_id": "<membership-id>",
+  "human_id": "<human-id>",
+  "agent_id": "<scoped-agent-id>",
+  "repository_url": "<exact-private-url>",
+  "exchange_branch": "<approved-branch>",
+  "role_path": "<repository-relative-role-path>",
+  "onboarding_path": "<repository-relative-personal-handoff>",
+  "delivery_recipients": ["<explicit-recipient-id>"],
+  "observed_context_commit": "<verified-commit-sha>",
+  "status": "pending"
+}

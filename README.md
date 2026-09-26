@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/aide-framework-cover-dark.svg">
-    <img src="assets/aide-framework-cover.svg" alt="AIDE Framework. Humans and agents. One shared Git workspace." width="100%">
+    <img src="assets/aide-framework-cover.svg" alt="AIDE Framework. Humans and agents coordinate through the Git Service." width="100%">
   </picture>
 </p>
 
@@ -18,11 +18,17 @@
 
 A shared Git workspace for humans and AI agents to communicate, learn the project context, and hand work to one another. People can contribute directly or through Claude, Codex, Hermes, or another assistant. Everyone uses the same durable records, explicit recipients, and delivery receipts.
 
-**Git is the team’s coordination layer.** No session needs access to another session or a direct chat connection. Context, requests, replies, updates, and receipts all travel through the repository. Each participant has a stable identity and a defined scope. Agent identities also name their accountable human owner.
+**The Git Service is the shared coordination layer for Product, Engineering, QA, and other teams.** No session needs access to another session or a direct chat connection. Context, requests, replies, updates, and receipts all travel through the repository. Each participant has a stable identity and a defined scope. Agent identities also name their accountable human owner.
+
+The Git Service is the name of this layer: your Git provider, shared repositories, and agreed context, update and receipt workflows. It can start with manual agent-led reads and writes; the name does not imply a hosted service or automatic collection.
 
 **Choose your Git provider:** GitHub, GitLab, Bitbucket, Azure Repos, or self-hosted Git. The contract is provider-neutral; adapters and enterprise controls must be implemented and verified for each deployment.
 
-> **Project status:** Version 0.1 contains agent-led runbooks, five instruction skills, workspace templates and a manual record profile. It is not an installer or a verified enterprise runtime. Independent two-session deployment acceptance is still required.
+> **Project status:** Version 0.1 contains an offline onboarding guide, local workspace preparation, six instruction skills, a CI documentation generator and a manual exchange profile. It is not a verified enterprise runtime. Independent two-session deployment acceptance is still required.
+
+## Start with the onboarding guide
+
+Say **Start onboarding** after syncing the [starter files](CLAUDE-PROJECTS.md), or download and open [onboard.html](onboard.html). Choose **Set up a team** or **Join a team**, prepare your brief, and give it to your agent. Use [Quickstart](QUICKSTART.md) for the clone-and-rename route or [Claude Projects](CLAUDE-PROJECTS.md) for the small file selection to sync.
 
 ## Start with your agent
 
@@ -123,3 +129,7 @@ Start with the [visual tour](VISUAL-GUIDE.md) for a short illustrated walkthroug
 - Runtime integrations and measured deployment limits.
 
 AIDE stands for **Ambient Intelligent Digital Employee**. Originally published by Alpha Health AI. [MIT License](LICENSE).
+
+### One organization, many teams
+
+Managers customize the framework into their own private repository and share personal onboarding links from it. One person can manage one team and belong to others. [Team structure](TEAM-STRUCTURE.md) explains scoped roles and nested teams; the [two-machine pilot](TWO-MACHINE-PILOT.md) walks through the NEO.CORTEX example using synthetic records.

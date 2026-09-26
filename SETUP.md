@@ -22,6 +22,10 @@ flowchart LR
   B --> C["3. Team verifies<br/>Employee handoff and receipt"]
 ```
 
+## Start with the HTML guide
+
+Download and open [onboard.html](onboard.html), then choose **I’m setting up a team**. The employee uses the same guide and chooses **I’m joining a team**. Follow [Quickstart](QUICKSTART.md) for the local clone route or [Claude Projects](CLAUDE-PROJECTS.md) for selective GitHub knowledge sync. The form prepares a brief; the agent performs permitted setup and verification.
+
 ## What you will be asked to do
 
 | Your part | What the agent prepares |
@@ -72,3 +76,7 @@ Create a team-readable `aides/README.md` catalog. Employees can propose improvem
 ## What the agent must verify in your client
 
 [Runtime setup](RUNTIME-SETUP.md) adds saved-profile read-back, fresh-session startup, actual Git and product-tool connections, and explicit availability checks. Existing bots are reconciled before creating new ones. [Readiness](READINESS.md) separates the included documentation from untested runtime behavior and missing implementation.
+
+## Multiple teams and roles
+
+Follow [team structure](TEAM-STRUCTURE.md) for nested managers and people who participate in several teams. Onboarding applies to the selected organization, workspace and team, not to an entire machine. Reuse the person's verified identity within an organization and create a separate scoped membership for each team. A manager of an existing team joins its private deployment; they do not bootstrap another organization. Use the [two-machine pilot](TWO-MACHINE-PILOT.md) to verify these routes.

@@ -2,16 +2,16 @@
 
 Version 0.1 describes the implementation contract. The components below have not yet been released as software.
 
-## Independent sessions, shared Git records
+## Independent sessions, one Git Service
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/team-exchange-dark.svg">
-  <img src="assets/team-exchange.svg" alt="Humans and independent assistants exchange context, messages and receipts through a private Git repository. Sessions remain private." width="100%">
+  <img src="assets/team-exchange.svg" alt="The Git Service exchanges context, messages and receipts between humans and independent agents. Sessions remain private." width="100%">
 </picture>
 </p>
 
-The core contract uses Git as the shared coordination layer for humans and agents. GitHub, GitLab, Bitbucket, Azure Repos, and self-hosted Git are deployment choices, not required dependencies. Each adapter must pass the same delivery and access checks. Each person may use a different runtime. Sessions do not share chat histories, remote-control access, or vendor-specific messaging. They exchange reviewed context, requests, replies, updates, receipts, and verification records through the configured repository and branch.
+The Git Service is the shared coordination layer for humans and agents. It consists of the chosen Git provider, configured repositories and branches, and the context, messaging and receipt contract. This is a logical layer, not an additional deployed server supplied by the framework. GitHub, GitLab, Bitbucket, Azure Repos, and self-hosted Git are deployment choices, not required dependencies. Each adapter must pass the same delivery and access checks. Each person may use a different runtime. Sessions do not share chat histories, remote-control access, or vendor-specific messaging. They exchange reviewed context, requests, replies, updates, receipts, and verification records through the configured repository and branch.
 
 The [team workflow](TEAM-WORKFLOW.md) defines the repository layout and startup sequence. Reviewed context provides a common starting point; immutable exchange records preserve what was sent and received. Access to an inbox does not authorize changes to shared policy. Record the context revision used for work and reference authoritative work systems rather than silently treating a status summary as canonical.
 
@@ -68,7 +68,7 @@ Record the human-selected subject, priority, and requested action. Publish only 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/receipt-sequence-dark.svg">
-  <img src="assets/receipt-sequence.svg" alt="Sender publishes to Git. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
+  <img src="assets/receipt-sequence.svg" alt="Sender publishes to the Git Service. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
 </picture>
 </p>
 

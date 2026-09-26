@@ -17,6 +17,10 @@ flowchart LR
   B --> C["3. Verify delivery<br/>Read the manager receipt"]
 ```
 
+## Use the visual guide
+
+Open [onboard.html](onboard.html) and choose **I’m joining a team**. Use the private repository, branch and onboarding link your manager provided. For Claude Projects, select the core and employee context packs using [this guide](CLAUDE-PROJECTS.md). Knowledge sync alone does not create a local checkout or prove publication access.
+
 ## Procedure for the employee's agent
 
 1. **Resolve the destination.** Read the handoff, approved `START-HERE.md`, deployment configuration and registry from the exact branch. Verify the assigned human and agent IDs and the manager recipient. If the authenticated identity conflicts, stop that action and report the cause. Do not create a new identity to bypass a mismatch.
@@ -47,3 +51,7 @@ Read your team's `aides/README.md` during onboarding. Your agent can explain exi
 If a useful capability is missing, ask your agent to [prepare a proposal](CREATE-AIDE.md). After the manager's required approval, you can build it in your authorized instance, publish the reusable package and verify it with a colleague. You may own its maintenance; the manager does not need to operate it for you.
 
 Before marking your AIDE connected, use [runtime setup](RUNTIME-SETUP.md) to read back saved settings where supported and verify startup in a fresh session. Existing profile names do not prove access, persistence or isolation. Keep manual startup and missing product connections visible.
+
+## Multiple teams and roles
+
+Follow [team structure](TEAM-STRUCTURE.md) for nested managers and people who participate in several teams. Onboarding applies to the selected organization, workspace and team, not to an entire machine. Reuse the person's verified identity within an organization and create a separate scoped membership for each team. A manager of an existing team joins its private deployment; they do not bootstrap another organization. Use the [two-machine pilot](TWO-MACHINE-PILOT.md) to verify these routes.

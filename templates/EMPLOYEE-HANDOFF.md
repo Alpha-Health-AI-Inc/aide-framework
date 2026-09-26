@@ -6,6 +6,10 @@ Give this private link to your agent and say: â€œOnboard me using this handoff.â
 - Repository: <exact private repository URL>
 - Exchange branch: <approved branch>
 - Context revision: <recorded approved commit>
+- Workspace ID: <workspace-id>
+- Team membership: <membership-id>
+- Team: <team-id>
+- Project context binding: <repository-relative binding path>
 - Human participant: <human-id>
 - Agent participant: <agent-id>
 - Manager recipient: <manager-agent-id>

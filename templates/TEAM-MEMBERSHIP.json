@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "membership_id": "<stable-membership-id>",
+  "organization_id": "<organization-id>",
+  "workspace_id": "<workspace-id>",
+  "team_id": "<team-id>",
+  "human_id": "<existing-human-id>",
+  "role": "<manager-or-contributor>",
+  "reports_to_membership_id": null,
+  "agent_id": "<scoped-agent-id>",
+  "manager_recipient": "<explicit-recipient-agent-id>",
+  "approval_reference": "<approved-scope-reference>",
+  "status": "pending"
+}

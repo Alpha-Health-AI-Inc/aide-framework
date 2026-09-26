@@ -12,6 +12,8 @@ These files are source templates. The setup agent renders them locally, reviews 
 | `workspace/processes/process.md` | `processes/<process-id>/README.md`; approved procedure or explicitly pending draft |
 | `workspace/projects/project.md` | `projects/<project-id>/README.md`; scoped work with links to the other Ps |
 | `workspace/registry/participants.json` | Human and agent identities, attribution mechanism and routes |
+| [Team membership](TEAM-MEMBERSHIP.json) | `registry/memberships/<membership-id>.json`; one scoped role per team |
+| [Project context](PROJECT-CONTEXT.json) | `operations/contexts/<context-id>.json`; explicit project binding, no machine secrets |
 | `workspace/registry/teams.json` | Explicit membership and routing version |
 | `workspace/operations/setup-state.json` | Stage progress and sanitized evidence references |
 | `workspace/.gitignore` | Merge the ignore rules into a new workspace; preserve existing rules |

@@ -6,17 +6,28 @@ Humans and agents both participate. People can write updates directly using a Gi
 
 Claude, Codex, Hermes, and other tools are potential clients of this contract. The design does not require them to inspect each other's conversations, discover remote sessions, or send direct messages. Each client must prove that its configured Git access can perform the required operations. This repository does not ship or certify those integrations.
 
-## Git is the shared coordination layer
+## The Git Service connects teams
 
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/team-exchange-dark.svg">
-  <img src="assets/team-exchange.svg" alt="Humans and independent assistants exchange context, messages and receipts through a private Git repository. Sessions remain private." width="100%">
+  <img src="assets/team-exchange.svg" alt="The Git Service exchanges context, messages and receipts between humans and independent agents. Sessions remain private." width="100%">
 </picture>
 </p>
 
 
-All cross-session coordination travels through Git, including requests, replies, routing changes, and acknowledgements. Each session retains its own conversation and local working state. Sharing a repository does not share a model's memory or give another assistant control of that session.
+All cross-session coordination travels through the Git Service, including requests, replies, routing changes, and acknowledgements. Each session retains its own conversation and local working state. Sharing a repository does not share a model's memory or give another assistant control of that session.
+
+The Git Service combines your Git provider and shared records with the agreed publishing and receipt workflow. Product, Engineering and QA can use different agents while handing work through the same service.
+
+| Team | Publishes | Reads from other teams |
+| --- | --- | --- |
+| Product | Requirements, decisions and acceptance criteria | Delivery status, implementation questions and QA findings |
+| Engineering | Implementation evidence, changes and known limits | Requirements, decisions and reproducible defects |
+| QA | Gherkin scenarios, observed results and evidence | Acceptance criteria, testable revisions and environment details |
+
+For example, Product publishes a requirement, Engineering publishes an implementation update, and QA publishes its findings. Addressed recipients record receipt of the exact update. Human approval and test acceptance remain separate. Other functions use the same contract with their own roles and artifacts.
+
 
 The public framework contains the design and reusable templates. Each adopting organization creates its own private operational repository. Team members receive access through their organization's existing approval process; a project link alone grants nothing.
 
@@ -133,7 +144,7 @@ Before reporting "published," read the exact record back from the configured rem
 <p>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/receipt-sequence-dark.svg">
-  <img src="assets/receipt-sequence.svg" alt="Sender publishes to Git. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
+  <img src="assets/receipt-sequence.svg" alt="Sender publishes to the Git Service. Receiver reads and validates, then stores a receipt. Sender checks the receipt and stores verification. Human review is separate." width="100%">
 </picture>
 </p>
 

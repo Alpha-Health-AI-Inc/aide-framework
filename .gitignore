@@ -1,0 +1,14 @@
+# Organization work belongs in a separate private deployment.
+# Renamed first-level workspace directories remain local by default.
+/*/
+!/assets/
+!/skills/
+!/templates/
+!/scripts/
+!/tests/
+!/context/
+# WORKSPACE starter files are tracked; new files beneath it stay ignored.
+**/__pycache__/
+**/.venv/
+.env
+.env.*

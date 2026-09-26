@@ -4,6 +4,7 @@ These skills are Markdown instruction packages maintained with the framework. Th
 
 | Request | Procedure |
 | --- | --- |
+| “Start onboarding,” “Onboard me,” or “Resume onboarding.” | [aide-start-onboarding](skills/aide-start-onboarding/SKILL.md) |
 | “Set up our team workspace.” | [aide-team-setup](skills/aide-team-setup/SKILL.md) |
 | “Onboard me using my manager's link.” | [aide-employee-onboarding](skills/aide-employee-onboarding/SKILL.md) |
 | “Propose a QA bot,” “Build an approved specialist,” or “Share this AIDE.” | [aide-create-specialist](skills/aide-create-specialist/SKILL.md) |
@@ -21,7 +22,7 @@ For a new employee session, the private team's START-HERE and role contract dete
 
 ## Current validation
 
-The kit includes these five procedures, runbooks, workspace templates and a manual exchange profile. The CI documentation skill also ships a local validator and Markdown/JSONL generator; it is self-contained when copied with its complete skill directory. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
+The kit includes these six procedures, runbooks, workspace templates and a manual exchange profile. The CI documentation skill also ships a local validator and Markdown/JSONL generator; it is self-contained when copied with its complete skill directory. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
 
 ## Lifecycle procedures
 

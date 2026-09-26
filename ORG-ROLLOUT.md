@@ -47,3 +47,7 @@ The public kit contains guides, instruction skills and templates. Structural val
 ## Let employees build shared capabilities
 
 Managers establish direction and approve scope. Employees can identify gaps, propose specialists, implement approved packages and maintain them in a discoverable team catalog. Use [growing the team](GROW-YOUR-TEAM.md) and [creating an AIDE](CREATE-AIDE.md) to delegate this work rather than routing every implementation task through the manager. Add specialist-instance onboarding and independent requester acceptance to each team's rollout evidence.
+
+## Multiple teams and roles
+
+Follow [team structure](TEAM-STRUCTURE.md) for nested managers and people who participate in several teams. Onboarding applies to the selected organization, workspace and team, not to an entire machine. Reuse the person's verified identity within an organization and create a separate scoped membership for each team. A manager of an existing team joins its private deployment; they do not bootstrap another organization. Use the [two-machine pilot](TWO-MACHINE-PILOT.md) to verify these routes.
