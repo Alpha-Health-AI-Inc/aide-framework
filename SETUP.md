@@ -18,11 +18,8 @@ is still pending. Do not call setup complete until the stated checks pass.
 
 ```mermaid
 flowchart LR
-  A[Manager shares this link] --> B[Agent prepares the workspace]
-  B --> C[Manager authenticates and approves]
-  C --> D[Agent publishes and verifies]
-  D --> E[Employee receives onboarding link]
-  E --> F[Two agents verify the first handoff]
+  A["1. Agent prepares<br/>Workspace and defaults"] --> B["2. Manager approves<br/>Authenticates and confirms"]
+  B --> C["3. Team verifies<br/>Employee handoff and receipt"]
 ```
 
 ## What you will be asked to do

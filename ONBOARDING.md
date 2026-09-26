@@ -13,12 +13,8 @@ Ask me to authenticate or approve only when needed. Preserve existing work.
 
 ```mermaid
 flowchart LR
-  A[Employee supplies private link] --> B[Agent reads role and Four Ps]
-  B --> C[Employee authenticates]
-  C --> D[Agent prepares local folder]
-  D --> E[Publish first test]
-  E --> F[Manager agent writes receipt]
-  F --> G[Employee agent verifies receipt]
+  A["1. Get connected<br/>Read context and authenticate"] --> B["2. Publish a test<br/>From the employee workspace"]
+  B --> C["3. Verify delivery<br/>Read the manager receipt"]
 ```
 
 ## Procedure for the employee's agent
