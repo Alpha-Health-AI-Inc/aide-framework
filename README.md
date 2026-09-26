@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="TEAM-WORKFLOW.md">Team workflow</a> &nbsp; / &nbsp;
   <a href="ARCHITECTURE.md">Architecture</a> &nbsp; / &nbsp;
   <a href="ADOPTION.md">Pilot guide</a> &nbsp; / &nbsp;
   <a href="FORK-GUIDE.md">Fork and build</a> &nbsp; / &nbsp;
@@ -11,7 +12,9 @@
 
 # Alpha Health AIDE Framework
 
-A reference design for AI assistants that coordinate work across teams. Each assistant has a defined role, a human owner, and a shared record of what it sent and received.
+A reference design for a shared GitHub workspace for teams using separate AI assistants. People keep working in their own Claude, Codex, Hermes, or other sessions. Their assistants read common project context, publish selected updates from their own folders, and confirm delivery through receipts.
+
+**GitHub is the team’s coordination layer.** No session needs access to another session or a direct chat connection. Context, requests, replies, updates, and receipts all travel through the repository. Each assistant has a stable identity, a human owner, and a defined scope.
 
 > **Project status:** Version 0.1 contains documentation and templates. The runtime and SDK are planned.
 
@@ -25,22 +28,24 @@ The records distinguish publication, receipt, sender verification, human review,
 
 ## Start with one workflow
 
-**1. Define the role.** Name the owner, allowed actions, recipients, and evidence requirements using the [role template](ROLE-TEMPLATE.md).
+**1. Establish the shared workspace.** Follow the [team workflow](TEAM-WORKFLOW.md) to organize shared context, teams, roles, and each sender’s folder in a private repository. Use the [startup template](START-HERE-TEMPLATE.md) to bring a new session up to speed.
 
-**2. Build the exchange.** Follow the [architecture](ARCHITECTURE.md) for message identity, delivery receipts, duplicate handling, and recovery.
+**2. Connect independent sessions.** Define each [role](ROLE-TEMPLATE.md), verify its permitted GitHub access, and use the [architecture](ARCHITECTURE.md) for publishing, receipts, and recovery.
 
-**3. Prove the handoff.** Run the [pilot checks](ADOPTION.md) before connecting a broader workload.
+**3. Prove the handoff.** Run the [pilot checks](ADOPTION.md) with two isolated sessions. Verify publication, receipt, and sender confirmation using GitHub alone.
 
 ## Use your own systems
 
-Choose your models, tools, identity provider, and execution environment. Keep business rules and operating hours in deployment configuration.
+Choose your models, tools, identity provider, and execution environment. GitHub is the required exchange for the initial team workflow. Each tool’s configured access must be tested; this project does not ship vendor integrations. Keep business rules and operating hours in deployment configuration.
 
-The first planned storage adapter uses a private GitHub repository. Other adapters can follow the same delivery contract. Operational messages and credentials stay in your deployment, separate from this public project.
+Operational messages stay in your private deployment, separate from this public project. Credentials stay in approved credential storage.
 
-A published update remains available when the sender goes offline. Collection still requires a running worker on a schedule or event trigger.
+A published update remains available when the sender goes offline. Collection requires an active session or worker. Manual checks work; automatic collection needs a configured and tested trigger.
 
 ## Documentation
 
+- [Team workflow](TEAM-WORKFLOW.md): shared context, team routing, daily use, and delivery lessons.
+- [Startup template](START-HERE-TEMPLATE.md): an entry point for independent sessions.
 - [Architecture](ARCHITECTURE.md): components, records, processing, and access boundaries.
 - [Pilot guide](ADOPTION.md): deployment decisions, acceptance checks, and scale measurements.
 - [Role template](ROLE-TEMPLATE.md): a reusable operating contract for each assistant.

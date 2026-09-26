@@ -2,11 +2,19 @@
 
 Version 0.1 describes the implementation contract. The components below have not yet been released as software.
 
+## Independent sessions, shared GitHub records
+
+The initial implementation must use GitHub as the sole cross-session coordination channel. Each person may use a different runtime. Sessions do not share chat histories, remote-control access, or vendor-specific messaging. They exchange reviewed context, requests, replies, updates, receipts, and verification records through the configured repository and branch.
+
+The [team workflow](TEAM-WORKFLOW.md) defines the repository layout and startup sequence. Reviewed context provides a common starting point; immutable exchange records preserve what was sent and received. Access to an inbox does not authorize changes to shared policy. Record the context revision used for work and reference authoritative work systems rather than silently treating a status summary as canonical.
+
+A human-triggered session can follow the contract with approved GitHub tools. Reliable unattended collection still requires an implemented worker. Alternate transports are future extensions; the GitHub-only pilot must work without them.
+
 ## Identity and ownership
 
 Each AIDE has a stable identifier within an organization, a human owner, a backup, and a defined scope of work. Runtime sessions and machine addresses are replaceable routing details.
 
-The registry maps an AIDE identifier to an authenticated runtime identity, permitted recipients, and a credential reference. A sender name in a JSON file is not proof of identity. The storage or runtime adapter must verify who submitted the record.
+The registry maps an AIDE identifier to an authenticated runtime identity, team memberships, permitted recipients, and a credential reference. Multiple sessions acting as the same AIDE need separate session provenance and coordinated publication state or a single active writer. A sender name in a JSON file is not proof of identity. The storage or runtime adapter must verify who submitted the record.
 
 ## Components
 
@@ -33,11 +41,13 @@ Identity checks, duplicate detection, digest comparison, and retry timing belong
 | Sender verification | Message ID, receiver, receipt reference and digest, verified timestamp, and verifier identity |
 | Work decision | Work reference, decision owner, decision type, criteria, evidence, timestamp, and authorization reference |
 
-Match recipients by stable identifier. Track delivery separately for each recipient so partial delivery remains visible.
+Match recipients by stable identifier. Expand a team alias to explicit recipient IDs at publication and record the membership/routing version. Track delivery separately for each required recipient so partial delivery remains visible. A coordinator may be the sole intended recipient only when the configured workflow explicitly says so. Replies are new messages referencing the original ID.
+
+Resolve reassignments through reviewed registry changes. Preserve old addressed messages and receipts. Correct a misrouted update by publishing a new ID that references it; do not reinterpret an old address as a delivery to a new receiver.
 
 Content digests bind receipts to message bytes. They do not authenticate an author. Keep the digest algorithm explicit, including when a transport supplies a Git blob identifier rather than a digest of raw file bytes.
 
-Updates can include completed work, work in progress, blockers, next steps, and requested decisions. Sources should identify their date and revision. QA reports should separate Feature/Scenario/Given/When/Then specifications from actual results, execution status, environment, and evidence.
+Record the human-selected subject, priority, and requested action. Publish only the authorized portion of session work, not a default export of conversation history. Updates can include completed work, work in progress, blockers, next steps, and requested decisions. Sources should identify their date and revision. QA reports should separate Feature/Scenario/Given/When/Then specifications from actual results, execution status, environment, and evidence.
 
 ## Processing
 
@@ -63,11 +73,19 @@ The delivery model is at-least-once discovery with idempotent receipt processing
 Proposed layout in a private deployment repository:
 
 ```text
+START-HERE.md
+context/projects/<project-id>/overview.md
 registry/participants.json
+registry/teams.json
+roles/<aide-id>.md
+teams/<team-id>/README.md
+people/<aide-id>/status.md
 messages/<sender-id>/<message-id>.json
 receipts/<receiver-id>/<sender-id>/<message-id>.json
 verifications/<sender-id>/<receiver-id>/<message-id>.json
 ```
+
+Use reviewed context changes and an authorized exchange branch for routine records. A collector reads only records reachable from that configured branch; a draft, local commit, or unmerged change elsewhere is not published to the exchange.
 
 The collector freezes a commit and fetches unseen records. Writers create unique files without overwriting previous records. If concurrent writes conflict, refresh the branch reference and inspect the destination before retrying. Schema migrations need explicit mappings and compatibility checks.
 
@@ -77,7 +95,7 @@ Protected history and append-only files support an audit trail but cannot guaran
 
 ## Scheduling and scale
 
-Unread messages persist across collection windows. Sender availability is unnecessary after publication. Receiver availability determines when collection resumes. Operation while employee laptops are off requires a separately deployed worker.
+Publishing to GitHub does not wake a session. Manual collection, scheduled workers, and event triggers are different deployment modes and must be labeled and tested. Unread messages persist across collection windows. Sender availability is unnecessary after publication. Receiver availability determines when collection resumes. Operation while employee laptops are off requires a separately deployed worker.
 
 Batch metadata reads, retrieve only unseen payloads, and persist checkpoints. Bound worker concurrency, retries, and model spend. Event triggers can reduce delays; periodic reconciliation recovers missed events.
 

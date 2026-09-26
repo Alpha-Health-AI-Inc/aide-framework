@@ -1,6 +1,6 @@
 # Pilot guide
 
-Start with one internal workflow whose outcome can be measured. A useful example is a QA assistant sending a report to a delivery assistant for human review.
+Start with one internal workflow whose outcome can be measured. Use two independent sessions, such as a QA assistant and a delivery assistant, with no mutual session access. They must obtain shared context and complete the handoff through GitHub alone.
 
 This guide defines acceptance requirements for an implementation. It is not a record of completed tests.
 
@@ -20,11 +20,12 @@ Choose the identity provider, repository host, model vendor, and execution envir
 
 ## Run the pilot
 
-1. **Define the assignment.** Name the outcome, owner, recipients, allowed actions, and evidence requirements. Complete a [role contract](ROLE-TEMPLATE.md).
-2. **Configure access.** Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
-3. **Test delivery.** Publish a unique message. Inspect its receipt and the sender's verification. Interrupt processing and confirm that it resumes without losing the update.
-4. **Use a limited workload.** Track delays, duplicate records, manual intervention, report quality, and cost. Keep pending and rejected deliveries visible.
-5. **Review the results.** Compare the evidence with the agreed criteria. The sponsor and independent reviewer decide whether to expand.
+1. **Prepare shared context.** Create a private operational repository, choose the exact exchange branch, and complete the [startup entry point](START-HERE-TEMPLATE.md). Follow the [team layout](TEAM-WORKFLOW.md). Keep internal content out of public forks.
+2. **Define the assignment.** Name the outcome, owner, recipients, allowed actions, and evidence requirements. Complete a [role contract](ROLE-TEMPLATE.md).
+3. **Configure access.** Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
+4. **Test delivery.** Publish a unique message. Inspect its receipt and the sender's verification. Interrupt processing and confirm that it resumes without losing the update.
+5. **Use a limited workload.** Track delays, duplicate records, manual intervention, report quality, and cost. Keep pending and rejected deliveries visible.
+6. **Review the results.** Compare the evidence with the agreed criteria. The sponsor and independent reviewer decide whether to expand.
 
 Two to five AIDEs and one workflow provide a manageable initial scope. Set service targets from the workflow's requirements and observed performance.
 
@@ -32,6 +33,15 @@ Two to five AIDEs and one workflow provide a manageable initial scope. Set servi
 
 | Scenario | Expected result |
 | --- | --- |
+| Fresh isolated session | Reads the approved startup entry point, identifies its role and context revision, and recovers pending delivery without another session’s history. |
+| Different runtime | A second configured client completes publish, receipt, and verify through GitHub only; no vendor integration is assumed. |
+| Deliberately scoped update | Selected findings and priority are preserved; unrelated chat content is excluded. |
+| Team fan-out | Explicit recipient IDs and routing version are stored; partial receipts remain visible. |
+| Recipient reassignment | New messages use current routing; old messages are not silently re-addressed. |
+| Local or wrong-branch update | Is not reported as published to the configured exchange. |
+| Check before publication | Shows the observed snapshot and pending state; a later run can discover the update. |
+| Concurrent publishers | Unique records survive contention; uncertain writes are reconciled before retry. |
+| Manual versus scheduled mode | No automatic wake-up is claimed without a verified trigger; the actual collection window is visible. |
 | Correct recipient | Message, exact-content receipt, and sender verification agree. |
 | Wrong recipient | The unintended AIDE does not issue a receipt; the operator can identify the routing error. |
 | Duplicate discovery | Processing reuses the existing logical receipt and does not repeat work effects. |
