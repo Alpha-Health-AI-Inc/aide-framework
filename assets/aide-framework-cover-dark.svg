@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="cover-title cover-desc">
+<title id="cover-title">AIDE Framework</title><desc id="cover-desc">Independent agents. One shared workspace. A business-neutral framework for teams, originated by Alpha Health.</desc>
+<defs>
+ <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#bc0037"/><stop offset="0.55" stop-color="#fa2452"/><stop offset="1" stop-color="#ff7996"/></linearGradient>
+ <clipPath id="bounds"><rect width="1440" height="620" rx="22"/></clipPath>
+</defs>
+<g clip-path="url(#bounds)">
+<rect width="1440" height="620" fill="#101113"/>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<text x="720" y="72" fill="#a3a4ab" font-size="18" letter-spacing="3">OPEN FRAMEWORK / INDEPENDENT AGENTS</text>
+<text x="720" y="189" fill="#f7f7f8" font-size="100" font-weight="700" letter-spacing="-4">AIDE Framework</text>
+<text x="720" y="258" fill="#f7f7f8" font-size="36" letter-spacing="-0.7">Your agents. One shared workspace.</text>
+<text x="720" y="307" fill="#a3a4ab" font-size="24">Shared context, team updates, and delivery receipts through GitHub.</text>
+</g>
+<path d="M-100 510C330 460 580 350 900 425S1220 369 1530 313" fill="none" stroke="#fa2452" stroke-opacity="0.07" stroke-width="105"/>
+<path d="M-100 510C330 460 580 350 900 425S1220 369 1530 313" fill="none" stroke="url(#ribbon)" stroke-width="47"/>
+<path d="M-100 492C330 442 580 332 900 407S1220 351 1530 295" fill="none" stroke="#ffbacb" stroke-opacity="0.65" stroke-width="3"/>
+<rect x="185" y="366" width="1070" height="125" rx="20" fill="#17181c" stroke="#303138" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="220" y="409" font-size="17" fill="#a3a4ab" letter-spacing="2">THE TEAM CONTRACT</text>
+<text x="220" y="452" font-size="26" font-weight="700" fill="#f7f7f8">Read context</text>
+<text x="492" y="452" font-size="26" font-weight="700" fill="#f7f7f8">Publish updates</text>
+<text x="807" y="452" font-size="26" font-weight="700" fill="#f7f7f8">Confirm receipt</text>
+<path d="M438 443H463M455 435L463 443L455 451M748 443H773M765 435L773 443L765 451" stroke="#a3a4ab" stroke-width="2" fill="none"/>
+<circle cx="1198" cy="430" r="27" fill="#f5224e"/>
+<path d="M1186 430H1210M1201 421L1210 430L1201 439" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<text x="64" y="582" font-size="18" fill="#a3a4ab">Documentation and templates / v0.1</text>
+<text x="1376" y="582" text-anchor="end" font-size="18" fill="#a3a4ab">An open-source project from Alpha Health</text>
+</g></g></svg>

@@ -1,5 +1,8 @@
 <p align="center">
-  <img src="assets/aide-framework-cover.svg" alt="Alpha Health AIDE Framework. Defined roles. Shared records. Confirmed delivery." width="100%">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/aide-framework-cover-dark.svg">
+    <img src="assets/aide-framework-cover.svg" alt="AIDE Framework. Your agents. One shared workspace." width="100%">
+  </picture>
 </p>
 
 <p align="center">
@@ -10,7 +13,7 @@
   <a href="LICENSE">MIT license</a>
 </p>
 
-# Alpha Health AIDE Framework
+# AIDE Framework
 
 A reference design for a shared GitHub workspace for teams using separate AI assistants. People keep working in their own Claude, Codex, Hermes, or other sessions. Their assistants read common project context, publish selected updates from their own folders, and confirm delivery through receipts.
 
@@ -22,7 +25,10 @@ A reference design for a shared GitHub workspace for teams using separate AI ass
 
 A QA assistant sends a report to a delivery assistant. The receiver reads it and writes a receipt tied to that exact report. The sender checks the receipt. A manager can then review the findings without first chasing confirmation that they arrived.
 
-<img src="assets/delivery-flow.svg" alt="Three steps: publish the update, receive it and write a receipt, then verify the receipt. Human review remains separate." width="100%">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/delivery-flow-dark.svg">
+  <img src="assets/delivery-flow.svg" alt="Three steps: publish the update, receive it and write a receipt, then verify the receipt. Human review remains separate." width="100%">
+</picture>
 
 The records distinguish publication, receipt, sender verification, human review, and acceptance. Missing deliveries remain visible, and interrupted processing can resume from saved progress.
 
@@ -50,6 +56,7 @@ A published update remains available when the sender goes offline. Collection re
 - [Pilot guide](ADOPTION.md): deployment decisions, acceptance checks, and scale measurements.
 - [Role template](ROLE-TEMPLATE.md): a reusable operating contract for each assistant.
 - [Fork guide](FORK-GUIDE.md): setup instructions and a brief for Claude or another implementation assistant.
+- [Branding](BRANDING.md): visual conventions and adapting the identity for your fork.
 
 ## Roadmap
 
@@ -58,4 +65,4 @@ A published update remains available when the sender goes offline. Collection re
 - Recovery tests and an operator delivery-status view.
 - Runtime integrations and measured deployment limits.
 
-AIDE stands for **Ambient Intelligent Digital Employee**. Published by Alpha Health under the [MIT License](LICENSE).
+AIDE stands for **Ambient Intelligent Digital Employee**. Originally published by Alpha Health. [MIT License](LICENSE).

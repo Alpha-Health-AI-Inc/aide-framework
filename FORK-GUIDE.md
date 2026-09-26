@@ -8,7 +8,7 @@ Fork this repository to adapt the design and templates for your organization. Ve
 2. Read the [overview](README.md), [team workflow](TEAM-WORKFLOW.md), [architecture](ARCHITECTURE.md), and [pilot guide](ADOPTION.md).
 3. Choose one workflow and complete its [role contract](ROLE-TEMPLATE.md).
 4. Keep credentials, internal policies, deployment identities, and operational messages outside the public repository. Use synthetic data in examples and tests.
-5. Preserve the [MIT license](LICENSE) notice in copies or substantial portions of the project. Identify your version as a derivative of the Alpha Health AIDE Framework.
+5. Preserve the [MIT license](LICENSE) notice in copies or substantial portions of the project. Use your own project name, organization identity, and visual theme. See [branding your fork](BRANDING.md).
 
 ## Implementation brief for Claude
 

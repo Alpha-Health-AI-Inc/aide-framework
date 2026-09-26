@@ -1,28 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="540" viewBox="0 0 1440 540" role="img" aria-labelledby="title desc">
-<title id="title">Alpha Health AIDE Framework</title><desc id="desc">AI assistants with defined roles, shared records, and confirmed delivery. Open-source reference design.</desc>
-<defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#16374a" stroke-width="1"/></pattern></defs>
-<rect width="1440" height="540" rx="20" fill="#071d2c"/>
-<rect x="860" width="580" height="540" fill="url(#grid)"/>
-<path d="M64 74H104" stroke="#5ee6be" stroke-width="4"/>
-<text x="120" y="82" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#e9f6fa">ALPHA HEALTH</text>
-<text x="64" y="214" font-family="Arial,Helvetica,sans-serif" font-size="84" font-weight="700" letter-spacing="-3" fill="#ffffff">AIDE Framework</text>
-<text x="68" y="285" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#b9d2de">Defined roles. Shared records.</text>
-<text x="68" y="331" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#b9d2de">Confirmed delivery.</text>
-<rect x="68" y="428" width="272" height="40" rx="20" fill="#133b42"/>
-<text x="88" y="454" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="1.1" fill="#7cebc9">OPEN-SOURCE DESIGN</text>
-<text x="362" y="454" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#96b7c6">v0.1 / MIT</text>
-<path d="M1000 160V222H1230V338" fill="none" stroke="#58d9b5" stroke-width="3"/>
-<path d="M1223 330L1230 339L1237 330" fill="none" stroke="#58d9b5" stroke-width="3"/>
-<rect x="880" y="83" width="350" height="98" rx="14" fill="#102d40" stroke="#3b667c"/>
-<text x="904" y="116" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8facbf">01 / PUBLISH</text>
-<text x="904" y="153" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#ffffff">Update sent</text>
-<rect x="970" y="236" width="350" height="98" rx="14" fill="#102d40" stroke="#3b667c"/>
-<text x="994" y="269" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8facbf">02 / RECEIVE</text>
-<text x="994" y="306" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#ffffff">Receipt recorded</text>
-<rect x="1020" y="377" width="350" height="98" rx="14" fill="#113d3b" stroke="#58d9b5"/>
-<circle cx="1056" cy="426" r="17" fill="#5ee6be"/>
-<path d="M1048 426L1054 432L1065 420" stroke="#071d2c" stroke-width="3" fill="none"/>
-<text x="1086" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8dddc6">03 / VERIFY</text>
-<text x="1086" y="449" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#ffffff">Delivery confirmed</text>
-<path d="M1230 334V377" stroke="#58d9b5" stroke-width="3"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="620" viewBox="0 0 1440 620" role="img" aria-labelledby="cover-title cover-desc">
+<title id="cover-title">AIDE Framework</title><desc id="cover-desc">Independent agents. One shared workspace. A business-neutral framework for teams, originated by Alpha Health.</desc>
+<defs>
+ <linearGradient id="ribbon" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#bc0037"/><stop offset="0.55" stop-color="#fa2452"/><stop offset="1" stop-color="#ff7996"/></linearGradient>
+ <clipPath id="bounds"><rect width="1440" height="620" rx="22"/></clipPath>
+</defs>
+<g clip-path="url(#bounds)">
+<rect width="1440" height="620" fill="#ffffff"/>
+<g font-family="Arial,Helvetica,sans-serif" text-anchor="middle">
+<text x="720" y="72" fill="#666970" font-size="18" letter-spacing="3">OPEN FRAMEWORK / INDEPENDENT AGENTS</text>
+<text x="720" y="189" fill="#101113" font-size="100" font-weight="700" letter-spacing="-4">AIDE Framework</text>
+<text x="720" y="258" fill="#101113" font-size="36" letter-spacing="-0.7">Your agents. One shared workspace.</text>
+<text x="720" y="307" fill="#666970" font-size="24">Shared context, team updates, and delivery receipts through GitHub.</text>
+</g>
+<path d="M-100 510C330 460 580 350 900 425S1220 369 1530 313" fill="none" stroke="#fa2452" stroke-opacity="0.07" stroke-width="105"/>
+<path d="M-100 510C330 460 580 350 900 425S1220 369 1530 313" fill="none" stroke="url(#ribbon)" stroke-width="47"/>
+<path d="M-100 492C330 442 580 332 900 407S1220 351 1530 295" fill="none" stroke="#ffbacb" stroke-opacity="0.65" stroke-width="3"/>
+<rect x="185" y="366" width="1070" height="125" rx="20" fill="#ffffff" stroke="#e3e4e8" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<text x="220" y="409" font-size="17" fill="#666970" letter-spacing="2">THE TEAM CONTRACT</text>
+<text x="220" y="452" font-size="26" font-weight="700" fill="#101113">Read context</text>
+<text x="492" y="452" font-size="26" font-weight="700" fill="#101113">Publish updates</text>
+<text x="807" y="452" font-size="26" font-weight="700" fill="#101113">Confirm receipt</text>
+<path d="M438 443H463M455 435L463 443L455 451M748 443H773M765 435L773 443L765 451" stroke="#666970" stroke-width="2" fill="none"/>
+<circle cx="1198" cy="430" r="27" fill="#f5224e"/>
+<path d="M1186 430H1210M1201 421L1210 430L1201 439" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+<text x="64" y="582" font-size="18" fill="#666970">Documentation and templates / v0.1</text>
+<text x="1376" y="582" text-anchor="end" font-size="18" fill="#666970">An open-source project from Alpha Health</text>
+</g></g></svg>

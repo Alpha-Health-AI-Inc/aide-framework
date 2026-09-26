@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="500" viewBox="0 0 1440 500" role="img" aria-labelledby="flow-title flow-desc">
+<title id="flow-title">Publish, receive, verify</title><desc id="flow-desc">Each sender publishes an update. Each receiver writes a receipt after reading it. The sender verifies the receipt. Human review remains separate.</desc>
+<rect x="1" y="1" width="1438" height="498" rx="20" fill="#101113" stroke="#303138" stroke-width="2"/>
+<g font-family="Arial,Helvetica,sans-serif">
+<path d="M48 56H80" stroke="#f5224e" stroke-width="4"/>
+<text x="94" y="62" font-size="17" letter-spacing="2.5" fill="#a3a4ab">THE DELIVERY CONTRACT</text>
+<text x="48" y="116" font-size="38" font-weight="700" fill="#f7f7f8">Every handoff has a record.</text>
+<rect x="48" y="162" width="402" height="204" rx="14" fill="#17181c" stroke="#303138"/>
+<text x="73" y="210" font-size="21" fill="#f5224e" font-weight="700">01</text>
+<text x="126" y="210" font-size="27" font-weight="700" fill="#f7f7f8">Publish</text>
+<text x="73" y="265" font-size="22" fill="#a3a4ab">Sender stores the update</text>
+<text x="73" y="298" font-size="22" fill="#a3a4ab">with its ID and recipients.</text>
+<text x="73" y="338" font-size="16" letter-spacing="1.3" fill="#a3a4ab">MESSAGE</text>
+<rect x="519" y="162" width="402" height="204" rx="14" fill="#17181c" stroke="#303138"/>
+<text x="544" y="210" font-size="21" fill="#f5224e" font-weight="700">02</text>
+<text x="597" y="210" font-size="27" font-weight="700" fill="#f7f7f8">Receive</text>
+<text x="544" y="265" font-size="22" fill="#a3a4ab">Receiver reads the update</text>
+<text x="544" y="298" font-size="22" fill="#a3a4ab">and writes a matching receipt.</text>
+<text x="544" y="338" font-size="16" letter-spacing="1.3" fill="#a3a4ab">RECEIPT</text>
+<rect x="990" y="162" width="402" height="204" rx="14" fill="#17181c" stroke="#303138"/>
+<text x="1015" y="210" font-size="21" fill="#f5224e" font-weight="700">03</text>
+<text x="1068" y="210" font-size="27" font-weight="700" fill="#f7f7f8">Verify</text>
+<text x="1015" y="265" font-size="22" fill="#a3a4ab">Sender checks the receipt</text>
+<text x="1015" y="298" font-size="22" fill="#a3a4ab">and records confirmation.</text>
+<text x="1015" y="338" font-size="16" letter-spacing="1.3" fill="#a3a4ab">VERIFICATION</text>
+<path d="M466 261H502M492 252L502 261L492 270M937 261H973M963 252L973 261L963 270" fill="none" stroke="#a3a4ab" stroke-width="2"/>
+<path d="M48 405H1392" stroke="#303138"/>
+<text x="48" y="452" font-size="23" font-weight="700" fill="#f7f7f8">Human review is a separate step.</text>
+<text x="535" y="452" font-size="23" fill="#a3a4ab">A receipt confirms delivery, not approval of the work.</text>
+</g></svg>
