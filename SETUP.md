@@ -68,3 +68,7 @@ Plan continuity at setup: assign an accountable owner and backup, pin the proced
 The first manager can prepare their own workspace before another employee joins. Keep the independent counterpart test pending until a real authorized participant is available. The framework supports their growing scope through [new humans and specialist AIDEs](GROW-YOUR-TEAM.md).
 
 Create a team-readable `aides/README.md` catalog. Employees can propose improvements, build approved specialists in their own instances and share them through that catalog. [Creating an AIDE](CREATE-AIDE.md) covers delegated ownership and approval; [using an existing AIDE](SHARED-AIDES.md) covers discovery and actual access. The manager directs scope while employees can own implementation and maintenance.
+
+## What the agent must verify in your client
+
+[Runtime setup](RUNTIME-SETUP.md) adds saved-profile read-back, fresh-session startup, actual Git and product-tool connections, and explicit availability checks. Existing bots are reconciled before creating new ones. [Readiness](READINESS.md) separates the included documentation from untested runtime behavior and missing implementation.

@@ -114,6 +114,9 @@ products/<product-id>/README.md
 products/<product-id>/access.md
 processes/<process-id>/README.md
 projects/<project-id>/README.md
+aides/README.md
+aides/<capability-id>/README.md
+operations/runtimes/<aide-id>.md
 registry/participants.json
 registry/teams.json
 roles/<aide-id>.md

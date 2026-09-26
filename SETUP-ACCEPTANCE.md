@@ -56,3 +56,7 @@ Store outcomes in dated transition and acceptance records. A documentation revie
 ## Employee-created shared specialist
 
 Use [the specialist acceptance template](templates/AIDE-ACCEPTANCE.md). Verify that an employee can prepare a proposal, obtain an actual scoped decision, build through supported tools and publish a usable package. A different colleague must discover it, submit an allowed request and receive a useful result through Git without access to the creator's session. Keep catalog publication, runtime activation, delivery and task quality separate. Exercise out-of-scope handling, repeated-request reconciliation, creator unavailability and operator handover. These checks are requirements, not recorded passes.
+
+## Runtime acceptance
+
+Use [runtime setup](RUNTIME-SETUP.md) and one [runtime record](templates/RUNTIME-RECORD.md) per actual instance. Require existing-profile reconciliation, saved-configuration read-back where available, fresh-session role persistence, verified per-tool scope and declared shared-environment limits. Test hosted execution, actual triggers, newly submitted work while the user's computer is unavailable, and cost separately whenever those capabilities are claimed. A native group acknowledgement is not a Git receipt; retain per-recipient evidence and label manual activation honestly.

@@ -45,3 +45,5 @@ A new session reads the checkpoint and reconciles remote records. For a new comp
 Read your team's `aides/README.md` during onboarding. Your agent can explain existing QA, Product or other specialists, their approved use and their availability. Follow [shared AIDEs](SHARED-AIDES.md) to use one.
 
 If a useful capability is missing, ask your agent to [prepare a proposal](CREATE-AIDE.md). After the manager's required approval, you can build it in your authorized instance, publish the reusable package and verify it with a colleague. You may own its maintenance; the manager does not need to operate it for you.
+
+Before marking your AIDE connected, use [runtime setup](RUNTIME-SETUP.md) to read back saved settings where supported and verify startup in a fresh session. Existing profile names do not prove access, persistence or isolation. Keep manual startup and missing product connections visible.

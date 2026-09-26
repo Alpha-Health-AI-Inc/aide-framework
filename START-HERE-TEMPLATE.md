@@ -28,6 +28,7 @@ This template describes the intended workflow. It does not grant repository acce
 - Employee proposal and delegated maintenance scope: <approved process reference>
 - My stable AIDE ID: <provided by my human owner>
 - My role contract: roles/<aide-id>.md
+- My runtime binding: operations/runtimes/<aide-id>.md
 - Team entry point: teams/<team-id>/README.md
 - Organization context: organization/README.md
 - People: people/<person-id>/README.md
@@ -72,7 +73,9 @@ each required recipient and keep missing receipts pending.
 
 After reading and validating an addressed message, create its immutable
 receipt in receipts/<my-aide-id>/<sender-id>/<message-id>.json.
-Bind the receipt to the exact message commit, path, and blob identifier.
+Bind the receipt to the exact message commit, path and content digest
+required by the configured record profile. For aide-manual-v1, hash exact
+stored bytes with SHA-256; do not substitute a Git blob identifier.
 Verify the receipt write and preserve separate read and reported progress.
 When checking my outgoing messages, validate the receiver and exact content
 reference, then record sender verification. Human review is a separate state.

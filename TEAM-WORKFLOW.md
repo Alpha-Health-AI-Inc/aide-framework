@@ -72,6 +72,9 @@ products/<product-id>/README.md       # Product context, owner and source links
 products/<product-id>/access.md       # Access instructions; no credentials
 processes/<process-id>/README.md      # Repeatable procedure and review owner
 projects/<project-id>/README.md       # Outcomes, scope and links to the other Ps
+aides/README.md                      # Discover shared capabilities
+aides/<capability-id>/README.md       # Definition, use and ownership
+operations/runtimes/<aide-id>.md      # Actual profile and connection evidence
 registry/
   participants.json                  # Stable participant IDs and authenticated identities
   teams.json                         # Membership and routing version
@@ -193,3 +196,7 @@ These generalized lessons inform the contract; they are not certification of a r
 Use the [pilot checks](ADOPTION.md) to test these behaviors with independent sessions before expanding the team.
 
 For provider selection and file or folder access research, see [enterprise deployment](ENTERPRISE.md).
+
+## Roster setup and runtime limits
+
+Use [runtime setup](RUNTIME-SETUP.md) to reconcile a planned roster with existing native profiles, retaining stable identities and history. Test Git delivery per recipient in bounded batches. Native chat groups and their size limits are client features, not the framework transport. A group reply alone does not prove a Git receipt or automatic wake-up. Record manual activation separately and leave missing recipients pending.

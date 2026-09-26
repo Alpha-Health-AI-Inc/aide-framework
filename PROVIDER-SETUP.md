@@ -33,3 +33,5 @@ An organization may require review before records enter the exchange branch. In 
 Prepare everything possible locally. Report the exact missing operation and the smallest next action: authenticate the selected provider, obtain the approved repository grant, or use a client with filesystem and Git access. Do not send the manager an open-ended implementation backlog.
 
 Keep a pure documentation review, local file setup, remote publication, authenticated multi-participant delivery and unattended operation as distinct results.
+
+Git access is one part of setup. Use [runtime setup](RUNTIME-SETUP.md) separately for saved profiles, role persistence, tools, shared resources and execution modes. A successful provider check does not establish that the agent will run unattended.

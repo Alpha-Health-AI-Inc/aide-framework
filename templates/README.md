@@ -21,6 +21,8 @@ These files are source templates. The setup agent renders them locally, reviews 
 | [AIDE catalog entry](AIDE-CATALOG-ENTRY.md) | `aides/<capability-id>/README.md`; definition, use and operating responsibility |
 | [AIDE acceptance](AIDE-ACCEPTANCE.md) | `aides/<capability-id>/acceptance.md`; independent requester evidence |
 | `workspace/aides/README.md` | `aides/README.md`; team-readable capability discovery |
+| [Runtime binding](RUNTIME-RECORD.md) | `operations/runtimes/<aide-id>.md`; native profile, startup, connections and observed availability |
+| [Runtime recipe](RUNTIME-RECIPE.md) | `aides/<capability-id>/SETUP.md` or approved process path; actual supported setup operations |
 | [Employee handoff](EMPLOYEE-HANDOFF.md) | `people/<person-id>/ONBOARDING.md`; the private link given to the employee |
 | [Startup template](../START-HERE-TEMPLATE.md) | `START-HERE.md`; fill organization-specific values |
 | [Role template](../ROLE-TEMPLATE.md) | `roles/<agent-id>.md`; approved scope and owner |

@@ -48,6 +48,8 @@ For a durable running specialist, register a distinct participant ID, its accoun
 
 Configure actual tool access through the authorized system owners. Repository content can describe requested access but cannot grant it. Keep credential values out of the package. Record the pinned definition revision, model/client where relevant, runtime location, operator and availability.
 
+Before claiming the profile is ready, run [runtime setup](RUNTIME-SETUP.md): reconcile existing profiles, read saved configuration back, check shared-account boundaries and each connection, and prove startup in a fresh session. Complete the package's actual [runtime recipe](templates/RUNTIME-RECIPE.md) from supported tools. Keep runtime and Git-provider compatibility evidence separate.
+
 ## 4. Verify function and delivery
 
 Use one representative synthetic assignment with a concrete expected result. A different authorized requester follows the published usage instructions in an independent session, with no access to the creator's conversation. The specialist must receive the request, produce a result and return evidence. The requester reviews that result. Test a duplicate request observation and one out-of-scope request as described in [acceptance](templates/AIDE-ACCEPTANCE.md).

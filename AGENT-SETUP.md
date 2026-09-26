@@ -55,6 +55,8 @@ Add `operations/setup-state.json` from the template. Track each stage as pending
 
 Create a continuity checkpoint for each manager and employee from [the template](templates/CONTINUITY.md). Include the pinned lifecycle/device-change procedures in private startup references. Record a confirmed backup operator, the approved backup route or its unresolved owner, and the one-publishing-session convention. Do not configure schedules or grants simply because an operator is named. For organization scope, use [the rollout runbook](ORG-ROLLOUT.md).
 
+Apply [runtime setup](RUNTIME-SETUP.md) to the manager and any configured AIDEs. Reuse verified existing profiles, inspect saved settings where supported, record missing integrations and test a fresh session. A role document alone does not establish runtime configuration. Store [runtime records](templates/RUNTIME-RECORD.md) for actual instances.
+
 ## 4. Publish and read back
 
 After the applicable authorization and authentication succeed, create or use the approved remote destination. Inspect the exact staged diff for scope and secret material. Stage specific intended files; do not blanket-add unrelated local work.

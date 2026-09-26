@@ -30,7 +30,8 @@
 ## Package and maintenance
 
 - `role.md`: completed approved role contract.
-- `SETUP.md`: supported execution steps and dependencies; unresolved capabilities stay explicit.
+- `SETUP.md`: concrete supported execution steps from the runtime recipe; unresolved capabilities stay explicit.
+- Runtime binding: `operations/runtimes/<aide-id>.md` for each operated instance, with saved-state, fresh-session, tool and availability evidence.
 - `examples/`: sanitized request and result examples.
 - `acceptance.md`: actual tests, observed results and independent requester evidence.
 - `continuity.md`: pending work, runtime and handover references for an operated specialist.

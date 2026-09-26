@@ -94,6 +94,10 @@ A published update remains available when the sender goes offline. Collection re
 
 The [enterprise investigation](ENTERPRISE.md) covers human and agent access, private deployment options, and Drive-like file and folder permissions. Granular access is a research and implementation goal. Folder names, recipient fields, and review rules do not provide confidential file access.
 
+## Readiness
+
+See [what is included and what still needs proof](READINESS.md) and [the design review](DESIGN-REVIEW.md). The next implementation gate is a concrete runtime recipe and an independent manager, employee and specialist workflow using actual tools.
+
 ## Documentation
 
 For implementation, begin with [manager setup](SETUP.md), [agent procedures](SKILLS.md), and [workspace templates](templates/README.md).

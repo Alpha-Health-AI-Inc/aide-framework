@@ -10,7 +10,11 @@
 | --- | --- | --- |
 | Scope and approval agree with deployed role and access | Not tested | |
 | Colleague discovers the package and follows it without creator chat access | Not tested | |
+| Existing profile matched and saved configuration read back | Not tested | |
+| Fresh session restores approved role and startup without earlier chat | Not tested | |
+| Shared-account boundaries and per-connector operation evidence recorded | Not tested | |
 | Actual instance identity, operator and availability are verified | Not tested | |
+| Execution, trigger, computer-unavailable behavior and cost tested separately where claimed | Not tested | |
 | Representative allowed request is received and receipted | Not tested | |
 | Useful reply references original request and actual execution evidence | Not tested | |
 | Requester receives result and human reviews quality | Not tested | |
