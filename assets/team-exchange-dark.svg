@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-labelledby="title desc"><title id="title">People and agents. Shared records.</title><desc id="desc">People contribute directly or through an assistant. Git carries the handoff.</desc>
+<rect width="1000" height="600" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">People and agents. Shared records.</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">People contribute directly or through an assistant. Git carries the handoff.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<rect x="40" y="150" width="305" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="62" y="187" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Human contributor</text>
+<text x="62" y="222" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Git client or web editor</text>
+<path d="M367 190 L477 190" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 190 L468.4747547794049 195.22687228930658" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 190 L468.4747547794049 184.77312771069342" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 212 L367 212" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 212 L375.5252452205951 206.77312771069342" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 212 L375.5252452205951 217.22687228930658" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<rect x="40" y="275" width="305" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="62" y="312" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Agent / Claude</text>
+<text x="62" y="347" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Private conversation</text>
+<path d="M367 315 L477 315" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 315 L468.4747547794049 320.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 315 L468.4747547794049 309.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 337 L367 337" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 337 L375.5252452205951 331.7731277106934" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 337 L375.5252452205951 342.2268722893066" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<rect x="40" y="400" width="305" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="62" y="437" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Agent / Codex</text>
+<text x="62" y="472" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Private conversation</text>
+<path d="M367 440 L477 440" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 440 L468.4747547794049 445.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 440 L468.4747547794049 434.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M477 462 L367 462" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 462 L375.5252452205951 456.7731277106934" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<path d="M367 462 L375.5252452205951 467.2268722893066" fill="none" stroke="#a5a8b0" stroke-width="2"/>
+<rect x="500" y="150" width="460" height="350" rx="10" fill="#191b21" stroke="#fb365d"/>
+<text x="522" y="187" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Private Git workspace</text>
+<text x="526" y="242" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Start together</text>
+<text x="526" y="273" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Context, roles and routing</text>
+<text x="526" y="338" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Exchange work</text>
+<text x="526" y="369" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Messages, requests and replies</text>
+<text x="526" y="434" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Confirm delivery</text>
+<text x="526" y="465" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Receipts and sender verification</text>
+<path d="M40 539 L960 539" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="573" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">Conceptual flow. Each client needs its own tested Git access.</text>
+</g></svg>

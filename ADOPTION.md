@@ -1,6 +1,6 @@
 # Pilot guide
 
-Start with one internal workflow whose outcome can be measured. Use two independent sessions, such as a QA assistant and a delivery assistant, with no mutual session access. They must obtain shared context and complete the handoff through GitHub alone.
+Start with one internal workflow whose outcome can be measured. Use two independent sessions, such as a QA assistant and a delivery assistant, with no mutual session access. They must obtain shared context and complete the handoff through Git alone.
 
 This guide defines acceptance requirements for an implementation. It is not a record of completed tests.
 
@@ -20,6 +20,13 @@ Choose the identity provider, repository host, model vendor, and execution envir
 
 ## Run the pilot
 
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pilot-path-dark.svg">
+  <img src="assets/pilot-path.svg" alt="Pilot stages: prepare private context; connect and test access; prove publication, receipt and verification; review recovery, quality and human acceptance." width="100%">
+</picture>
+</p>
+
 1. **Prepare shared context.** Create a private operational repository, choose the exact exchange branch, and complete the [startup entry point](START-HERE-TEMPLATE.md). Follow the [team layout](TEAM-WORKFLOW.md). Keep internal content out of public forks.
 2. **Define the assignment.** Name the outcome, owner, recipients, allowed actions, and evidence requirements. Complete a [role contract](ROLE-TEMPLATE.md).
 3. **Configure access.** Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
@@ -31,10 +38,13 @@ Two to five AIDEs and one workflow provide a manageable initial scope. Set servi
 
 ## Acceptance checks
 
+<details>
+<summary>Full acceptance checklist: 24 scenarios</summary>
+
 | Scenario | Expected result |
 | --- | --- |
 | Fresh isolated session | Reads the approved startup entry point, identifies its role and context revision, and recovers pending delivery without another session’s history. |
-| Different runtime | A second configured client completes publish, receipt, and verify through GitHub only; no vendor integration is assumed. |
+| Different runtime | A second configured client completes publish, receipt, and verify through Git only; no vendor integration is assumed. |
 | Deliberately scoped update | Selected findings and priority are preserved; unrelated chat content is excluded. |
 | Team fan-out | Explicit recipient IDs and routing version are stored; partial receipts remain visible. |
 | Recipient reassignment | New messages use current routing; old messages are not silently re-addressed. |
@@ -53,7 +63,12 @@ Two to five AIDEs and one workflow provide a manageable initial scope. Set servi
 | Instructions embedded in a message | The message cannot expand permissions or change the assignment. |
 | Credential revoked | Actual storage and tool access are denied. |
 | Separate tenant or restricted team | Unauthorized reads and writes fail at the access layer. |
+| Human participant | A person publishes, receives and verifies through the same record contract; an agent receipt cannot impersonate human review. |
+| Provider portability | Repeat the synthetic delivery and recovery suite on each selected provider; record tested provider and adapter versions. |
+| Path restriction proposal | Denied content cannot be fetched through alternate refs, raw objects, APIs, search or direct storage access. |
 | Human review pending | Delivery remains distinct from review and acceptance. |
+
+</details>
 
 ## Measure performance
 
@@ -79,3 +94,5 @@ Load tests should vary participant count, message volume, artifact size, and con
 Transfer pending work and reassign recipients explicitly. The responsible operators revoke credentials, integrations, and schedules, then verify the result. Preserve required evidence under the retention policy and update the registry.
 
 Archiving a conversation does not revoke system access.
+
+Before enterprise rollout, complete the [deployment and access investigation](ENTERPRISE.md). No provider or access model is certified by this document alone.

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="580" viewBox="0 0 1000 580" role="img" aria-labelledby="title desc"><title id="title">A team update has several deliveries</title><desc id="desc">Illustrative routing snapshot: release-team → qa, delivery, product.</desc>
+<rect width="1000" height="580" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">A team update has several deliveries</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Illustrative routing snapshot: release-team → qa, delivery, product.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<rect x="40" y="220" width="280" height="150" rx="10" fill="#191b21" stroke="#fb365d"/>
+<text x="62" y="257" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Message QA-042</text>
+<text x="62" y="292" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Explicit recipient IDs</text>
+<text x="62" y="322" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Routing version: 7</text>
+<path d="M340 295 L405 295" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M405 175 L405 435" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M405 175 L450 175" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 175 L441.4747547794049 180.22687228930658" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 175 L441.4747547794049 169.77312771069342" fill="none" stroke="#fb365d" stroke-width="2"/>
+<rect x="475" y="125" width="485" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="497" y="162" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">qa</text>
+<text x="497" y="197" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Receipt stored</text>
+<path d="M405 305 L450 305" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 305 L441.4747547794049 310.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 305 L441.4747547794049 299.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<rect x="475" y="255" width="485" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="497" y="292" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">delivery</text>
+<text x="497" y="327" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Receipt stored</text>
+<path d="M405 435 L450 435" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 435 L441.4747547794049 440.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M450 435 L441.4747547794049 429.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<rect x="475" y="385" width="485" height="100" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="497" y="422" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">product</text>
+<text x="497" y="457" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Pending collection</text>
+<path d="M40 519 L960 519" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="553" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">Two of three receipts is partial delivery. A coordinator cannot receipt for all.</text>
+</g></svg>

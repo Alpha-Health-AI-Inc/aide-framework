@@ -10,7 +10,8 @@ This template describes the intended workflow. It does not grant repository acce
 ## Deployment
 
 - Organization: <organization-id>
-- Shared repository: <private GitHub repository URL>
+- Git provider and adapter version: <deployment configuration>
+- Shared repository: <private Git repository URL>
 - Exchange branch: <exact branch>
 - Approved context revision or review process: <reference>
 - Participants: registry/participants.json
@@ -35,7 +36,7 @@ State the context revision, source dates, assigned scope, and access gaps.
 
 ## Team coordination
 
-Use this GitHub exchange for every cross-session request, update, reply,
+Use this Git exchange for every cross-session request, update, reply,
 and acknowledgement. Do not depend on access to another agent's session.
 Read permitted shared context and addressed messages. Publish deliberate
 updates within my role and my human's selected scope. Include source dates

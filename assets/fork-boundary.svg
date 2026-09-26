@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="550" viewBox="0 0 1000 550" role="img" aria-labelledby="title desc"><title id="title">Reusable project. Private team workspace.</title><desc id="desc">Keep the framework separate from the organization using it.</desc>
+<rect width="1000" height="550" rx="16" fill="#ffffff"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#14171b">Reusable project. Private team workspace.</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#5e626b">Keep the framework separate from the organization using it.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#dfe1e6" stroke-width="2"/>
+<rect x="40" y="152" width="400" height="140" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
+<text x="62" y="189" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">Public upstream</text>
+<text x="62" y="224" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Design + reusable templates</text>
+<text x="62" y="254" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Alpha Health AI origin · MIT license</text>
+<path d="M240 302 L240 337" fill="none" stroke="#e52349" stroke-width="2"/>
+<path d="M240 337 L234.77312771069342 328.4747547794049" fill="none" stroke="#e52349" stroke-width="2"/>
+<path d="M240 337 L245.22687228930658 328.4747547794049" fill="none" stroke="#e52349" stroke-width="2"/>
+<rect x="40" y="351" width="400" height="120" rx="10" fill="#f6f7f9" stroke="#dfe1e6"/>
+<text x="62" y="388" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">Your public fork</text>
+<text x="62" y="423" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Adapted design + synthetic tests</text>
+<path d="M500 145 L500 466" fill="none" stroke="#dfe1e6" stroke-width="2" stroke-dasharray="6 6"/>
+<rect x="560" y="152" width="400" height="319" rx="10" fill="#f6f7f9" stroke="#e52349"/>
+<text x="582" y="189" font-size="24" font-weight="700" text-anchor="start" fill="#14171b">Your private deployment</text>
+<text x="582" y="224" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Reviewed company context</text>
+<text x="582" y="254" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">People, roles and recipients</text>
+<text x="582" y="284" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Messages + receipts</text>
+<text x="582" y="314" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Approved runtime configuration</text>
+<path d="M40 489 L960 489" fill="none" stroke="#dfe1e6" stroke-width="2"/>
+<text x="40" y="523" font-size="19" font-weight="400" text-anchor="start" fill="#5e626b">Create the private workspace separately. Keep credentials in approved storage.</text>
+</g></svg>

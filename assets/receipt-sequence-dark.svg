@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-labelledby="title desc"><title id="title">How the sender knows it arrived</title><desc id="desc">One message, one exact-content receipt, one sender verification.</desc>
+<rect width="1000" height="660" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">How the sender knows it arrived</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">One message, one exact-content receipt, one sender verification.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="175" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Sender</text>
+<path d="M175 182 L175 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="500" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Git</text>
+<path d="M500 182 L500 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="825" y="159" font-size="24" font-weight="700" text-anchor="middle" fill="#f4f5f7">Receiver</text>
+<path d="M825 182 L825 541" fill="none" stroke="#343740" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="200" y="205" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">1  Publish message</text>
+<path d="M175 224 L500 224" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 224 L491.4747547794049 229.22687228930658" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 224 L491.4747547794049 218.77312771069342" fill="none" stroke="#fb365d" stroke-width="2"/>
+<text x="540" y="275" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">2  Read + validate</text>
+<path d="M500 294 L825 294" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M825 294 L816.474754779405 299.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M825 294 L816.474754779405 288.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<text x="540" y="345" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">3  Store receipt</text>
+<path d="M825 364 L500 364" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 364 L508.5252452205951 358.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 364 L508.5252452205951 369.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<text x="200" y="415" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">4  Check receipt</text>
+<path d="M500 434 L175 434" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M175 434 L183.52524522059505 428.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M175 434 L183.52524522059505 439.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<text x="200" y="485" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">5  Store verification</text>
+<path d="M175 504 L500 504" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 504 L491.4747547794049 509.2268722893066" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M500 504 L491.4747547794049 498.7731277106934" fill="none" stroke="#fb365d" stroke-width="2"/>
+<text x="40" y="571" font-size="23" font-weight="600" text-anchor="start" fill="#f4f5f7">Human review happens separately, after delivery.</text>
+<path d="M40 599 L960 599" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="633" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">Each arrow requires an active session or worker. Git does not wake it.</text>
+</g></svg>

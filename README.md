@@ -1,11 +1,12 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/aide-framework-cover-dark.svg">
-    <img src="assets/aide-framework-cover.svg" alt="AIDE Framework. Your agents. One shared workspace." width="100%">
+    <img src="assets/aide-framework-cover.svg" alt="AIDE Framework. Humans and agents. One shared Git workspace." width="100%">
   </picture>
 </p>
 
 <p align="center">
+  <a href="VISUAL-GUIDE.md">Visual tour</a> &nbsp; / &nbsp;
   <a href="TEAM-WORKFLOW.md">Team workflow</a> &nbsp; / &nbsp;
   <a href="ARCHITECTURE.md">Architecture</a> &nbsp; / &nbsp;
   <a href="ADOPTION.md">Pilot guide</a> &nbsp; / &nbsp;
@@ -14,9 +15,11 @@
 
 # AIDE Framework
 
-A reference design for a shared GitHub workspace for teams using separate AI assistants. People keep working in their own Claude, Codex, Hermes, or other sessions. Their assistants read common project context, publish selected updates from their own folders, and confirm delivery through receipts.
+A shared Git workspace for humans and AI agents to communicate, learn the project context, and hand work to one another. People can contribute directly or through Claude, Codex, Hermes, or another assistant. Everyone uses the same durable records, explicit recipients, and delivery receipts.
 
-**GitHub is the team’s coordination layer.** No session needs access to another session or a direct chat connection. Context, requests, replies, updates, and receipts all travel through the repository. Each assistant has a stable identity, a human owner, and a defined scope.
+**Git is the team’s coordination layer.** No session needs access to another session or a direct chat connection. Context, requests, replies, updates, and receipts all travel through the repository. Each participant has a stable identity and a defined scope. Agent identities also name their accountable human owner.
+
+**Choose your Git provider:** GitHub, GitLab, Bitbucket, Azure Repos, or self-hosted Git. The contract is provider-neutral; adapters and enterprise controls must be implemented and verified for each deployment.
 
 > **Project status:** Version 0.1 contains documentation and templates. The runtime and SDK are planned.
 
@@ -35,21 +38,41 @@ The records distinguish publication, receipt, sender verification, human review,
 
 ## Start with one workflow
 
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pilot-path-dark.svg">
+  <img src="assets/pilot-path.svg" alt="Pilot stages: prepare private context; connect and test access; prove publication, receipt and verification; review recovery, quality and human acceptance." width="100%">
+</picture>
+</p>
+
 **1. Establish the shared workspace.** Follow the [team workflow](TEAM-WORKFLOW.md) to organize shared context, teams, roles, and each sender’s folder in a private repository. Use the [startup template](START-HERE-TEMPLATE.md) to bring a new session up to speed.
 
-**2. Connect independent sessions.** Define each [role](ROLE-TEMPLATE.md), verify its permitted GitHub access, and use the [architecture](ARCHITECTURE.md) for publishing, receipts, and recovery.
+**2. Connect independent sessions.** Define each [role](ROLE-TEMPLATE.md), verify its permitted Git access, and use the [architecture](ARCHITECTURE.md) for publishing, receipts, and recovery.
 
-**3. Prove the handoff.** Run the [pilot checks](ADOPTION.md) with two isolated sessions. Verify publication, receipt, and sender confirmation using GitHub alone.
+**3. Prove the handoff.** Run the [pilot checks](ADOPTION.md) with two isolated sessions. Verify publication, receipt, and sender confirmation using Git alone.
 
 ## Use your own systems
 
-Choose your models, tools, identity provider, and execution environment. GitHub is the required exchange for the initial team workflow. Each tool’s configured access must be tested; this project does not ship vendor integrations. Keep business rules and operating hours in deployment configuration.
+<p>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/fork-boundary-dark.svg">
+  <img src="assets/fork-boundary.svg" alt="Public upstream contains reusable design. A public fork contains adaptations and synthetic examples. A separate private deployment holds organization context and operational records." width="100%">
+</picture>
+</p>
+
+Choose your models, tools, identity provider, and execution environment. The exchange uses a shared Git repository on your chosen provider. Each tool’s configured access must be tested; this project does not ship vendor integrations. Keep business rules and operating hours in deployment configuration.
 
 Operational messages stay in your private deployment, separate from this public project. Credentials stay in approved credential storage.
 
 A published update remains available when the sender goes offline. Collection requires an active session or worker. Manual checks work; automatic collection needs a configured and tested trigger.
 
+## Enterprise deployment
+
+The [enterprise investigation](ENTERPRISE.md) covers human and agent access, private deployment options, and Drive-like file and folder permissions. Granular access is a research and implementation goal. Folder names, recipient fields, and review rules do not provide confidential file access.
+
 ## Documentation
+
+Start with the [visual tour](VISUAL-GUIDE.md) for a short illustrated walkthrough.
 
 - [Team workflow](TEAM-WORKFLOW.md): shared context, team routing, daily use, and delivery lessons.
 - [Startup template](START-HERE-TEMPLATE.md): an entry point for independent sessions.
@@ -57,13 +80,15 @@ A published update remains available when the sender goes offline. Collection re
 - [Pilot guide](ADOPTION.md): deployment decisions, acceptance checks, and scale measurements.
 - [Role template](ROLE-TEMPLATE.md): a reusable operating contract for each assistant.
 - [Fork guide](FORK-GUIDE.md): setup instructions and a brief for Claude or another implementation assistant.
+- [Enterprise investigation](ENTERPRISE.md): access boundaries, provider adapters, and deployment acceptance.
 - [Branding](BRANDING.md): visual conventions and adapting the identity for your fork.
 
 ## Roadmap
 
-- Versioned schemas and synthetic fixtures.
+- Human and agent participant schemas, plus synthetic fixtures.
+- Provider adapters and enterprise access-control research.
 - Publish, collect, receipt, and verify operations with persistent state.
 - Recovery tests and an operator delivery-status view.
 - Runtime integrations and measured deployment limits.
 
-AIDE stands for **Ambient Intelligent Digital Employee**. Originally published by Alpha Health. [MIT License](LICENSE).
+AIDE stands for **Ambient Intelligent Digital Employee**. Originally published by Alpha Health AI. [MIT License](LICENSE).

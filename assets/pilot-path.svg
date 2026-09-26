@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="555" viewBox="0 0 1000 555" role="img" aria-labelledby="title desc"><title id="title">Prove one workflow before expanding</title><desc id="desc">Start with two isolated sessions and synthetic records.</desc>
+<rect width="1000" height="555" rx="16" fill="#ffffff"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#14171b">Prove one workflow before expanding</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#5e626b">Start with two isolated sessions and synthetic records.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#dfe1e6" stroke-width="2"/>
+<text x="40" y="177" font-size="32" font-weight="700" text-anchor="start" fill="#e52349">1</text>
+<text x="40" y="219" font-size="25" font-weight="700" text-anchor="start" fill="#14171b">Prepare</text>
+<text x="40" y="260" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Private repo + branch</text>
+<text x="40" y="290" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Context + owners</text>
+<path d="M232 205 L263 205" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M263 205 L254.47475477940495 210.22687228930658" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M263 205 L254.47475477940495 199.77312771069342" fill="none" stroke="#5e626b" stroke-width="2"/>
+<text x="280" y="177" font-size="32" font-weight="700" text-anchor="start" fill="#e52349">2</text>
+<text x="280" y="219" font-size="25" font-weight="700" text-anchor="start" fill="#14171b">Connect</text>
+<text x="280" y="260" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Test Git access</text>
+<text x="280" y="290" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Confirm recipients</text>
+<path d="M472 205 L503 205" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M503 205 L494.4747547794049 210.22687228930658" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M503 205 L494.4747547794049 199.77312771069342" fill="none" stroke="#5e626b" stroke-width="2"/>
+<text x="520" y="177" font-size="32" font-weight="700" text-anchor="start" fill="#e52349">3</text>
+<text x="520" y="219" font-size="25" font-weight="700" text-anchor="start" fill="#14171b">Prove</text>
+<text x="520" y="260" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Message → receipt</text>
+<text x="520" y="290" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Sender verification</text>
+<path d="M712 205 L743 205" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M743 205 L734.474754779405 210.22687228930658" fill="none" stroke="#5e626b" stroke-width="2"/>
+<path d="M743 205 L734.474754779405 199.77312771069342" fill="none" stroke="#5e626b" stroke-width="2"/>
+<text x="760" y="177" font-size="32" font-weight="700" text-anchor="start" fill="#e52349">4</text>
+<text x="760" y="219" font-size="25" font-weight="700" text-anchor="start" fill="#14171b">Review</text>
+<text x="760" y="260" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Recovery + quality</text>
+<text x="760" y="290" font-size="21" font-weight="400" text-anchor="start" fill="#5e626b">Human acceptance</text>
+<path d="M40 337 L960 337" fill="none" stroke="#dfe1e6" stroke-width="2"/>
+<text x="40" y="383" font-size="25" font-weight="700" text-anchor="start" fill="#14171b">Measure the handoff</text>
+<text x="40" y="424" font-size="22" font-weight="400" text-anchor="start" fill="#5e626b">Delivery delay · Recovery time · Manual intervention</text>
+<text x="40" y="454" font-size="22" font-weight="400" text-anchor="start" fill="#5e626b">Report quality · Cost per accepted handoff · Human time saved</text>
+<path d="M40 494 L960 494" fill="none" stroke="#dfe1e6" stroke-width="2"/>
+<text x="40" y="528" font-size="19" font-weight="400" text-anchor="start" fill="#5e626b">Acceptance requirements, not completed results. No runtime ships in v0.1.</text>
+</g></svg>

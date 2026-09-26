@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="665" viewBox="0 0 1000 665" role="img" aria-labelledby="title desc"><title id="title">A QA report people can act on</title><desc id="desc">Synthetic example. This is a specification with a separate execution record.</desc>
+<rect width="1000" height="665" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">A QA report people can act on</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Synthetic example. This is a specification with a separate execution record.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="155" font-size="18" font-weight="700" text-anchor="start" fill="#fb365d">FINDING</text>
+<text x="40" y="190" font-size="24" font-weight="600" text-anchor="start" fill="#f4f5f7">Export behavior is specified; execution is still pending.</text>
+<rect x="40" y="225" width="920" height="245" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="62" y="262" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Feature: Export a project report</text>
+<text x="62" y="302" font-size="22" font-weight="600" text-anchor="start" fill="#fb365d">Scenario</text>
+<text x="220" y="302" font-size="23" font-weight="400" text-anchor="start" fill="#f4f5f7">Export a permitted project</text>
+<text x="62" y="347" font-size="22" font-weight="600" text-anchor="start" fill="#fb365d">Given</text>
+<text x="220" y="347" font-size="23" font-weight="400" text-anchor="start" fill="#f4f5f7">I can view the project</text>
+<text x="62" y="392" font-size="22" font-weight="600" text-anchor="start" fill="#fb365d">When</text>
+<text x="220" y="392" font-size="23" font-weight="400" text-anchor="start" fill="#f4f5f7">I request its report</text>
+<text x="62" y="437" font-size="22" font-weight="600" text-anchor="start" fill="#fb365d">Then</text>
+<text x="220" y="437" font-size="23" font-weight="400" text-anchor="start" fill="#f4f5f7">The export contains only that project</text>
+<text x="40" y="515" font-size="18" font-weight="700" text-anchor="start" fill="#fb365d">EXECUTION</text>
+<text x="40" y="550" font-size="22" font-weight="400" text-anchor="start" fill="#a5a8b0">Not run · No pass/fail result · No test evidence yet</text>
+<text x="40" y="580" font-size="22" font-weight="400" text-anchor="start" fill="#a5a8b0">Record environment, revision and evidence when the test runs.</text>
+<path d="M40 604 L960 604" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="638" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">Include recipient, observation date, priority and requested action in the message.</text>
+</g></svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="585" viewBox="0 0 1000 585" role="img" aria-labelledby="title desc"><title id="title">One collaboration model. Scoped access.</title><desc id="desc">Enterprise investigation: choose and verify the actual enforcement boundary.</desc>
+<rect width="1000" height="585" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">One collaboration model. Scoped access.</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Enterprise investigation: choose and verify the actual enforcement boundary.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<rect x="40" y="151" width="280" height="132" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="62" y="188" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Participants</text>
+<text x="62" y="223" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Humans + agents</text>
+<text x="62" y="253" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Separate identities</text>
+<path d="M340 216 L440 216" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M440 216 L431.4747547794049 221.22687228930658" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M440 216 L431.4747547794049 210.77312771069342" fill="none" stroke="#fb365d" stroke-width="2"/>
+<rect x="460" y="151" width="500" height="132" rx="10" fill="#191b21" stroke="#fb365d"/>
+<text x="482" y="188" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Access enforcement</text>
+<text x="482" y="223" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Provider permissions or a proposed gateway</text>
+<text x="482" y="253" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Authenticate, authorize and audit</text>
+<path d="M590 300 L590 343" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M590 343 L584.7731277106934 334.4747547794049" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M590 343 L595.2268722893066 334.4747547794049" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M840 300 L840 343" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M840 343 L834.7731277106934 334.4747547794049" fill="none" stroke="#fb365d" stroke-width="2"/>
+<path d="M840 343 L845.2268722893066 334.4747547794049" fill="none" stroke="#fb365d" stroke-width="2"/>
+<rect x="460" y="362" width="230" height="119" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="482" y="399" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Shared context</text>
+<text x="482" y="434" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Permitted records</text>
+<rect x="730" y="362" width="230" height="119" rx="10" fill="#191b21" stroke="#343740"/>
+<text x="752" y="399" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Restricted work</text>
+<text x="752" y="434" font-size="21" font-weight="400" text-anchor="start" fill="#a5a8b0">Separate boundary</text>
+<text x="40" y="376" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Git provider</text>
+<text x="40" y="414" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">GitHub · GitLab · Bitbucket</text>
+<text x="40" y="444" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Azure Repos · Self-hosted</text>
+<path d="M40 524 L960 524" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="558" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">A proposed gateway only protects content when direct storage bypass is blocked.</text>
+</g></svg>

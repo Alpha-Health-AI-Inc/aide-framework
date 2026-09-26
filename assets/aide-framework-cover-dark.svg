@@ -1,23 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-labelledby="title desc">
-<title id="title">AIDE Framework</title><desc id="desc">Independent agent sessions exchange shared context and handoffs through GitHub.</desc>
+<title id="title">AIDE Framework</title><desc id="desc">Humans and agents exchange shared context and handoffs through a shared Git repository.</desc>
 <rect x="1" y="1" width="1198" height="418" rx="16" fill="#101114" stroke="#30333b"/>
 <g font-family="Inter,Arial,Helvetica,sans-serif">
 <path d="M48 54H73" stroke="#fb365d" stroke-width="4"/>
 <text x="86" y="61" fill="#a5a8b0" font-size="18" letter-spacing="2">OPEN FRAMEWORK</text>
 <text x="48" y="157" fill="#f4f5f7" font-size="66" font-weight="700" letter-spacing="-2.4">AIDE Framework</text>
-<text x="48" y="216" fill="#f4f5f7" font-size="26">Independent sessions.</text>
+<text x="48" y="216" fill="#f4f5f7" font-size="26">Humans and agents.</text>
 <text x="48" y="253" fill="#a5a8b0" font-size="24">Shared context and confirmed handoffs.</text>
 <path d="M688 48V306" stroke="#30333b"/>
 <path d="M796 144V181H944V214M944 144V214M1092 144V181H944" stroke="#a5a8b0" stroke-width="2" fill="none"/>
-<rect x="736" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="796" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Agent 01</text>
-<rect x="884" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="944" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Agent 02</text>
-<rect x="1032" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="1092" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Agent 03</text>
+<rect x="736" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="796" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Human</text>
+<rect x="884" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="944" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Agent A</text>
+<rect x="1032" y="88" width="120" height="56" rx="8" fill="#181a1f" stroke="#30333b"/><text x="1092" y="123" text-anchor="middle" fill="#f4f5f7" font-size="20" font-weight="600">Agent B</text>
 <circle cx="944" cy="181" r="5" fill="#fb365d"/>
 <rect x="788" y="214" width="312" height="92" rx="10" fill="#181a1f" stroke="#30333b"/>
 <rect x="788" y="236" width="3" height="48" fill="#fb365d"/>
-<text x="944" y="252" text-anchor="middle" fill="#f4f5f7" font-size="27" font-weight="700">GitHub</text>
+<text x="944" y="252" text-anchor="middle" fill="#f4f5f7" font-size="27" font-weight="700">Git</text>
 <text x="944" y="283" text-anchor="middle" fill="#a5a8b0" font-size="20">Shared workspace</text>
 <path d="M48 340H1152" stroke="#30333b"/>
 <text x="48" y="382" fill="#a5a8b0" font-size="18">Documentation + templates / v0.1</text>
-<text x="1152" y="382" text-anchor="end" fill="#a5a8b0" font-size="17">Originated at Alpha Health</text>
+<text x="1152" y="382" text-anchor="end" fill="#a5a8b0" font-size="17">Originated at Alpha Health AI</text>
 </g></svg>

@@ -6,7 +6,7 @@ Complete this template before activating an AIDE. Record unresolved fields as pe
 | --- | --- |
 | Identity | Stable organization and AIDE identifiers |
 | Team | Membership, project scope, routing version, and explicit permitted recipients |
-| GitHub workspace | Repository, exact exchange branch, approved entry point, sender folder, and receipt paths |
+| Git provider and workspace | Repository, exact exchange branch, approved entry point, sender folder, and receipt paths |
 | Purpose | Assigned responsibility and measurable outcome |
 | Ownership | Human owner and backup |
 | Execution | Runtime identity and credential reference, never a secret value |
@@ -25,7 +25,7 @@ Read the private deployment’s `START-HERE.md`, current role contract, reviewed
 
 ## Delivery
 
-Use GitHub for cross-session requests, replies, updates, and receipts. Preserve the human’s selected subject and priority. Distinguish QA specifications from test execution and evidence.
+Use Git for cross-session requests, replies, updates, and receipts. Preserve the human’s selected subject and priority. Distinguish QA specifications from test execution and evidence.
 
 Retain each published message's ID and exact content reference. During the next authorized run, check the matching receipt. Mark it verified only after checking receiver identity and content. Keep missing receipts pending and avoid duplicate publication. Record human review and acceptance separately.
 

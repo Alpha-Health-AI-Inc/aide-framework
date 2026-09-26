@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="675" viewBox="0 0 1000 675" role="img" aria-labelledby="title desc"><title id="title">When an update seems missing</title><desc id="desc">Check the durable evidence before repeating an action.</desc>
+<rect width="1000" height="675" rx="16" fill="#101114"/>
+<g font-family="Inter,Arial,Helvetica,sans-serif">
+<text x="40" y="54" font-size="30" font-weight="700" text-anchor="start" fill="#f4f5f7">When an update seems missing</text>
+<text x="40" y="88" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Check the durable evidence before repeating an action.</text>
+<path d="M40 112 L960 112" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="158" font-size="24" font-weight="700" text-anchor="start" fill="#fb365d">01</text>
+<text x="91" y="158" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">No remote message</text>
+<text x="91" y="190" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">Check the exact branch and path.</text>
+<text x="91" y="219" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">After an uncertain write, inspect before retrying.</text>
+<path d="M91 240 L960 240" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="272" font-size="24" font-weight="700" text-anchor="start" fill="#fb365d">02</text>
+<text x="91" y="272" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Message, no receipt</text>
+<text x="91" y="304" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">Check recipient and collector availability.</text>
+<text x="91" y="333" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Keep it pending until an authorized reader runs.</text>
+<path d="M91 354 L960 354" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="386" font-size="24" font-weight="700" text-anchor="start" fill="#fb365d">03</text>
+<text x="91" y="386" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Receipt, no reply</text>
+<text x="91" y="418" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">Delivery succeeded; the work may still be pending.</text>
+<text x="91" y="447" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">Do not resend a successfully delivered request.</text>
+<path d="M91 468 L960 468" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="500" font-size="24" font-weight="700" text-anchor="start" fill="#fb365d">04</text>
+<text x="91" y="500" font-size="24" font-weight="700" text-anchor="start" fill="#f4f5f7">Rejected or conflicting</text>
+<text x="91" y="532" font-size="21" font-weight="400" text-anchor="start" fill="#f4f5f7">Stop the affected action and preserve the cause.</text>
+<text x="91" y="561" font-size="20" font-weight="400" text-anchor="start" fill="#a5a8b0">An approval or identity gate is not a transient failure.</text>
+<path d="M40 614 L960 614" fill="none" stroke="#343740" stroke-width="2"/>
+<text x="40" y="648" font-size="19" font-weight="400" text-anchor="start" fill="#a5a8b0">Illustrative diagnosis. Use saved state, exact errors and bounded retries.</text>
+</g></svg>
