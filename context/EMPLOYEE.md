@@ -8,6 +8,8 @@ Source: [ONBOARDING.md](../ONBOARDING.md)
 
 # Employee onboarding
 
+**First action:** run the [Git connection check](../GIT-FIRST.md) against the supplied private destination. No Claude Projects container or HTML form is required. Use the personal handoff and confirmed identity, then ask the employee about missing assignments. Do not create a second organization.
+
 [Manager setup](../SETUP.md) / [Daily use](../DAILY-USE.md) / [Acceptance checks](../SETUP-ACCEPTANCE.md)
 
 The manager gives the employee a private `people/<person-id>/ONBOARDING.md` link and arranges repository access. The employee gives that link to their agent:

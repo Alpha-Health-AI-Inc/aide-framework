@@ -1,5 +1,7 @@
 # Start in Claude Projects
 
+This is an optional context-reading route. For local setup and publication, [Claude Code onboarding](CLAUDE-CODE.md) checks actual Git access first and does not require Projects. Sync is not a provider write connection.
+
 [Openable HTML guide](onboard.html) / [Manager setup](SETUP.md) / [Employee onboarding](ONBOARDING.md)
 
 Create a project in Claude Desktop or the web app. Choose a name such as your organization's knowledgebase name, then provide that name explicitly in the onboarding brief or project instructions. A project label is not automatically model context.

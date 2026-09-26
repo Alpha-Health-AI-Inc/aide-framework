@@ -1,5 +1,7 @@
 # Open, choose, hand off
 
+**Start with Git access:** In Claude Code or another local agent, paste the [single onboarding prompt](CLAUDE-CODE.md). It checks the actual Git connection before building files. No Projects setup or browser launch is required. The HTML route below is optional.
+
 Use [onboard.html](onboard.html) as the human entry point. It runs locally in a browser, with no build, server or external assets. Both managers and employees use the same file and choose their own path.
 
 ## Claude Projects

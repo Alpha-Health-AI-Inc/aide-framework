@@ -1,5 +1,7 @@
 # Set up your team
 
+**First action:** use [Git-first onboarding](GIT-FIRST.md) to verify tools, authentication and destination before collecting a roster or generating organization files. For Claude Code, use the [single-prompt route](CLAUDE-CODE.md). The workspace administrator creates the organization foundation; managers can then join it and prepare their team areas.
+
 [Overview](README.md) / [Employee onboarding](ONBOARDING.md) / [Daily use](DAILY-USE.md)
 
 Give your agent the link below. It prepares the workspace and explains what needs your approval. You authenticate with your Git provider and approve the proposed scope. You do not need to design a folder structure or write operating instructions.

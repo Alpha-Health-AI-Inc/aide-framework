@@ -1,5 +1,7 @@
 # Choose the execution route
 
+Start with [GIT-FIRST.md](GIT-FIRST.md). Confirm the route exists and authentication works before preparing the organization workspace. The absence of MCP does not block an already working approved Git/CLI route.
+
 This guide tells the setup agent how to use the organization's existing Git environment. It does not install provider integrations or certify compatibility.
 
 ## Prefer what is already approved

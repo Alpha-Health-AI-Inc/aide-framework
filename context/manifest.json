@@ -3,36 +3,36 @@
   "measurement": "UTF-8 bytes and whitespace-delimited words. Not token counts or provider capacity.",
   "packs": {
     "MANAGER.md": {
-      "bytes": 24440,
-      "words": 3264,
-      "sha256": "72fdc0f4a731aea9b24f55892273de6c3df6f29a2efc7fe6c8aeb17edbfb92dd",
+      "bytes": 26199,
+      "words": 3495,
+      "sha256": "2ca0356457df9277e8ab23a0566894647ffbaf745c6b28b647537ed6a62bdd94",
       "sources": {
-        "SETUP.md": "a2e2128c1d1240999eb1d7166f2d378486b78e905fff42869d23c4f9fcec1fe3",
-        "AGENT-SETUP.md": "2094600cf6f1af23d3b4ed44db499b7ef257a3bf2fcaf55d3c41aa4a0d13fb80",
+        "SETUP.md": "1eb713d094f01a5213f664325db94ae7ef1eb6c2f1ed82261d55b06d10a17252",
+        "AGENT-SETUP.md": "995165554be0d324280aa1d6623fbfdd3a836f908ebb5d79c439d863f7a41dbb",
         "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
       }
     },
     "EMPLOYEE.md": {
-      "bytes": 12253,
-      "words": 1577,
-      "sha256": "31f068ab64371f4c4e12cd38eb2b6a10c2c4f13c2fe73255b55e8702d283c983",
+      "bytes": 12552,
+      "words": 1618,
+      "sha256": "489e18b303dc07fb4212811cbd21ef74036282a0bc75886403097ffdd5ac955a",
       "sources": {
-        "ONBOARDING.md": "d21fa732c57910ae845631b0f6446c1108008e73f8339c9143ab0df985032f90",
+        "ONBOARDING.md": "4708d086c9a471b153e48b9d8f2a8425ebaa4ae3a22dae0c04d5fb8c192ad56e",
         "EXCHANGE-CONTRACT.md": "3f8d830163b948d09a0bd3f0f7f6cb1e0a84970cdffe24c1c1c53ce89da01a6b"
       }
     },
     "CORE.md": {
-      "bytes": 5103,
-      "words": 742,
-      "sha256": "647392fcf321ef18c86bbc45f149417d3b266fcd560d8d17b92750f5265b967e",
+      "bytes": 5562,
+      "words": 807,
+      "sha256": "46d802a00c95ca3fefeef0b45630f55b3bc117e2be5bee5410a5deb8536e41d8",
       "sources": {}
     }
   },
   "launch_files": {
     "skills/aide-start-onboarding/SKILL.md": {
-      "bytes": 2972,
-      "words": 445,
-      "sha256": "a1230125f95f42fa8363fe20b6762a7cd059126759c013b39445765e770e2f37"
+      "bytes": 2261,
+      "words": 326,
+      "sha256": "905d2fe0548093c9201fbcd6093b0a4c3e3de77fe80c253642bccc2d4d9e89ab"
     },
     "onboard.html": {
       "bytes": 23622,

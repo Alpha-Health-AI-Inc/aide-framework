@@ -5,6 +5,9 @@ description: Onboard a person and their agent from an approved private AIDE team
 
 # Employee onboarding
 
+First execute [Git-first onboarding](../../GIT-FIRST.md) against the supplied private repository. Use the personal handoff and actual identity. No Projects container or browser form is required.
+
+
 Read the user's private handoff link, its approved START-HERE and role contract, then [the employee procedure](../../ONBOARDING.md). Read only authorized, relevant team context. Confirm human identity, agent identity, repository, branch and manager recipient before publishing.
 
 Preserve existing local files. Load the assigned People, Products, Processes and Projects. Track product access separately from repository access and prepare a concrete request for the responsible owner when a required grant is missing.

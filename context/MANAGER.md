@@ -8,6 +8,8 @@ Source: [SETUP.md](../SETUP.md)
 
 # Set up your team
 
+**First action:** use [Git-first onboarding](../GIT-FIRST.md) to verify tools, authentication and destination before collecting a roster or generating organization files. For Claude Code, use the [single-prompt route](../CLAUDE-CODE.md). The workspace administrator creates the organization foundation; managers can then join it and prepare their team areas.
+
 [Overview](../README.md) / [Employee onboarding](../ONBOARDING.md) / [Daily use](../DAILY-USE.md)
 
 Give your agent the link below. It prepares the workspace and explains what needs your approval. You authenticate with your Git provider and approve the proposed scope. You do not need to design a folder structure or write operating instructions.
@@ -95,6 +97,12 @@ Source: [AGENT-SETUP.md](../AGENT-SETUP.md)
 
 # Agent runbook: manager setup
 
+## 0. Verify the connection first
+
+Execute [GIT-FIRST.md](../GIT-FIRST.md) before substantial preparation. Report actual account and destination evidence, never an assumed connection. Reuse supplied facts. If authentication is blocked, resolve that step before creating organization files. After it passes, prepare concrete changes before any still-required publication approval. A new destination may still have creation/publication pending.
+
+Do not require a pilot employee or full roster to begin the administrator setup. Employees supply their own product assignments later. Do not invent meeting days, escalation deadlines, responsibilities or reporting relationships. Existing local drafts are preserved and reviewed for unsupported assumptions. The HTML and Projects routes are optional.
+
 Use this runbook when a manager asks you to establish a team workspace. The manager supplies context, authenticates and approves concrete decisions. You prepare the implementation details, verify outcomes and preserve progress.
 
 ## Entry paths
@@ -121,7 +129,7 @@ For the intended local employee experience, filesystem access is required. A con
 
 ## 2. Prepare a concrete proposal
 
-Use the defaults in SETUP.md. Fill known facts from authorized evidence. Ask for only what remains essential: destination organization, accountable manager, pilot employee and permitted source material. Bundle missing facts once rather than asking a sequence of implementation questions.
+Use the defaults in SETUP.md. Fill known facts from authorized evidence. Ask for only what remains essential: destination organization/account, accountable owner and permitted source material. A pilot employee and full roster are not prerequisites for initial publication. Bundle missing facts once rather than asking a sequence of implementation questions.
 
 Prepare a local `setup-proposal.md` with the destination repository, visibility, exact branch, local path, named members and proposed permissions, Four Ps entries, existing product links, permitted payloads and manual operation. List source references and unresolved facts. Propose the smallest access needed for the actual workflow; do not label broad write permissions as folder-isolated.
 
@@ -165,6 +173,10 @@ Honor branch protection and required review. If direct writes are disallowed, us
 Publish, then independently fetch or retrieve the exact remote branch. Verify all required entry points, IDs, destinations and template substitutions. Record the resulting commit in setup state with a timestamp. That record describes a prior observed commit, not the commit containing its own updated bytes.
 
 For an uncertain write, inspect the exact path and bytes before a bounded retry. For a conflict, refresh and reconcile only your own changes without overwriting another contributor. Stop the affected action on permission rejection, identity mismatch or content conflict, preserving its cause.
+
+## First milestone: return the shared link
+
+Publish the generic `JOIN.md` from the workspace template and verify it alongside `START-HERE.md`. Return the actual private repository link and JOIN.md link immediately after successful read-back. Do not block this milestone on product assignments, meeting details or a complete roster. State any employee invitation still needed. A general join link does not register identities, grant access or establish membership. Continue personal handoffs when the owner confirms each membership.
 
 ## 5. Prepare the employee handoff
 

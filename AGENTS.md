@@ -1,5 +1,7 @@
 # AIDE Framework entry point
 
+For onboarding, read `GIT-FIRST.md` first and verify the actual Git/provider route before generating organization files. Resolve administrator, team-manager or employee scope from supplied facts. Existing-team managers and employees join their private deployment; only first-organization setup uses the starter-folder bootstrap. The HTML form and Projects sync are optional. Do not invent assignments, reporting lines, schedules or policies.
+
 For a request to build an organization's workspace from this clone:
 
 - Look for the user-selected first-level folder containing `.aide-workspace.json`. If several exist, ask which one to use. If only `WORKSPACE` exists, obtain the intended name and rename it before organization work.

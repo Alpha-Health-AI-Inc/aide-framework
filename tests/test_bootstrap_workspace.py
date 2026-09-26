@@ -22,6 +22,20 @@ class BootstrapTests(unittest.TestCase):
         for p in ['people','products','processes','projects']: self.assertTrue((self.target/p/'README.md').is_file())
         self.assertTrue((self.target/'.aide-framework/context/CORE.md').is_file())
         self.assertIn('.aide-framework/SETUP.md',(self.target/'onboard.html').read_text())
+    def test_private_entry_and_connection_record_remain_honest(self):
+        m.prepare(self.root,'TEAM.KNOWLEDGE')
+        self.assertIn('.aide-framework/GIT-FIRST.md',(self.target/'CLAUDE.md').read_text())
+        self.assertIn('does not grant access',(self.target/'JOIN.md').read_text())
+        record=json.loads((self.target/'operations/git-connection.json').read_text())
+        self.assertEqual(record['authentication_status'],'not_checked')
+        self.assertEqual(record['publication_status'],'not_verified')
+        self.assertIsNone(record['authenticated_login'])
+        (self.target/'CLAUDE.md').write_text('Existing private instructions')
+        record['authentication_status']='verified';record['authenticated_login']='example-user'
+        (self.target/'operations/git-connection.json').write_text(json.dumps(record))
+        m.prepare(self.root,'TEAM.KNOWLEDGE')
+        self.assertEqual((self.target/'CLAUDE.md').read_text(),'Existing private instructions')
+        self.assertEqual(json.loads((self.target/'operations/git-connection.json').read_text()),record)
     def test_resume_preserves_actual_work(self):
         m.prepare(self.root,'TEAM.KNOWLEDGE');p=self.target/'workspace.json';p.write_text('{"actual":"keep"}')
         result=m.prepare(self.root,'TEAM.KNOWLEDGE')

@@ -4,6 +4,9 @@ These files are source templates. The setup agent renders them locally, reviews 
 
 | Source | Destination and use |
 | --- | --- |
+| `workspace/JOIN.md` | `JOIN.md`; generic shared entry, no automatic identity or access grant |
+| `workspace/CLAUDE.md` | `CLAUDE.md`; private-deployment entry point, preserve and reconcile any existing file |
+| [Git connection](GIT-CONNECTION.json) | `operations/git-connection.json`; sanitized observed account, destination and separate read/write evidence |
 | `workspace/workspace.json` | `workspace.json`; exact provider, repository, branch and manual profile |
 | `workspace/organization/README.md` | Organization context from approved sources |
 | `workspace/people/person.md` | `people/<person-id>/README.md`; one for each person |

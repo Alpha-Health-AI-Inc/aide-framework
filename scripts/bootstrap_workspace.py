@@ -70,6 +70,9 @@ def prepare(root, workspace, brief=None):
                   repository_url=None, exchange_branch=None, manager_recipient=None,
                   procedure_revision=None, approval_reference=None)
     put('workspace.json', encoded(config))
+    put('JOIN.md', (root/'templates/workspace/JOIN.md').read_text())
+    put('CLAUDE.md', (root/'templates/workspace/CLAUDE.md').read_text())
+    put('operations/git-connection.json', (root/'templates/GIT-CONNECTION.json').read_text())
     if brief is not None:
         put('operations/onboarding-brief.json', encoded(brief))
     if (root/'onboard.html').is_file():

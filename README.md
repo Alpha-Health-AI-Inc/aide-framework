@@ -26,13 +26,11 @@ The Git Service is the name of this layer: your Git provider, shared repositorie
 
 > **Project status:** Version 0.1 contains an offline onboarding guide, local workspace preparation, six instruction skills, a CI documentation generator and a manual exchange profile. It is not a verified enterprise runtime. Independent two-session deployment acceptance is still required.
 
-## Start with the onboarding guide
+## Start with one prompt
 
-Say **Start onboarding** after syncing the [starter files](CLAUDE-PROJECTS.md), or download and open [onboard.html](onboard.html). Choose **Set up a team** or **Join a team**, prepare your brief, and give it to your agent. Use [Quickstart](QUICKSTART.md) for the clone-and-rename route or [Claude Projects](CLAUDE-PROJECTS.md) for the small file selection to sync.
+Use [Claude Code onboarding](CLAUDE-CODE.md) in a local working folder. The agent first checks Git tools, provider authentication and the intended private destination, then prepares the workspace. No Claude Projects setup, browser form or GitHub MCP is required when a permitted Git/CLI connection works.
 
-## Start with your agent
-
-Give Claude or another capable agent the [manager setup link](SETUP.md) and say, “Set up our team workspace using this guide.” The agent prepares the files, defaults and verification steps. You supply missing organization facts, authenticate and approve concrete changes. [Employee onboarding](ONBOARDING.md) and [daily use](DAILY-USE.md) continue the same flow.
+Choose your scope: create the organization foundation, manage a team in an existing workspace, or join as an employee. One person can fill several roles. [Git-first onboarding](GIT-FIRST.md) defines the checks and stopping conditions. [Quickstart](QUICKSTART.md) retains the optional downloaded HTML and selective-context routes.
 
 ## Grow from a human workspace
 

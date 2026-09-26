@@ -8,6 +8,7 @@ The public framework is a documentation and instruction-skill kit with an offlin
 | --- | --- | --- |
 | Human and team setup | Offline HTML guide, local scaffold, runbooks, Four Ps templates and approval handoffs | Clean independent manager/employee deployment |
 | Nested teams and multiple roles | Membership/context templates, manager paths and two-machine pilot | Actual identity, routing, hierarchy and context-switch acceptance |
+| Claude Code / Git-first setup | Concise CLAUDE.md, account/destination preflight and local prompt route | Actual signed-in customer authentication, publication and two-machine handoff |
 | Claude Projects | Selective core/role packs and capacity guidance from official docs | Signed-in customer account sync and actual write-capability checks |
 | Employee-created specialists | Proposal, catalog, creation skill and sharing procedure | Independent builder/requester test with actual tools |
 | Runtime configuration | Profile reconciliation, saved-state and fresh-session checks; recipe template | Concrete tested recipe for each supported client/version |

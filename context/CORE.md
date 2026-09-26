@@ -37,3 +37,7 @@ Follow the selected role pack. Ask only for missing organization facts, supporte
 ## Multiple project contexts
 
 A person can be an employee in one team and a manager in another. Read TEAM-STRUCTURE.md before adding a team or changing a role. Bind each project to the exact organization, workspace, team, human identity, scoped agent identity, branch, role and recipient. A computer or project label is not that binding. Reuse approved organization context; do not create a new organization for each project. Keep separate checkout folders and local cursors for independent writers. The manager shares their private deployment link with employees, not the public framework setup link.
+
+## Connection before setup
+
+For Start onboarding, read GIT-FIRST.md first. Verify tools, actual provider authentication and intended destination before generating organization files. A successful public clone or a connector in another session is not proof. MCP, Projects and browser HTML are optional when the permitted local Git route works. Reuse supplied facts and defer unknown employee assignments. Do not invent reporting lines, schedules or policies.

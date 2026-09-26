@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "observed_at": null,
+  "provider_host": null,
+  "tool_and_version": null,
+  "publication_route": null,
+  "authenticated_login": null,
+  "authentication_status": "not_checked",
+  "repository_url": null,
+  "branch": null,
+  "destination_state": "not_resolved",
+  "read_status": "not_checked",
+  "reported_write_permission": null,
+  "publication_status": "not_verified",
+  "observed_commit": null,
+  "evidence_references": [],
+  "failure_cause": null,
+  "next_action": null
+}

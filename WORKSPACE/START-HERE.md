@@ -1,5 +1,7 @@
 # Build this workspace
 
+Before first setup, read the parent clone’s `GIT-FIRST.md` and verify actual account/destination access. If authentication is missing, resolve it before generating the organization scaffold. Use answers already supplied; the HTML form is optional.
+
 The name of this folder is the proposed knowledgebase name. It is not evidence of the legal organization, authenticated account, participant identities or approved scope.
 
 ## First setup

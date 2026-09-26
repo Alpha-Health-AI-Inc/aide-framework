@@ -1,5 +1,9 @@
 # Test NEO.CORTEX on two machines
 
+## Claude Code route
+
+On each machine, open Claude Code in its selected working folder and use [the prompt-first entry](CLAUDE-CODE.md). Check Git authentication and the private destination before generating files. Skip the Projects/sync and HTML steps below when using this route. Machine A establishes the foundation; Machine B uses the resulting private handoff. Both still perform publication, receipt and sender verification. If a prior attempt generated files, preserve them and reconcile unsupported facts rather than starting over.
+
 [Team structure](TEAM-STRUCTURE.md) / [Claude Projects](CLAUDE-PROJECTS.md) / [Acceptance](SETUP-ACCEPTANCE.md)
 
 This is a proposed acceptance test, not a completed NEOGOV deployment. Use synthetic content until the organization's destination, data and access are approved. The manager owns the resulting private repository. Employee projects use that repository, not the public upstream as their working knowledgebase.
