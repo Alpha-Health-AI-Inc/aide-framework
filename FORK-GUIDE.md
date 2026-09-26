@@ -1,27 +1,42 @@
-# Fork and adapt the Alpha Health AIDE Framework
+# Fork guide
 
-This repository is a documentation starter under MIT. Forking it copies the design and templates; it does not install a working AIDE runtime or connect any organization systems.
+Fork this repository to adapt the design and templates for your organization. Version 0.1 contains documentation; implementation starts in your fork.
 
-## Start here
+## Setup
 
-1. Fork this repository into an organization you control, using your authorized GitHub identity.
-2. Read README.md, ARCHITECTURE.md, ADOPTION.md and ROLE-TEMPLATE.md.
-3. Choose one internal pilot workflow and record its accountable owner, allowed data, recipients, tools and acceptance criteria.
-4. Keep deployment identities, credentials, internal policies and real message data outside the public fork. Use synthetic fixtures for development.
-5. Implement the contract and recovery checks before adding model-driven work. Track proposed, implemented and verified capabilities separately.
-6. Preserve the MIT copyright and permission notice in copies or substantial portions. Describe your version as a derivative; do not imply Alpha Health endorsement or production certification.
+1. [Create a fork](https://github.com/Alpha-Health-AI-Inc/aide-framework/fork) in an organization you control.
+2. Read the [overview](README.md), [architecture](ARCHITECTURE.md), and [pilot guide](ADOPTION.md).
+3. Choose one workflow and complete its [role contract](ROLE-TEMPLATE.md).
+4. Keep credentials, internal policies, deployment identities, and operational messages outside the public repository. Use synthetic data in examples and tests.
+5. Preserve the [MIT license](LICENSE) notice in copies or substantial portions of the project. Identify your version as a derivative of the Alpha Health AIDE Framework.
 
-## Prompt to give Claude or another implementation assistant
+## Implementation brief for Claude
 
-> Use https://github.com/Alpha-Health-AI-Inc/aide-framework as the upstream design for an organization-specific derivative. First read all five documentation files and identify what is proposed versus implemented. This repository currently has no runtime. Prepare a concrete pilot plan and implementation backlog for one authorized internal workflow. Preserve stable agent identity, accountable ownership, scoped tools, exact-content delivery receipts, sender verification, durable recovery and separate human acceptance. Keep organization-specific configuration and operational data private; public fixtures must be synthetic. Do not assume our organization has any particular identity provider, repository host, model vendor or hosting environment. Identify those deployment decisions explicitly. Start with deterministic message validation, publish/collect/receipt/verify behavior and the acceptance scenarios in ADOPTION.md. Do not create infrastructure, grant access or connect live systems without the applicable authorization. If authorized to implement, work in our fork and report actual tests and remaining gaps; do not claim the documentation itself provides working features.
+Copy this brief into Claude or another implementation assistant:
 
-## Implementation order
+```text
+Use https://github.com/Alpha-Health-AI-Inc/aide-framework as the upstream design.
+Read README.md, ARCHITECTURE.md, ADOPTION.md, ROLE-TEMPLATE.md, and FORK-GUIDE.md.
+The repository contains documentation, not a working runtime.
 
-- Contract schemas and valid/invalid synthetic fixtures.
-- A single transport adapter with durable outbox, bounded collection and receipt verification.
-- Restart, duplicate, integrity-conflict and wrong-recipient checks.
-- Role configuration, scoped runtime adapter and operator delivery-status view.
-- Customer-environment access isolation and independent pilot acceptance.
-- Additional adapters, scheduling integrations and measured scale.
+Prepare a pilot plan and implementation backlog for one internal workflow.
+Identify the human owner, recipients, allowed actions, evidence requirements,
+and acceptance criteria. Establish our identity, hosting, model, and storage
+choices from available requirements. Flag unresolved choices explicitly.
 
-Project branding is Alpha Health AIDE Framework. Each adopter owns its deployment decisions and remains responsible for its actual runtime, data handling and approvals.
+Implement in our fork only when authorized. Begin with versioned schemas,
+synthetic fixtures, and deterministic publish, collect, receipt, and verify
+operations. Preserve stable identities, exact-content receipts, persistent
+recovery state, scoped access, and separate human acceptance.
+
+Use the acceptance scenarios in ADOPTION.md. Report which checks passed,
+which failed, and what remains unimplemented. Keep organization data and
+credentials private. Obtain the applicable authorization before connecting
+live systems, granting access, or creating infrastructure.
+```
+
+## First implementation
+
+Build schemas and synthetic fixtures, then one storage adapter with a persistent outbox and collector. Verify restart recovery, duplicates, content conflicts, and wrong recipients before adding model execution.
+
+Add role configuration and a delivery-status view. Complete access-isolation checks and independent pilot acceptance before expanding to other workflows or adapters.

@@ -1,61 +1,66 @@
-# Architecture and delivery contract
+# Architecture
 
-Proposed design, not an implemented or certified protocol · Draft 0.1
+Version 0.1 describes the implementation contract. The components below have not yet been released as software.
 
-## Separate the core from each deployment
+## Identity and ownership
 
-The core owns validation, stable identifiers, delivery state transitions, duplicate handling and auditable evidence links. Adapters own model execution, tool access, scheduling, storage and user interfaces. Deployment configuration owns organizational roles, credentials, approvals, data classification, reporting cadence, retention and cost limits.
+Each AIDE has a stable identifier within an organization, a human owner, a backup, and a defined scope of work. Runtime sessions and machine addresses are replaceable routing details.
 
-A registry maps a stable organization/agent identity to its human owner, active runtime binding, permitted routes and credential reference. A session or machine ID is a replaceable routing attribute. Published registry claims must be bound to authenticated principals by the deployment, rather than accepted solely because a JSON file names a sender.
+The registry maps an AIDE identifier to an authenticated runtime identity, permitted recipients, and a credential reference. A sender name in a JSON file is not proof of identity. The storage or runtime adapter must verify who submitted the record.
 
-## Components to build
+## Components
 
-| Component | Deterministic responsibility |
+| Component | Responsibility |
 | --- | --- |
-| Registry validator | Validate active identities, authorized routes and configuration version |
-| Outbox | Persist a pending publication before submission; reconcile uncertain writes |
-| Collector | Read a fixed snapshot or bounded cursor range, validate messages, and checkpoint processing |
-| Receipt writer | Create one receipt per recipient/message/content version after validated retrieval |
-| Sender verifier | Check receipt identity and content binding, update sender delivery records |
-| Scheduler integration | Trigger bounded work inside deployment-defined windows and budgets |
-| Operator store/view | Surface published, received, verified, overdue, rejected and failed states |
-| Runtime adapter | Provide validated data to a model and execute only authorized tool actions |
+| Registry | Resolve identities, permitted routes, and configuration versions. |
+| Outbox | Save pending messages before publication and reconcile uncertain writes. |
+| Collector | Read a fixed snapshot or cursor range, validate records, and save progress. |
+| Receipt writer | Record validated retrieval of an exact message version. |
+| Sender verifier | Validate receipts and update the sender's delivery record. |
+| Scheduler | Trigger work within configured operating windows and budgets. |
+| Operator view | Show delivery state, age, errors, and required decisions. |
+| Runtime adapter | Supply validated inputs to a model and execute permitted tool actions. |
 
-Do not spend model calls deciding whether a known message ID was already processed, whether a receipt hash matches, or whether a retry deadline elapsed. These are deterministic checks. Models interpret work and draft summaries after validation.
+Identity checks, duplicate detection, digest comparison, and retry timing belong in deterministic code. Models interpret work and produce summaries after those checks.
 
-## Proposed portable records
+## Records
 
-These fields describe a future contract. They do not silently replace the existing prototype's schema.
-
-| Record | Required information |
+| Record | Required fields |
 | --- | --- |
-| Message | Schema version; organization; unique message ID; authenticated sender binding; intended recipients; type; creation/source-observation timestamps; correlation/work reference; payload and evidence references |
-| Stored-message reference | Storage location; immutable version; digest algorithm and digest of the exact stored UTF-8 bytes |
-| Receipt | Schema version; organization; unique receipt ID; message ID and stored-message reference; receiving agent/principal; received timestamp; `received` status |
-| Sender verification | Message ID; receiver; exact receipt reference/digest; verified timestamp; verifier identity |
-| Work decision | Work reference; reviewer/approver identity; decision type; criteria; evidence; timestamp; applicable authorization reference |
+| Message | Schema version, organization, unique ID, authenticated sender, recipients, type, creation and source-observation timestamps, work reference, payload, and evidence references |
+| Content reference | Storage location, immutable version, digest algorithm, and digest of the stored UTF-8 bytes |
+| Receipt | Schema version, organization, receipt ID, message ID, content reference, receiver identity, received timestamp, and status |
+| Sender verification | Message ID, receiver, receipt reference and digest, verified timestamp, and verifier identity |
+| Work decision | Work reference, decision owner, decision type, criteria, evidence, timestamp, and authorization reference |
 
-Recipient matching is exact; similar display names are not equivalent identities. For multiple recipients, delivery is tracked independently per recipient. The interface must distinguish partial receipt from all-required-recipients receipt.
+Match recipients by stable identifier. Track delivery separately for each recipient so partial delivery remains visible.
 
-Published business payloads may include completed work, work in progress, blockers, next steps, requested decisions and source evidence. QA payloads use Feature/Scenario/Given/When/Then, with actual results, execution status, environment, revision and evidence recorded separately. A written scenario is not a passed test.
+Content digests bind receipts to message bytes. They do not authenticate an author. Keep the digest algorithm explicit, including when a transport supplies a Git blob identifier rather than a digest of raw file bytes.
 
-Content digests bind receipts to exact bytes; they do not authenticate the sender. Authentication requires the adapter's trusted principal or a validated signing identity. Algorithm identifiers remain explicit; a Git blob identifier must not be labeled as a SHA-256 digest of the raw message bytes.
+Updates can include completed work, work in progress, blockers, next steps, and requested decisions. Sources should identify their date and revision. QA reports should separate Feature/Scenario/Given/When/Then specifications from actual results, execution status, environment, and evidence.
 
-## Processing and recovery rules
+## Processing
 
-1. Persist the intended publication ID, exact content digest and delivery attempt before sending. A retry reuses this identity; it does not create a duplicate business message.
-2. After an uncertain write, read the exact destination. Matching bytes mean the write succeeded. Conflicting bytes under the same ID are an integrity failure. Only a confirmed absence plus a transient failure permits a bounded retry.
-3. A collector reads a fixed commit or snapshot, validates schema, organization, authenticated sender, recipient, timestamps and evidence metadata, and rejects unsupported versions. Future timestamps beyond configured clock tolerance are flagged; historical messages are not discarded because they are old.
-4. Record the message as read and pending receipt/report. Create the receipt only after validated retrieval into the receiving AIDE's durable processing state. A storage listing, HTTP success or queued runtime request alone is insufficient.
-5. Read back the receipt and commit the receipt/report checkpoints. Separate last-read and last-reported state so an interruption does not lose an unreported update.
-6. Sender verification checks the exact recipient, message version/digest and receipt author identity. Persist the verified state. Initial deployment acceptance may publish one confirmation artifact for the receiver to inspect; verification artifacts do not generate recursive confirmation requests.
-7. Retry transient reachability/storage failures within configured limits. Stop on permission rejection, identity conflict, integrity conflict or unsupported schema; surface the actual cause. A pending successful request is not resent.
+1. **Prepare.** Save the message ID, content digest, and pending attempt before publication. Reuse the same ID and content when retrying that publication.
+2. **Publish.** Write the message and read it back. If the result is uncertain, inspect the exact destination. Matching content confirms success; different content under the same ID is a conflict.
+3. **Collect.** Read a fixed commit, snapshot, or bounded cursor range. Validate the schema, organization, sender, recipient, timestamps, and evidence metadata. Retain unread historical messages. Flag timestamps beyond the configured clock tolerance.
+4. **Receive.** Persist the validated message in the receiver's processing state. Mark the receipt and report as pending. A file listing or queued request is insufficient to establish receipt.
+5. **Acknowledge.** Create the receipt, read it back, and save progress. Track read messages separately from reported messages so a crash cannot silently drop an update.
+6. **Verify.** The sender checks the receipt's author, recipient, message version, and digest, then records verification. A deployment test may publish one verification artifact. It must not start a chain of confirmations.
 
-Expected delivery model: at-least-once discovery with idempotent receipt processing. Exactly-once business effects are not promised. Any future action executor must separately deduplicate its effects and provide recovery evidence. Reporting into a channel without idempotency support can still produce a duplicate after a crash; expose and reconcile that limitation rather than claim guaranteed exactly-once reporting.
+A message and receipt pair is immutable within this contract. Corrections use new IDs and reference the earlier record. A conflict must not overwrite an existing message or receipt.
 
-## GitHub reference adapter
+## Failure handling
 
-Illustrative layout in a dedicated private deployment repository:
+Retry temporary access or storage failures within configured limits. After an uncertain write, retry only after confirming the destination is absent. Stop on permission rejection, identity conflict, content conflict, or an unsupported schema version. Preserve the error for the operator.
+
+Do not resend a successfully delivered request while its response is pending. When a receipt is missing, retain a pending or overdue status based on the collection policy.
+
+The delivery model is at-least-once discovery with idempotent receipt processing. Business actions need their own duplicate protection. A reporting channel without idempotency support may show a duplicate after a crash; its adapter must document how to reconcile that case.
+
+## GitHub adapter
+
+Proposed layout in a private deployment repository:
 
 ```text
 registry/participants.json
@@ -64,22 +69,24 @@ receipts/<receiver-id>/<sender-id>/<message-id>.json
 verifications/<sender-id>/<receiver-id>/<message-id>.json
 ```
 
-This is a proposed neutral layout. An adapter for the existing prototype can map its current paths without rewriting historical messages. The collector freezes a commit, compares unseen IDs and blobs, and creates unique receipt files without overwrite. On concurrent-write conflict it refreshes the ref and checks the exact file before a bounded retry. Migration between schema versions requires explicit mapping and conformance checks.
+The collector freezes a commit and fetches unseen records. Writers create unique files without overwriting previous records. If concurrent writes conflict, refresh the branch reference and inspect the destination before retrying. Schema migrations need explicit mappings and compatibility checks.
 
-GitHub's app permissions operate at repository/resource scopes. Folder names and JSON recipient fields must not be treated as confidentiality or write-access controls. Use a deployment boundary consistent with the actual repository permissions; unrelated tenants must not share a broadly readable inbox repository. A mediated writer or separate repositories may be needed to enforce sender and recipient isolation. See [GitHub App permissions](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps) and [installation repository access](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps).
+GitHub access permissions apply to repository resources. Folder names and recipient fields do not enforce confidentiality. Separate repositories or a service that authorizes each operation may be needed to isolate senders, recipients, and tenants. See [GitHub App permissions](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps) and [repository access settings](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps).
 
-Append-only files and protected history provide an audit convention, not guaranteed immutable retention against administrators. If a customer requires stronger retention guarantees, the deployment needs separately enforced storage/audit controls. Keep sensitive evidence in its authorized system and exchange only permitted references and minimal summaries.
+Protected history and append-only files support an audit trail but cannot guarantee retention against repository administrators. Deployments with stronger retention requirements need separately enforced controls. Restricted evidence should remain in its authorized system, with only permitted references in the inbox.
 
-## Scheduling, availability and cost
+## Scheduling and scale
 
-Persist unread work across collection windows. A sender can go offline after durable publication; a collector can still read the published record. An offline collector leaves delivery pending. Availability with employee laptops off requires a separately deployed and tested worker; GitHub storage alone does not supply execution.
+Unread messages persist across collection windows. Sender availability is unnecessary after publication. Receiver availability determines when collection resumes. Operation while employee laptops are off requires a separately deployed worker.
 
-Batch metadata reads per snapshot, use durable checkpoints, retrieve only unseen payloads, and bound concurrency and model budgets. Polling and event triggers are adapter choices. Event triggers reduce waiting only if an authorized worker exists; periodic reconciliation is still needed to recover missed events. Do not promise instant delivery from the existence of a webhook.
+Batch metadata reads, retrieve only unseen payloads, and persist checkpoints. Bound worker concurrency, retries, and model spend. Event triggers can reduce delays; periodic reconciliation recovers missed events.
 
-## Scale and trust boundaries
+As volume grows, partition storage by tenant or team and maintain recipient indexes. Measure concurrent writers, queue age, artifact size, and storage throttling before choosing a larger transport. No throughput limit has been established for this design.
 
-Start with one exchange boundary and a small roster. At larger volumes, partition by tenant/team, maintain recipient indexes, apply backpressure, and move receipt/query workloads to an appropriate service while retaining the portable contract. A single Git branch and repeated full-history scans require measurement before broad rollout; no capacity limit or throughput claim has been established.
+Send routine detail to the team responsible for the work. Route exceptions and decisions to their owners. Requiring an executive assistant to interpret every message creates a review bottleneck.
 
-Route routine detail to the relevant team AIDE, with exceptions and decisions going to the responsible human. Requiring one executive AIDE to interpret every message creates a review bottleneck. Federation across organizations needs explicit identity trust, allowed routes and data-sharing rules; matching identifiers alone is insufficient.
+## Execution boundaries
 
-Inputs remain untrusted data. An update cannot add permissions, change startup policy or order tool execution outside an existing work contract. Revocation must disable the actual credential/runtime/scheduler routes, not merely hide an agent from a directory.
+Incoming records are data. They cannot grant access, change startup policy, or authorize actions outside an existing assignment. Cross-organization exchange requires explicit identity trust, permitted routes, and data-sharing rules.
+
+Revocation must disable the relevant credentials, integrations, workers, and schedules. Removing an AIDE from a directory alone does not revoke its access.

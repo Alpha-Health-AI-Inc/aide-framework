@@ -1,79 +1,71 @@
-# Alpha Health AIDE Framework: customer pilot and scale plan
+# Pilot guide
 
-Customer-neutral proposal · Draft 0.1
+Start with one internal workflow whose outcome can be measured. A useful example is a QA assistant sending a report to a delivery assistant for human review.
 
-## The offer
+This guide defines acceptance requirements for an implementation. It is not a record of completed tests.
 
-Give an organization a repeatable way to assign AI assistants to roles, exchange evidence across teams, prove delivery and keep humans accountable for decisions. The customer controls its identities, tools, models, storage, knowledge sources and operating rules.
+## Establish the deployment
 
-The first practical use case is a scoped internal handoff: a QA assistant sends a structured test report to a delivery assistant, which verifies receipt and presents an evidence-based summary to a human reviewer. Another organization could use the same mechanism for research, support escalation or implementation status. Each workflow needs its own approved scope and acceptance criteria.
-
-## Discovery questions before implementation
-
-| Decision | Owner to identify | Concrete output |
+| Decision | Responsible role | Required output |
 | --- | --- | --- |
-| First workflow and outcome | Business sponsor | One measurable workflow and baseline |
-| AIDE roles and escalation | Workflow owner | Accountable humans, recipients and backup coverage |
-| Identity and access | Customer platform/security owner | Authenticated principals and enforced access scopes |
-| Systems of record | Application/data owners | Which system owns work status, knowledge and decisions |
-| Hosting and availability | Runtime operator | Execution location, service hours and recovery ownership |
-| Data treatment | Customer data owner | Allowed content, storage, retention and evidence references |
-| Acceptance and expansion | Sponsor plus independent reviewer | Demonstration criteria, measures and expansion decision |
+| Workflow | Business sponsor | Scope, expected outcome, and baseline |
+| Ownership | Workflow owner | AIDE roles, human owners, recipients, and backups |
+| Access | Platform or security owner | Authenticated identities and enforced permissions |
+| Records | Application owners | Systems that own work status, knowledge, and decisions |
+| Execution | Runtime operator | Hosting, operating hours, recovery, and budgets |
+| Data | Data owner | Permitted content, storage location, and retention |
+| Acceptance | Sponsor and independent reviewer | Pass criteria and expansion decision |
 
-Do not assume a prospective customer's existing identity provider, repository host, AI vendor, deployment model or regulatory requirements. These are implementation inputs to establish together.
+Choose the identity provider, repository host, model vendor, and execution environment to fit the organization. Record these decisions before connecting live systems.
 
-## Pilot sequence
+## Run the pilot
 
-1. **Define:** Choose one low-impact internal workflow. Name the owner, intended recipients, decision boundaries and baseline measures. Use synthetic fixtures for initial verification.
-2. **Configure:** Create role contracts, authenticate each runtime, select the transport, configure the authorized collection cadence and set retention/budget limits. Verify allowed and denied routes safely.
-3. **Demonstrate:** Publish a uniquely identifiable synthetic message. Independently read the receiver's receipt and the sender's verification. Interrupt and resume processing to test recovery. Record actual evidence at each step.
-4. **Operate:** Use a limited authorized workload. Track delays, duplicates, manual intervention, quality and cost. Keep missing or rejected deliveries visible.
-5. **Evaluate:** The sponsor and independent reviewer decide whether the workflow meets agreed requirements. Expand only after the observed results justify it.
+1. **Define the assignment.** Name the outcome, owner, recipients, allowed actions, and evidence requirements. Complete a [role contract](ROLE-TEMPLATE.md).
+2. **Configure access.** Authenticate the runtimes and verify permitted and restricted routes with synthetic data. Set collection windows, retry limits, retention, and budgets.
+3. **Test delivery.** Publish a unique message. Inspect its receipt and the sender's verification. Interrupt processing and confirm that it resumes without losing the update.
+4. **Use a limited workload.** Track delays, duplicate records, manual intervention, report quality, and cost. Keep pending and rejected deliveries visible.
+5. **Review the results.** Compare the evidence with the agreed criteria. The sponsor and independent reviewer decide whether to expand.
 
-A proposed start could use two to five AIDEs and one workflow. This is a scoping suggestion, not a validated capacity, staffing commitment or delivery deadline.
+Two to five AIDEs and one workflow provide a manageable initial scope. Set service targets from the workflow's requirements and observed performance.
 
-## Acceptance scenarios for the proposed implementation
+## Acceptance checks
 
-| Scenario | Required observable result |
+| Scenario | Expected result |
 | --- | --- |
-| Correctly addressed update | Published message, exact-content receipt and sender verification agree |
-| Wrong recipient | Intended AIDE does not claim receipt; operator sees routing error |
-| Duplicate delivery | No second logical receipt or duplicate work effect |
-| Same ID, changed content | Integrity conflict surfaced; no overwrite or silent acceptance |
-| Crash after retrieval or receipt write | Resume reconciles exact files; pending report remains recoverable |
-| Sender goes offline after publication | Receiver retrieves shared record without sender machine access |
-| Collector is offline | Message remains pending; resumes without loss when collector returns |
-| Approval or access rejection | Affected action stops with exact reason; no alternate-route bypass |
-| Message contains new instructions | No expansion of permissions or execution outside the work contract |
-| Credential or role revoked | Actual tool/storage access is denied; queued work follows policy |
-| Separate tenant or restricted team | Unauthorized read/write attempts fail at the access layer |
-| Human acceptance not yet given | Delivery status remains distinct from review and approval |
+| Correct recipient | Message, exact-content receipt, and sender verification agree. |
+| Wrong recipient | The unintended AIDE does not issue a receipt; the operator can identify the routing error. |
+| Duplicate discovery | Processing reuses the existing logical receipt and does not repeat work effects. |
+| Same ID with different content | An integrity conflict is reported; the original record remains unchanged. |
+| Crash after reading or writing a receipt | Recovery reconciles the stored records and preserves any pending report. |
+| Sender offline after publication | The receiver can retrieve the shared update. |
+| Collector offline | The message remains pending and is collected after recovery. |
+| Access or approval rejected | The affected action stops with its actual cause recorded. |
+| Instructions embedded in a message | The message cannot expand permissions or change the assignment. |
+| Credential revoked | Actual storage and tool access are denied. |
+| Separate tenant or restricted team | Unauthorized reads and writes fail at the access layer. |
+| Human review pending | Delivery remains distinct from review and acceptance. |
 
-These are acceptance requirements to implement and run, not tests that have already passed in this draft.
+## Measure performance
 
-## Measure scale before promising it
+Measure publication-to-receipt latency and receipt-to-verification latency separately. Report wall time alongside the configured service window.
 
-Track publication-to-receipt latency and receipt-to-sender-verification latency separately, both in wall time and against configured service windows. Measure oldest pending message, recovery time, missed collection slots, duplicate/conflict counts, unauthorized-action attempts, human intervention rate, summary corrections, cost per accepted handoff and human time saved against baseline.
+Also track the oldest pending message, recovery time, missed collection slots, conflicts, duplicate reports, manual interventions, summary corrections, cost per accepted handoff, and human time saved against the baseline.
 
-Agree target values before the pilot; this proposal invents no SLA or ROI. Load-test increasing participant counts, message volume, artifact size and concurrent writers. Include unavailable workers and storage throttling. Use the results to choose partitioning, event triggers, worker capacity and storage adapters.
+Load tests should vary participant count, message volume, artifact size, and concurrent writers. Include unavailable workers and storage throttling. Use the results to decide when to partition storage, add workers, or change adapters.
 
-## Implementation milestones for an open-source project
+## Build sequence
 
-| Milestone | Deliverable | Exit evidence |
+| Stage | Deliverable | Completion evidence |
 | --- | --- | --- |
-| Contract | Versioned schemas and synthetic fixtures | Valid and invalid records classified consistently |
-| Reference exchange | Publish/collect/receipt/verify commands with durable state | Recovery and duplicate-handling scenarios pass |
-| Operator experience | Status view, clear errors, role and policy templates | An operator can diagnose a delayed or misrouted message |
-| Customer deployment | Identity binding, runtime, isolation and monitoring | Independent acceptance in the customer's environment |
-| Interoperability and scale | Additional adapters and measured load behavior | Same contract semantics across adapters; documented limits |
-| Runtime release | Maintainers, dependency provenance and contribution/security process | Tested distributable runtime with documented support scope; documentation starter already MIT-licensed |
+| Contract | Versioned schemas and synthetic fixtures | Valid and invalid records are classified consistently. |
+| Exchange | Publish, collect, receipt, and verify operations | Duplicate and recovery checks pass. |
+| Operations | Delivery-status view and clear errors | An operator can diagnose a missing or misrouted update. |
+| Deployment | Identity, isolation, execution, and monitoring | Independent acceptance in the target environment. |
+| Expansion | Additional adapters and load testing | Documented compatibility and operating limits. |
+| Runtime release | Maintainers, dependency review, support, and security reporting | A tested distribution with a defined support scope. |
 
-## Offboarding and ownership changes
+## Reassignment and offboarding
 
-Transfer pending work and explicitly reassign recipients. Revoke applicable credentials, integrations and schedules through their actual operators. Verify the revocation, preserve evidence under the retention policy and update the registry. Archiving a conversation is not an access-revocation mechanism.
+Transfer pending work and reassign recipients explicitly. The responsible operators revoke credentials, integrations, and schedules, then verify the result. Preserve required evidence under the retention policy and update the registry.
 
-## A prospect-facing explanation
-
-“Alpha Health has published the Alpha Health AIDE Framework documentation starter as an open-source foundation for accountable AI teamwork. It gives your AI assistants defined roles, controlled access and verifiable handoffs. Your organization chooses its models and systems. We would start with one internal workflow and demonstrate that updates arrive, receipts come back, interruptions recover and human decision boundaries hold. Expansion would follow measured reliability and usefulness.”
-
-This wording proposes a pilot. It makes no claim of an existing customer integration, certification, enterprise SLA or production deployment.
+Archiving a conversation does not revoke system access.

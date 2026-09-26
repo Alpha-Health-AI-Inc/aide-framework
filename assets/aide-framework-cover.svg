@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="540" viewBox="0 0 1440 540" role="img" aria-labelledby="title desc">
+<title id="title">Alpha Health AIDE Framework</title><desc id="desc">AI assistants with defined roles, shared records, and confirmed delivery. Open-source reference design.</desc>
+<defs><pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#16374a" stroke-width="1"/></pattern></defs>
+<rect width="1440" height="540" rx="20" fill="#071d2c"/>
+<rect x="860" width="580" height="540" fill="url(#grid)"/>
+<path d="M64 74H104" stroke="#5ee6be" stroke-width="4"/>
+<text x="120" y="82" font-family="Arial,Helvetica,sans-serif" font-size="24" font-weight="700" letter-spacing="4" fill="#e9f6fa">ALPHA HEALTH</text>
+<text x="64" y="214" font-family="Arial,Helvetica,sans-serif" font-size="84" font-weight="700" letter-spacing="-3" fill="#ffffff">AIDE Framework</text>
+<text x="68" y="285" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#b9d2de">Defined roles. Shared records.</text>
+<text x="68" y="331" font-family="Arial,Helvetica,sans-serif" font-size="32" fill="#b9d2de">Confirmed delivery.</text>
+<rect x="68" y="428" width="272" height="40" rx="20" fill="#133b42"/>
+<text x="88" y="454" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" letter-spacing="1.1" fill="#7cebc9">OPEN-SOURCE DESIGN</text>
+<text x="362" y="454" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#96b7c6">v0.1 / MIT</text>
+<path d="M1000 160V222H1230V338" fill="none" stroke="#58d9b5" stroke-width="3"/>
+<path d="M1223 330L1230 339L1237 330" fill="none" stroke="#58d9b5" stroke-width="3"/>
+<rect x="880" y="83" width="350" height="98" rx="14" fill="#102d40" stroke="#3b667c"/>
+<text x="904" y="116" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8facbf">01 / PUBLISH</text>
+<text x="904" y="153" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#ffffff">Update sent</text>
+<rect x="970" y="236" width="350" height="98" rx="14" fill="#102d40" stroke="#3b667c"/>
+<text x="994" y="269" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8facbf">02 / RECEIVE</text>
+<text x="994" y="306" font-family="Arial,Helvetica,sans-serif" font-size="26" font-weight="700" fill="#ffffff">Receipt recorded</text>
+<rect x="1020" y="377" width="350" height="98" rx="14" fill="#113d3b" stroke="#58d9b5"/>
+<circle cx="1056" cy="426" r="17" fill="#5ee6be"/>
+<path d="M1048 426L1054 432L1065 420" stroke="#071d2c" stroke-width="3" fill="none"/>
+<text x="1086" y="414" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#8dddc6">03 / VERIFY</text>
+<text x="1086" y="449" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#ffffff">Delivery confirmed</text>
+<path d="M1230 334V377" stroke="#58d9b5" stroke-width="3"/>
+</svg>
