@@ -19,3 +19,7 @@ For a new employee session, the private team's START-HERE and role contract dete
 ## Current validation
 
 The kit includes these three procedures, runbooks, workspace templates and a manual exchange profile. Structural checks of Markdown, JSON, template references and skill metadata do not establish behavioral correctness. Independent two-session customer onboarding and provider-specific end-to-end testing remain required before a deployment is described as verified.
+
+## Lifecycle procedures
+
+For “Resume my AIDE,” “Move my AIDE,” “Prepare a handover,” or “Offboard this AIDE,” read [LIFECYCLE.md](LIFECYCLE.md) and follow its situation-specific guide. Keep the existing human and role identity across a device change, reconcile pending operations, and verify the publishing-session cutover. These runbooks use the same setup, onboarding and exchange skills; they are not additional installed executables.

@@ -12,6 +12,10 @@ This template describes the intended workflow. It does not grant repository acce
 - Organization: <organization-id>
 - Manual record profile or existing deployment schema: <approved profile>
 - Setup state: operations/setup-state.json
+- My continuity checkpoint: people/<person-id>/continuity.md
+- Transition records: operations/transitions/
+- Lifecycle and device-change procedures: <pinned readable references>
+- Active publishing session: <transition reference; verify actual cutover>
 - Agent procedures: <pinned framework SKILLS.md link or included copy>
 - Git provider and adapter version: <deployment configuration>
 - Shared repository: <private Git repository URL>
@@ -43,7 +47,11 @@ not checked, requested, granted and verified working states accurately.
 Resolve
 my identity and recipients through the registry. Do not infer them from
 session labels or device names. Preserve local work when fetching updates.
-Recover pending outbound messages, incoming messages, receipts, and reports.
+Read my continuity checkpoint and current transition record. Verify that
+this is the active publishing session before writes. For a device or client
+change, follow the pinned move procedure; do not silently start a second
+publisher. Recover pending outbound messages, incoming messages, receipts,
+and reports. Keep unknown reporting progress explicit.
 State the context revision, source dates, assigned scope, and access gaps.
 
 ## Team coordination

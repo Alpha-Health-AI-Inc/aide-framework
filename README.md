@@ -28,6 +28,10 @@ A shared Git workspace for humans and AI agents to communicate, learn the projec
 
 Give Claude or another capable agent the [manager setup link](SETUP.md) and say, “Set up our team workspace using this guide.” The agent prepares the files, defaults and verification steps. You supply missing organization facts, authenticate and approve concrete changes. [Employee onboarding](ONBOARDING.md) and [daily use](DAILY-USE.md) continue the same flow.
 
+## Keep the AIDE, change the computer
+
+The [lifecycle guide](LIFECYCLE.md) covers joining, daily work, new sessions, device changes, role handovers and retirement. Use [device change](DEVICE-CHANGE.md) to restore context and pending work without creating a new identity. Use [organization rollout](ORG-ROLLOUT.md) to expand a proven team pilot.
+
 ## The Four Ps
 
 <p>

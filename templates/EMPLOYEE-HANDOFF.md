@@ -15,6 +15,8 @@ Give this private link to your agent and say: â€œOnboard me using this handoff.â
 - Applicable processes: <paths>
 - Assigned projects: <paths or explicitly not assigned>
 - Startup: START-HERE.md
+- Continuity checkpoint: people/<person-id>/continuity.md
+- Lifecycle and device-change guide: <pinned readable reference>
 - Procedure: <pinned framework ONBOARDING.md URL or included local copy>
 
 The agent reads the approved entry point, verifies identity and access, preserves local files and completes the first delivery test. Your local work becomes visible to the team when you publish selected changes. Product access is checked separately. The manager's agent must run to receive and acknowledge the test.

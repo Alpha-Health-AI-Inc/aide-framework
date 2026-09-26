@@ -56,3 +56,9 @@ Read the [agent runbook](AGENT-SETUP.md) for the execution procedure. Start ther
 **Workspace prepared:** local files exist and have been reviewed. **Workspace published:** approved files are readable at the exact remote branch. **Employee connected:** the employee's independent session has read the workspace and verified its permitted access. **First handoff verified:** message, receiver receipt and sender verification all agree. **Pilot accepted:** the responsible human reviews the evidence.
 
 The agent reports these states separately. A missing employee response remains pending; it is not a reason to repeat a delivered request or claim the employee is onboarded.
+
+## Beyond the first team
+
+This link starts a guided team pilot. For organization-wide preparation, follow [organization rollout](ORG-ROLLOUT.md). Each employee still authenticates and verifies their own onboarding. The agent prepares the structure and links; it cannot infer the whole company's roster or grant access from a manager's team-level approval.
+
+Plan continuity at setup: assign an accountable owner and backup, pin the procedure version, and prepare a checkpoint for every manager and employee. [The lifecycle guide](LIFECYCLE.md) covers new sessions, computer changes, role transfers, pauses, departures, upgrades and retirement.

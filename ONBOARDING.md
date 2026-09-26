@@ -33,3 +33,9 @@ flowchart LR
 Work locally with the agent. Say “Publish these findings to my manager” when ready. Later say “Check whether my update arrived.” There is no automatic sharing of private chat history. The default shared folder is team-visible after publication.
 
 If onboarding is interrupted, inspect `operations/setup-state.json`, the person's onboarding status, and existing remote messages and receipts. Resume the first incomplete stage instead of re-creating accounts, folders or successful tests.
+
+## Keep your AIDE when the session or computer changes
+
+Create your shared continuity checkpoint from [this template](templates/CONTINUITY.md) after onboarding. Record your stable identity, current assignment, source revisions and pending work. Update it at meaningful handoffs and before leaving a session with unfinished work. Keep private chat and credentials out of it.
+
+A new session reads the checkpoint and reconciles remote records. For a new computer or agent client, use [device change](DEVICE-CHANGE.md). A fresh clone restores published work; unpublished files, local reporting state and attachments need their own verified recovery path. [The lifecycle guide](LIFECYCLE.md) also covers role changes and departures.

@@ -60,3 +60,7 @@ Write approval and read confidentiality are distinct. CODEOWNERS or branch revie
 5. Record results, unsupported cases and operating limits. Obtain the organization's deployment acceptance before expanding.
 
 No enterprise certification, universal provider support, or Drive-like file permissions are claimed by v0.1. Publish measured results as implementation work progresses.
+
+## Lifecycle and organization rollout
+
+Use [organization rollout](ORG-ROLLOUT.md) to separate a manager's team pilot from company deployment. Require the [lifecycle acceptance matrix](SETUP-ACCEPTANCE.md#lifecycle-acceptance), including device replacement, manager handover, revocation, backup restore and version changes. The [lifecycle guide](LIFECYCLE.md) assigns preparation, operator actions and evidence; writing these procedures does not prove they have been exercised in a particular enterprise.

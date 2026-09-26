@@ -53,6 +53,8 @@ Set each agent's permitted senders and recipients, human owner, allowed work and
 
 Add `operations/setup-state.json` from the template. Track each stage as pending, prepared, verified or blocked with observation time, exact cause and evidence references. Store no tokens. Local-only state and credentials stay outside tracked publication paths; place `.aide-local/` in the workspace ignore rules.
 
+Create a continuity checkpoint for each manager and employee from [the template](templates/CONTINUITY.md). Include the pinned lifecycle/device-change procedures in private startup references. Record a confirmed backup operator, the approved backup route or its unresolved owner, and the one-publishing-session convention. Do not configure schedules or grants simply because an operator is named. For organization scope, use [the rollout runbook](ORG-ROLLOUT.md).
+
 ## 4. Publish and read back
 
 After the applicable authorization and authentication succeed, create or use the approved remote destination. Inspect the exact staged diff for scope and secret material. Stage specific intended files; do not blanket-add unrelated local work.

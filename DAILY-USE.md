@@ -35,3 +35,9 @@ Tell the manager what changed, who reported it, the evidence date, and what need
 | Permission, identity or content conflict | Stop the affected action, preserve the cause and name the responsible owner. |
 
 Default checking is manual. Scheduling requires a separately approved and verified trigger, operating window and operator. The manager's laptop being asleep does not stop a published record from existing, but something must run to collect it.
+
+## End a session with a usable checkpoint
+
+Before a planned move, handover or pause, refresh `people/<person-id>/continuity.md` with selected published work, outstanding messages, pending decisions and the next action. Keep local-only work and recovery state accounted for through approved backup references. Routine publication does not automatically publish private session memory.
+
+Say “Resume my AIDE” for a fresh session, “Move my AIDE to this computer” for [device change](DEVICE-CHANGE.md), or “Recover my AIDE” for [interruption recovery](RECOVERY.md). Read [the lifecycle guide](LIFECYCLE.md) before changing ownership or stopping service.

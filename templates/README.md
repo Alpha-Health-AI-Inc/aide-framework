@@ -15,6 +15,8 @@ These files are source templates. The setup agent renders them locally, reviews 
 | `workspace/registry/teams.json` | Explicit membership and routing version |
 | `workspace/operations/setup-state.json` | Stage progress and sanitized evidence references |
 | `workspace/.gitignore` | Merge the ignore rules into a new workspace; preserve existing rules |
+| [Continuity checkpoint](CONTINUITY.md) | `people/<person-id>/continuity.md`; for every manager and employee |
+| [Transition record](TRANSITION.md) | `operations/transitions/<unique-transition-id>.md`; device, role, recovery or retirement evidence |
 | [Employee handoff](EMPLOYEE-HANDOFF.md) | `people/<person-id>/ONBOARDING.md`; the private link given to the employee |
 | [Startup template](../START-HERE-TEMPLATE.md) | `START-HERE.md`; fill organization-specific values |
 | [Role template](../ROLE-TEMPLATE.md) | `roles/<agent-id>.md`; approved scope and owner |
